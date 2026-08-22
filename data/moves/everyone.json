@@ -100,6 +100,34 @@
             "range": "6-",
             "text": "Something goes terribly wrong; mark 1 XP and the GM makes a Move."
         }
+    ],
+    "submoves": [
+        {
+            "title": "Spell Magnitude",
+            "description": "Magnitude (mag) represents the scale and power of a spell. The GM has the final say on a spell's mag, but these guidelines below should help:",
+            "outcomes": [
+                {
+                    "range": "mag 0",
+                    "text": "Example effects include: shoot a magical dart (1d6 dmg); summon or charm an ordinary being; put someone to magical sleep; slow down a fall"
+                },
+                {
+                    "range": "mag 1",
+                    "text": "Example effects include: shoot an acid arrow (1d8 dmg); read someone's thoughts; turn someone invisible until they trigger a Move; float up to a #near distance"
+                },
+                {
+                    "range": "mag 2",
+                    "text": "Example effects include: an explosive fireball (1d10 dmg); communicate with a ghost or spirit; fabricate a finished mundane item instantly from a pile of raw materials; turn yourself and your equipment into a cloud of smoke"
+                },
+                {
+                    "range": "mag 3",
+                    "text": "Example effects include: vomit a cloud of poison that damages anyone any time they breath the gas (1d12 dmg); create a door to another dimension; polymorph someone into another natural creature of their same size or smaller; lift a creature or object of up to 1,000 pounds and move it to a #near location and hold it in place"
+                },
+                {
+                    "range": "mag 4",
+                    "text": "Example effects include: utter a forbidden power word that kills anyone weaker than you or inflicts (1d8+1d6 dmg) if they're stronger; summon or paralyze a monstrous creature; make a single wish (and you can't wish for more wishes); teleport yourself and allies to any location on the same dimension"
+                }
+            ]
+        }
     ]
   },
   {
@@ -155,5 +183,109 @@
         }
     ]
 
+  },
+  {
+    "id": "evy007",
+    "title": "Sneak Past (+DEX)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **stealthily evade notice**, roll+dex.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "You remain completely undetected."
+        },
+        {
+            "range": "7-9",
+            "text": "You do it, but the GM chooses one:",
+            "bullets": [
+                "Someone grows suspicious; you have Disavantage to Sneak Past until that changes",
+                "You did it by the skin of your teeth; mark a condition",
+                "You don't have long; act now before the window of opportunity closes"
+            ]
+        },
+        {
+            "range": "6-",
+            "text": "You're spotted or expected; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "evy008",
+    "title": "Spout Lore (+Questions)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **rack your brain for information about a specific subject**, ask the GM one question about it, answer the questions below, then roll with +1 for each \"Yes\":\n- Do you have access to a book or equivalent record about this subject?\n- Is this subject related to your Origins?\n- Is this subject relevant to your Struggle?",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "The GM answers generously, and you or an ally also gain Advantage the first time someone acts on the answer."
+        },
+        {
+            "range": "7-9",
+            "text": "The GM just answers generously."
+        },
+        {
+            "range": "6-",
+            "text": "The GM answers with danger or an unwelcome truth; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "evy009",
+    "title": "Trade Blows (+STR or +DEX)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **engage a foe in battle**, roll+str in melee or +dex at range (or with *precise* weapons), then inflict your dmg and suffer theirs.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "Choose one:",
+            "bullets": [
+                "An ally gets a fleeting opportunity",
+                "You inflict max dmg",
+                "You suffer min dmg"
+            ]
+        },
+        {
+            "range": "7-9",
+            "text": "Choose one of these instead:",
+            "bullets": [
+                "Something upsets or provokes you; mark a condition",
+                "You grant the opponent a fleeting opportunity",
+                "You lose or break something. Choose what; the GM may ask for more"
+            ]
+        },
+        {
+            "range": "6-",
+            "text": "You inflict min dmg or suffer max dmg (your call); mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "evy010",
+    "title": "Unearth Secrets (+INT)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **investigate a mysterious situation or location**, ask the GM, \"Are there any secrets to discover here?\" If \"Yes\", roll+int. No matter what you roll, you always discover something; the GM will tell you what.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "Your discovery is clear and significant."
+        },
+        {
+            "range": "7-9",
+            "text": "Choose one from below:",
+            "bullets": [
+                "It is an important clue, but not a clear answer",
+                "The discovery puts you at risk; the GM will say how after you choose this option",
+                "The discovery rattles you; mark a condition"
+            ]
+        },
+        {
+            "range": "6-",
+            "text": "The discovery is dangerous; mark 1 XP and the GM makes a Move."
+        }
+    ]
   }
 ]
