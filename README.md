@@ -5,6 +5,9 @@ This is an initial outline of Dungeon World 2 beta character sheet.
 It is available at:
 https://tznind.github.io/dw2/cs.html
 
+For character sheets for other games (including dungeon world 1 and stonetop) and the main sheet engine see:
+https://github.com/tznind/lc
+
 ## Creating Moves
 
 Moves are designed for flexibility and ease writing. Simply enter moves into the json file and add to the availability map to relevant role(s).
