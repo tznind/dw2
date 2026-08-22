@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Commander Character Sheet</title>
+<title>Character Sheet</title>
 <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -39,20 +39,28 @@
       </div>
       
       <!-- Role selectors support data-roles attribute to limit which roles appear:
-           - Comma-separated list: data-roles="Navigator,Mech Adept" 
+           - Comma-separated list: data-roles="The Bard,Wanderer"
            - Wildcard for all roles: data-roles="*"
            - No attribute: shows all roles (same as *) -->
       <div class="role-controls">
-        <label for="role">Origin:</label>
-        <select id="role" name="role" data-roles="*">
-          <option value="">Select origin...</option>
+        <label for="role">Class:</label>
+        <select id="role" name="role" data-roles="The Bard">
+          <option value="">Select class...</option>
         </select>
-        <button type="button" id="role-help-button" class="help-icon" title="Show role description">?</button>
-  <!--
-        <label for="role2">Career:</label>
-        <select id="role2" name="role2" data-roles="*">
-          <option value="">Select career...</option>
-        </select>-->
+        <button type="button" id="role-help-button" class="help-icon" title="Show class description">?</button>
+
+        <label for="role2">Path 1:</label>
+        <select id="role2" name="role2" data-roles="Secondary Role 1, Secondary Role 2">
+          <option value="">Select path...</option>
+        </select>
+        <button type="button" id="role2-help-button" class="help-icon" title="Show path 1 description">?</button>
+
+        <label for="role3">Path 2:</label>
+        <select id="role3" name="role3" data-roles="Secondary Role 1, Secondary Role 2">
+          <option value="">Select path...</option>
+        </select>
+        <button type="button" id="role3-help-button" class="help-icon" title="Show path 2 description">?</button>
+
         <button type="button" id="copy-url-button">
           <span class="button-text">Copy URL</span>
           <span class="success-text">
@@ -62,7 +70,7 @@
         </button>
         <button type="button" id="clear-button">Clear</button>
         <label for="language-selector" style="display: none;">Language:</label>
-        <select id="language-selector" style="display: none;" data-languages="🇪🇸 es">
+        <select id="language-selector" style="display: none;">
           <option value="">Default</option>
         </select>
       </div>
