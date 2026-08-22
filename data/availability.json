@@ -19,6 +19,11 @@
     "description": "There's beauty in all things, even fighting!",
     "swb001": false
   },
+  "Struggles": {
+    "_movesFile": "data/moves/struggles.json",
+    "description": "Dark truths and burdens your PC carries, revealed over the course of a campaign",
+    "str001": true
+  },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
     "evy001": false,
@@ -41,6 +46,7 @@
     "evy018": true,
     "evy019": true,
     "evy020": true,
+    "evy021": true,
     "evya": true
   }
 }

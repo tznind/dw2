@@ -293,7 +293,27 @@
     "title": "Comfort or Support",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "Once per session, after you **offer comfort or support to another PC**, answer the following questions:\n- Did you explore, change, or reaffirm a Relationship or Bond?\n- Did they open up to you in return?\n- Did either of you reveal something new about your Struggle?\n\nFor each \"Yes\", the comforted can choose to clear a marked Condition, gain 1 Depth to their Relationship with the comforter, or have the comforter clear a marked Condition. The comforted can choose an option more than once."
+    "outcomes": [
+       
+        {
+            "text": "Once per session, after you **offer comfort or support to another PC**, answer the following questions",
+            "bullets": [
+                "Did you explore, change, or reaffirm a Relationship or Bond?",
+                "Did they open up to you in return?",
+                "Did either of you reveal something new about your Struggle?"
+            ]
+
+        },
+        {
+            "text": "For each \"Yes\", the comforted can choose (they can choose an option more than once).",
+            "bullets": [
+                                "Clear a marked Condition",
+                                "Gain 1 Depth to their Relationship with the comforter",
+                                "Or have the comforter clear a marked Condition."
+
+            ]
+        }
+    ]
   },
   {
     "id": "evy012",
@@ -430,5 +450,18 @@
             ]
         }
     ]
+  },
+  {
+    "id": "evy021",
+    "title": "Reveal Your Struggle",
+    "category": "Campaign Moves",
+    "hideCheckbox": true,
+    "description": "When you **Make Camp** with a locked Condition, or when you **Level Up**, you may choose to confess a new, terrible truth about your PC's Struggle. If you do, reveal a new Struggle or add a new detail to an already revealed one (and clear the locked Condition if any).",
+    "outcomes": [
+        {
+            "text": "You can only have one revealed Struggle at a time. When your revealed Struggle is resolved, **Level Up** (keeping marked XP), erase the Struggle, and lose both its Benefits (+) and Drawbacks (-). Clear the Advancement box if marked; you can choose a new Struggle in the future."
+        }
+    ],
+    "takeFrom": ["Struggles"]
   }
 ]

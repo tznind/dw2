@@ -1,0 +1,26 @@
+[
+  {
+    "id": "str001",
+    "title": "Amnesia",
+    "hideCheckbox": true,
+    "description": "You have no memory of your past. You know one thing, though: you may not want to remember it.",
+    "tracks": [
+        {
+            "name": "Memories",
+            "max": 5,
+            "shape": "circle"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "Where did you wake up without memory? What places, behaviours, or people feel familiar? What new identity are you building for yourself?"
+        },
+        {
+            "title": "Shards (+)(-)",
+            "description": "Once per session, when you would mark your last condition (thus **Reaching Your Limit**), you can instead mark Memories and *Have a Flashback*. When you do, you discover an important part of your past; mark 1 XP and the GM advances a Threat.\n\nWhen you reach 5 Memories, the picture of your past is complete; this Struggle is resolved."
+        }
+    ]
+    ,"details": true
+  }
+]
