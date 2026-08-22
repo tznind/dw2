@@ -300,7 +300,17 @@
     "title": "End the Session",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "When you **reach the end of a session**, answer the following questions as a group:\n- Did anyone add Depth to their Relationship(s)?\n- Did we defeat a dangerous threat, visit a new location, and/or find a memorable treasure?\n- Did we learn something new and important about the world or NPCs?\n\nFor each \"Yes\", everyone marks XP."
+    "description": "When you **reach the end of a session**, answer the following questions as a group",
+    "outcomes": [
+        {
+            "text": "For each \"Yes\", everyone marks XP",
+            "bullets": [
+                "Did anyone add Depth to their Relationship(s)?",
+                "Did we defeat a dangerous threat, visit a new location, and/or find a memorable treasure?",
+                "Did we learn something new and important about the world or NPCs?"
+            ]
+        }
+    ]    
   },
   {
     "id": "evy013",
@@ -346,5 +356,79 @@
     "category": "Extra Moves",
     "hideCheckbox": true,
     "description": "Once per session, when you **spend a few hours resting** (even while adventuring), describe cooperatively what each PC is up to. Things in the world worsen each time you **Make Camp**.\n\nWhen you **finish Making Camp**, each PC regains half their lost HP (rounded down) and clears one marked Condition."
+  },
+  {
+    "id": "evy016",
+    "title": "Perform a Ritual",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "When you **draw on a font of magical power** (object, person, or place) to create an effect, tell the GM what you're trying to achieve. The GM will ask for requirements equal to the effect's mag (min. 1) from the following (filling in the blanks or making choices when needed):\n- First you must ...\n- It's going to take days/weeks/months\n- It will require ...\n- The effect will be unreliable or limited\n- You and your allies will risk ...\n- You'll need help from ...\n- You'll have to destroy ... to do it\n\nOnce all requirements are fulfilled, the ritual is complete and the magical effect takes place."
+  },
+  {
+    "id": "evy017",
+    "title": "Reach Your Limit",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:\n- **Angry** — Lash out at your allies or break something important\n- **Distracted** — Wander off alone or miss something relevant\n- **Exhausted** — Collapse or give up when it matters\n- **Frightened** — Hide or flee from danger\n- **Insecure** — Overcompensate or harshly criticize someone\n\nAfter the outburst, lock the chosen Condition."
+  },
+  {
+    "id": "evy018",
+    "title": "Undertake a Perilous Journey",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "When you **travel through hostile territory**, choose a destination, a leader, and a method of travel:\n- **Quickly, risking it all.** -1 to the roll, everyone marks a Condition; you arrive earlier than expected\n- **Regular pace.** +1 to the roll, only the leader marks a Condition; you arrive when expected\n- **Slow & careful.** +2 to the roll; you arrive later than expected\n\nThen the leader rolls with the corresponding modifier.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "You arrive with a boon; the GM will tell you what."
+        },
+        {
+            "range": "7-9",
+            "text": "You'll get there but choose one:",
+            "bullets": [
+                "Someone's following you; let them, or everyone marks a Condition to lose them",
+                "Something unpleasant awaits at your destination",
+                "You encounter a danger along the way, but you have the drop on them"
+            ]
+        },
+        {
+            "range": "6-",
+            "text": "A danger surprises you; everyone marks 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "evy019",
+    "title": "Enjoy Downtime",
+    "category": "Campaign Moves",
+    "hideCheckbox": true,
+    "outcomes": [
+        {
+            "text": "When you **spend a few days resting in a safe place**, you may do as many as you'd like of the following:",
+            "bullets": [
+                "**Carouse.** Spend 1 Treasure so all PCs can recover back to max HP",
+                "**Reconnect.** Spend 1 Treasure to clear a locked Condition or gain 1 Depth with another PC",
+                "**Resupply.** Spend 1 Treasure to refresh all uses on a PC's non-magic items",
+                "**Shop.** Spend 1 Treasure to repair equipment, purchase items, or enlist services; you spend 1 Treasure per good/service",
+                "**Train.** Once per Downtime each PC can spend 1 Treasure to mark XP"
+            ]
+        }
+    ]
+  },
+  {
+    "id": "evy020",
+    "title": "Forge a Bond",
+    "category": "Campaign Moves",
+    "hideCheckbox": true,
+    "outcomes": [
+        {
+            "text": "When **two PCs have 3 Depth with the each other**, clear both tracks and the Relationships, then choose one:",
+            "bullets": [
+                "**Establish a new Bond.** Choose a Bond; write it on both character sheets in place of the Relationships. If you shared another Bond, erase it; both of you mark 1 XP for each Bond Advanced Move it had unlocked",
+                "**Reinforce an existing Bond.** Unlock a new Bond Advanced Move from it",
+                "**\"How are you really feeling?\"** Ask each other at least one question about your character's thoughts, feelings, or motivations. If both answer truthfully, each marks 1 XP or clears 1 locked Condition"
+            ]
+        }
+    ]
   }
 ]
