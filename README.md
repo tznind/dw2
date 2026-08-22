@@ -1,22 +1,9 @@
-# LC
-This repository is a template for building interactive [PbtA-style](https://en.wikipedia.org/wiki/Powered_by_the_Apocalypse?utm_source=chatgpt.com) character sheets.
+# Dungeon World 2
 
-## Live Character Sheet
+This is an initial outline of Dungeon World 2 beta character sheet.
 
-Players can create their own characters, choose skills etc. Data is saved only into the address bar (URL) - allowing sharing/saving for later e.g. as a bookmark.
-
-Showcases (GitHub Pages):
-- [<img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" /> Demo Site](https://tznind.github.io/lc/cs.html)
-- [<img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" /> Stonetop](https://tznind.github.io/st/cs.html) ([Source](https://github.com/tznind/st))
-- [<img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" /> Uncharted Worlds](https://tznind.github.io/uw/cs.html) ([Source](https://github.com/tznind/uw))
-- [<img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" /> Apocalypse World](https://tznind.github.io/aw/cs.html) ([Source](https://github.com/tznind/aw))
-- [<img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" /> Dungeon World](https://tznind.github.io/dw/cs.html) ([Source](https://github.com/tznind/dw))
--  [<img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" /> Monster of the Week](https://tznind.github.io/mw/cs.html) ([Source](https://github.com/tznind/mw))
-
-
-<a href="https://tznind.github.io/lc/cs.html?name=Captain+Inigo+Montoya&prophecy-value=8&player=Thomas&role=Navigator&mettle=%2B1&conviction=2&track_stat_prophecy=2&move_d4e5f6=1&track_stat_physique=3">
-<img src="https://github.com/user-attachments/assets/cff39bd9-d28d-495a-a958-eb86240389ed"/>
-</a>
+It is available at:
+https://tznind.github.io/dw2/cs.html
 
 ## Creating Moves
 
