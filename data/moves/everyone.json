@@ -44,10 +44,28 @@
             "title": "From Level 5 onwards, you can choose from the following:",
             "pick": [
                 "Gain a Path from your Class",
+                "+1 to any Stat (max +2)",
+                "*Multiclass* - Gain a Path from another Class",
+                "Obtain a *magic item* - choose from those available or work with your GM to create one",
                 "Take another Move from a Class Path",
                 "Take another Move from a Class Path",
                 "Take another Move from a Class Path",
-                "Take another Move from a Class Path"
+                "Take another Move from a Class Path",
+                "Take another Move from another Class Path",
+                "Take another Move from another Class Path",
+                "Take another Move from another Class Path",
+                "Take another Move from another Class Path"
+        ]},
+             {
+            "title": "From Level 10 onwards, you can choose from the following:",
+            "pick": [
+                "+1 to any stat (max +3)",
+                "*Multiclass* - Gain a Path from another Class",
+                "Obtain an *Artifact* - Choose from those available or work with your GM to create one",
+                "Take an additional Move from another Class Path",
+                "Take an additional Move from another Class Path",
+                "Take an additional Move from another Class Path",
+                "Take an additional Move from another Class Path"
         ]}
     ]
   }
