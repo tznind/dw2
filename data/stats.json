@@ -5,7 +5,7 @@
     "shape": "square",
     "tracks": [
       {
-        "name": "Exhausted",
+        "startLabel": "Exhausted",
         "shape": "circle",
         "max": 1
       }
@@ -17,7 +17,7 @@
     "shape": "square",
     "tracks": [
       {
-        "name": "Frightened",
+        "startLabel": "Frightened",
         "shape": "circle",
         "max": 1
       }
@@ -29,7 +29,7 @@
     "shape": "square",
     "tracks": [
       {
-        "name": "Angry",
+        "startLabel": "Angry",
         "shape": "circle",
         "max": 1
       }
@@ -41,7 +41,7 @@
     "shape": "square",
     "tracks": [
       {
-        "name": "Distracted",
+        "startLabel": "Distracted",
         "shape": "circle",
         "max": 1
       }
@@ -53,7 +53,7 @@
     "shape": "square",
     "tracks": [
       {
-        "name": "Insecure",
+        "startLabel": "Insecure",
         "shape": "circle",
         "max": 1
       }
