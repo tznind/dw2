@@ -101,5 +101,59 @@
             "text": "Something goes terribly wrong; mark 1 XP and the GM makes a Move."
         }
     ]
+  },
+  {
+    "id": "evy005",
+    "title": "Defy Danger (+Variable)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **contend with a risk, threat, or obstacle** - and no other move fits better - describe how you do it, then the GM chooses one:\n- +str if you power through, physically endure, or break it\n- +dex if you dodge, outpace, or target it precisely\n- +int if you analyze, notice, or outsmart it\n- +wis if you scrutinize, empathize with, or resolutely resist it\n- +cha if you charm, trick, impress, or provoke it",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "You overcome it flawlessly."
+        },
+        {
+            "range": "7-9",
+            "text": "You prevail over it, but choose one below:",
+            "bullets": [
+                "Doing so draws unwanted attention or escalates the situation; the GM will say how after you choose this option",
+                "The effort drains or rattles you; mark a condition",
+                "You sacrifice something to do it; say what it is. The GM may ask for more"
+            ]
+        },
+        {
+            "range": "6-",
+            "text": "Your efforts are thwarted or go terribly wrong; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "evy006",
+    "title": "Sense Motive (+WIS)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **scrutinize someone throughout a conversation**, roll+wis.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "You can ask their player two questions during the conversation (if they're an NPC, the GM answers)."
+        },
+        {
+            "range": "7-9",
+            "text": "Ask them only one."
+        },
+        {
+            "range": "6-",
+            "text": "If studying an NPC, then you're discovered or interrupted; mark 1 XP and the GM makes a Move. If studying a PC, then they ask you a question instead."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "Questions can be about a character's thoughts, feelings, or motivations. All answers must be truthful, even if the character(s) might not be.\n\nSome example questions include:\n- Are you lying about...?\n- How might I get you to ...?\n- How do you feel about ...?\n- What do you desire most?"
+        }
+    ]
+
   }
 ]
