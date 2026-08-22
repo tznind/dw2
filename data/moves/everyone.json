@@ -43,7 +43,11 @@
         {
             "title": "From Level 5 onwards, you can choose from the following:",
             "pick": [
-                "Gain a Path from your Class"
+                "Gain a Path from your Class",
+                "Take another Move from a Class Path",
+                "Take another Move from a Class Path",
+                "Take another Move from a Class Path",
+                "Take another Move from a Class Path"
         ]}
     ]
   }
