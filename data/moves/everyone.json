@@ -8,7 +8,7 @@
     "title": "Pull Strings (+CHA)",
     "category": "Core Moves",
     "hideCheckbox": true,
-    "description": "When you influence an NPC to do what you want, choose an approach below and roll+cha:\n- If you *deceive them with false words or actions*, they might later seek the truth or learn a secret about you\n- If you *persuade them openly and honestly*, they might ask for a promise and/or payment, or only partly follow through\n- If you **threaten their safety or interests*, they might escalate the conflict now, or escape or betray you later",
+    "description": "When you influence an NPC to do what you want, choose an approach below and roll+cha:\n- If you *deceive them with false words or actions*, they might later seek the truth or learn a secret about you\n- If you *persuade them openly and honestly*, they might ask for a promise and/or payment, or only partly follow through\n- If you *threaten their safety or interests*, they might escalate the conflict now, or escape or betray you later",
     "outcomes": [
         {
             "range": "10+",
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "id": "evy003",
+    "id": "evya",
     "title": "Advancements",
     "hideCheckbox": true,
     "description": "When you **Level Up**, increase your *HP* by 1 (max +10) and choose one of the following:",
@@ -67,6 +67,39 @@
                 "Take an additional Move from another Class Path",
                 "Take an additional Move from another Class Path"
         ]}
+    ]
+  },
+    {
+    "id": "evy003",
+    "title": "Aid A PC",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "While you **help another PC**, they have Advantage on their rolls. Before the helped PC rolls, you must either: \n\n- erase 1 Depth with them \n\n - expose yourself to their same risks and consequences\n\n - or mark a Condition"
+  },
+  {
+    "id": "evy004",
+    "title": "Cast a Spell (+Variable)",
+    "category": "Core Moves",
+    "hideCheckbox": true,
+    "description": "When you **invoke magic you can use**, say what you want to happen and roll+the corresponding Stat (see your Class or Paths) with a penalty equal to the spell's **MAG** (GM's call).",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "The spell is successfully cast."
+        },
+        {
+            "range": "7-9",
+            "text": "It goes off but choose one:",
+            "bullets": [
+                "A unique option depending on the source of your magic (see your Class or Paths)",
+                "The effort is tiresome; mark Conditions equal to the spell's mag",
+                "There's a twist; the GM will add an \"and\" or \"but\" to its effect"
+            ]
+        },
+        {
+            "range": "6-",
+            "text": "Something goes terribly wrong; mark 1 XP and the GM makes a Move."
+        }
     ]
   }
 ]

@@ -23,6 +23,8 @@
     "_movesFile": "data/moves/everyone.json",
     "evy001": false,
     "evy002": true,
-    "evy003": true
+    "evy003": true,
+    "evy004": true,
+    "evya": true
   }
 }
