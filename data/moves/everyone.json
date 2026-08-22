@@ -23,5 +23,28 @@
             "text": "They make things worse; mark 1 XP and the GM makes a Move."
         }
     ]
+  },
+  {
+    "id": "evy003",
+    "title": "Advancements",
+    "hideCheckbox": true,
+    "description": "When you **Level Up**, increase your *HP* by 1 (max +10) and choose one of the following:",
+    "pick": [
+        "Gain a Path from your Class",
+        "+1 to any stat (max +2)",
+        "+1 to any stat (max +2)",
+        "Reveal a Struggle",
+        "Take another Move from a Class Path",
+        "Take another Move from a Class Path",
+        "Take another Move from a Class Path",
+        "Take another Move from a Class Path"
+    ],
+    "submoves": [
+        {
+            "title": "From Level 5 onwards, you can choose from the following:",
+            "pick": [
+                "Gain a Path from your Class"
+        ]}
+    ]
   }
 ]
