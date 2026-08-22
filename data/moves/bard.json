@@ -1,2 +1,34 @@
 [
+  {
+    "id": "brd001",
+    "title": "Perform for an Audience",
+    "description": "You express yourself and affect others with a particular artistic skill: __bas__",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "Choose 3 from below",
+            "bullets": [
+                "An audience member clears a Condition",
+                "An audience member gains advantage on their next roll",
+                "Regain one use of your **artistic samples**",
+                "You get advantage on your next **Pull Strings** over an audience member"
+            ]
+        },
+        {
+            "range": "7-9",
+            "text": "Choose 2"
+        },
+        {
+            "range": "6-",
+            "text": "You feel the performance was awful; choose 1, but mark a Condition."
+        }
+    ],
+    "submoves": [
+        {
+
+        "title": "Note",
+        "description": "You can choose any option more than once."
+        }
+    ]
+  }
 ]

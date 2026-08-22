@@ -1,12 +1,19 @@
 {
   "The Bard": {
-    "_movesFile": "data/moves/bard.json"
+    "_movesFile": "data/moves/bard.json",
+    "brd001": true
   },
-  "Secondary Role 1": {
-    "_movesFile": "data/moves/secondary-role-1.json"
+  "Dabbler": {
+    "_movesFile": "data/moves/dabbler.json",
+    "dab001": false
   },
-  "Secondary Role 2": {
-    "_movesFile": "data/moves/secondary-role-2.json"
+  "Diplomat": {
+    "_movesFile": "data/moves/diplomat.json",
+    "dip001": false
+  },
+  "Swashbuckler": {
+    "_movesFile": "data/moves/swashbuckler.json",
+    "swb001": false
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json"
