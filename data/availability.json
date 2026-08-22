@@ -16,6 +16,8 @@
     "swb001": false
   },
   "Everyone": {
-    "_movesFile": "data/moves/everyone.json"
+    "_movesFile": "data/moves/everyone.json",
+    "evy001": false,
+    "evy002": true
   }
 }

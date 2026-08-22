@@ -1,2 +1,26 @@
 [
+  {
+    "id": "evy001",
+    "title": "Placeholder Move"
+  },
+  {
+    "id": "evy002",
+    "title": "Pull Strings (+CHA)",
+    "category": "Core Moves",
+    "description": "When you influence an NPC to do what you want, choose an approach below and roll+cha:\n- If you *deceive them with false words or actions*, they might later seek the truth or learn a secret about you\n- If you *persuade them openly and honestly*, they might ask for a promise and/or payment, or only partly follow through\n- If you **threaten their safety or interests*, they might escalate the conflict now, or escape or betray you later",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "They'll do it as best as they can."
+        },
+        {
+            "range": "7-9",
+            "text": "They'll try, but the GM will add a complication based on your approach."
+        },
+        {
+            "range": "6-",
+            "text": "They make things worse; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  }
 ]

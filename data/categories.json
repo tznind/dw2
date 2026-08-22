@@ -2,6 +2,7 @@
   "order": [
     "Moves",
     "Equipment",
-    "Advancement"
+    "Advancement",
+    "Core Moves"
   ]
 }
