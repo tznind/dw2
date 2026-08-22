@@ -287,5 +287,64 @@
             "text": "The discovery is dangerous; mark 1 XP and the GM makes a Move."
         }
     ]
+  },
+  {
+    "id": "evy011",
+    "title": "Comfort or Support",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "Once per session, after you **offer comfort or support to another PC**, answer the following questions:\n- Did you explore, change, or reaffirm a Relationship or Bond?\n- Did they open up to you in return?\n- Did either of you reveal something new about your Struggle?\n\nFor each \"Yes\", the comforted can choose to clear a marked Condition, gain 1 Depth to their Relationship with the comforter, or have the comforter clear a marked Condition. The comforted can choose an option more than once."
+  },
+  {
+    "id": "evy012",
+    "title": "End the Session",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "When you **reach the end of a session**, answer the following questions as a group:\n- Did anyone add Depth to their Relationship(s)?\n- Did we defeat a dangerous threat, visit a new location, and/or find a memorable treasure?\n- Did we learn something new and important about the world or NPCs?\n\nFor each \"Yes\", everyone marks XP."
+  },
+  {
+    "id": "evy013",
+    "title": "Face Death",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "When you **reach 0 HP**, you're Helpless until you recover HP or the Scene ends. While Helpless, if you lose any HP, you die. When you recover any HP, lock one of your Conditions and you're no longer Helpless.\n\nWhen you take decisive action while Helpless, choose one before resolving the action:",
+    "submoves": [
+        {
+            "title": "Gamble with Death",
+            "description": "Roll+nothing.",
+            "outcomes": [
+                {
+                    "range": "10+",
+                    "text": "You push past the pain; recover half your max HP (rounded down) then resolve your action."
+                },
+                {
+                    "range": "7-9",
+                    "text": "The GM says what part of you won't survive; accept the loss and recover 1 HP, or hold on to it and die after acting."
+                },
+                {
+                    "range": "6-",
+                    "text": "You're too hurt to act and will die before this Scene ends; you say when. What are your last words?"
+                }
+            ]
+        },
+        {
+            "title": "Go Out in a Blaze of Glory",
+            "description": "Briefly take control of the Scene, describe one last deed you accomplish, then die."
+        }
+    ]
+  },
+  {
+    "id": "evy014",
+    "title": "Level Up",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "When you **mark the last XP on your PC's Experience track**, clear the track, add 1 to your Level and current+maximum HP (up to +10), and gain one Advancement available to your new Level (or lower)."
+  },
+  {
+    "id": "evy015",
+    "title": "Make Camp",
+    "category": "Extra Moves",
+    "hideCheckbox": true,
+    "description": "Once per session, when you **spend a few hours resting** (even while adventuring), describe cooperatively what each PC is up to. Things in the world worsen each time you **Make Camp**.\n\nWhen you **finish Making Camp**, each PC regains half their lost HP (rounded down) and clears one marked Condition."
   }
 ]
