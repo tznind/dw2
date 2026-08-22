@@ -4,8 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Character Sheet</title>
-<title>Commander Character Sheet</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Force Class / Paths / Copy-Clear onto their own line, always - regardless of
+     how much horizontal room .role-controls (flex, wraps) actually has. */
+  .role-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .role-primary,
+  .role-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .paths-fieldset {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 6px 10px 8px;
+    margin: 0;
+  }
+
+  .paths-fieldset legend {
+    padding: 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .paths-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
+  }
+
+  .path-field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+</style>
 
 </head>
 <body>
@@ -44,50 +87,65 @@
            - Wildcard for all roles: data-roles="*"
            - No attribute: shows all roles (same as *) -->
       <div class="role-controls">
-        <label for="role">Class:</label>
-        <select id="role" name="role" data-roles="The Bard">
-          <option value="">Select class...</option>
-        </select>
-        <button type="button" id="role-help-button" class="help-icon" title="Show class description">?</button>
+        <div class="role-primary">
+          <label for="role">Class:</label>
+          <select id="role" name="role" data-roles="The Bard">
+            <option value="">Select class...</option>
+          </select>
+          <button type="button" id="role-help-button" class="help-icon" title="Show class description">?</button>
+        </div>
 
-        <label for="role2">Path 1:</label>
-        <select id="role2" name="role2" data-roles="Dabbler, Diplomat, Swashbuckler">
-          <option value="">Select path...</option>
-        </select>
-        <button type="button" id="role2-help-button" class="help-icon" title="Show path 1 description">?</button>
+        <fieldset class="paths-fieldset">
+          <legend>Paths</legend>
+          <div class="paths-flow">
+            <div class="path-field">
+              <label for="role2">Path 1:</label>
+              <select id="role2" name="role2" data-roles="Dabbler, Diplomat, Swashbuckler">
+                <option value="">Select path...</option>
+              </select>
+              <button type="button" id="role2-help-button" class="help-icon" title="Show path 1 description">?</button>
+            </div>
 
-        <label for="role3">Path 2:</label>
-        <select id="role3" name="role3" data-roles="Dabbler, Diplomat, Swashbuckler">
-          <option value="">Select path...</option>
-        </select>
-        <button type="button" id="role3-help-button" class="help-icon" title="Show path 2 description">?</button>
+            <div class="path-field">
+              <label for="role3">Path 2:</label>
+              <select id="role3" name="role3" data-roles="Dabbler, Diplomat, Swashbuckler">
+                <option value="">Select path...</option>
+              </select>
+              <button type="button" id="role3-help-button" class="help-icon" title="Show path 2 description">?</button>
+            </div>
 
-        <label for="role4">Multiclass 1:</label>
-        <select id="role4" name="role4" data-roles="Dabbler, Diplomat, Swashbuckler">
-          <option value="">Select path...</option>
-        </select>
-        <button type="button" id="role4-help-button" class="help-icon" title="Show multiclass 1 description">?</button>
+            <div class="path-field">
+              <label for="role4">Multiclass 1:</label>
+              <select id="role4" name="role4" data-roles="Dabbler, Diplomat, Swashbuckler">
+                <option value="">Select path...</option>
+              </select>
+              <button type="button" id="role4-help-button" class="help-icon" title="Show multiclass 1 description">?</button>
+            </div>
 
-        <label for="role5">Multiclass 2:</label>
-        <select id="role5" name="role5" data-roles="Dabbler, Diplomat, Swashbuckler">
-          <option value="">Select path...</option>
-        </select>
-        <button type="button" id="role5-help-button" class="help-icon" title="Show multiclass 2 description">?</button>
+            <div class="path-field">
+              <label for="role5">Multiclass 2:</label>
+              <select id="role5" name="role5" data-roles="Dabbler, Diplomat, Swashbuckler">
+                <option value="">Select path...</option>
+              </select>
+              <button type="button" id="role5-help-button" class="help-icon" title="Show multiclass 2 description">?</button>
+            </div>
+          </div>
+        </fieldset>
 
-        <div style="flex-basis: 100%; height: 0;"></div>
-
-        <button type="button" id="copy-url-button">
-          <span class="button-text">Copy URL</span>
-          <span class="success-text">
-            <span class="checkmark"></span>
-            Copied!
-          </span>
-        </button>
-        <button type="button" id="clear-button">Clear</button>
-        <label for="language-selector" style="display: none;">Language:</label>
-        <select id="language-selector" style="display: none;">
-          <option value="">Default</option>
-        </select>
+        <div class="role-actions">
+          <button type="button" id="copy-url-button">
+            <span class="button-text">Copy URL</span>
+            <span class="success-text">
+              <span class="checkmark"></span>
+              Copied!
+            </span>
+          </button>
+          <button type="button" id="clear-button">Clear</button>
+          <label for="language-selector" style="display: none;">Language:</label>
+          <select id="language-selector" style="display: none;">
+            <option value="">Default</option>
+          </select>
+        </div>
       </div>
     </div>
 
