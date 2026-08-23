@@ -12,8 +12,29 @@
     ],
     "pick": [
       "Return the Favor - When you help or save a relevant NPC, they now support your Cause. Once in the campaign per helped/saved NPC you may request their aid; they will appear as soon as possible and help you with any current predicament you're in.",
-      "You Cannot Kill an Idea - When you **Face Death** while fighting for your Cause, you may choose to Go Out in a Blaze of Glory without dying. Each of you can use this Move once in a campaign.",
+      "You Cannot Kill an Idea - When you **Face Death** while fighting for your Cause, you may choose to **Go Out in a Blaze of Glory** without dying. Each of you can use this Move once in a campaign.",
       "United We Stand - Each of you, once per session, may Aid the other while pursuing your Cause without paying any cost. When either of you **Sense Motive**, you can always ask \"Do you believe in my cause?\" no matter the result."
+    ]
+  },
+  {
+    "id": "bon002",
+    "title": "Comrades in Arms",
+    "hideCheckbox": true,
+    "description": "You support each other through fights and their aftermaths\nWith:__bon2_wi__ (which PC)",
+    "outcomes": [
+      {
+        "range": "Back to Back",
+        "text": "When you Aid your bondmate when they **Trade Blows**, you may choose one (or none):",
+        "bullets": [
+          "Suffer 1 dmg **piercing** instead of another **Aid A PC** cost",
+          "Instead of granting **adv** to their roll, you may add your dmg to theirs. This dmg is still affected by min and max choices"
+        ]
+      }
+    ],
+    "pick": [
+      "Let It All Out - When you **Comfort or Support** your bondmate by dueling, brawling, or fighting them, they either choose an extra option or mark 1 XP (their choice).",
+      "Killer Combo - When you **Trade Blows** with your bondmate's Aid, on a 12+ make an additional choice from the 10+ list.",
+      "Training Exercise - When you **Make Camp**, you and your bondmate can choose the same Condition together. Until you next **Make Camp**, you both ignore penalties from that Condition. Condition: __bon2_c__"
     ]
   }
 ]

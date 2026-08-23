@@ -10,5 +10,9 @@
   {
     "alias": "dis",
     "term": "Disadvantage"
+  },
+  {
+    "alias": "Go Out in a Blaze of Glory",
+    "move": "Face Death"
   }
 ]
