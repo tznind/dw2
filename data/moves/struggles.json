@@ -43,5 +43,614 @@
             "description": "When you gain Depth with another PC, mark a Condition."
         }
     ]
+  },
+  {
+    "id": "str003",
+    "title": "Caretaker",
+    "hideCheckbox": true,
+    "description": "You travel with an NPC who depends on you for aid or guidance.",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Why does this person depend on you so much? __str3_0__\n\n- Do they know how much you do for them? __str3_1__\n\n- How do they tax your patience? __str3_2__"
+        },
+        {
+            "title": "Biggest Fan (+)",
+            "description": "When you give or receive **Comfort or Support** alongside your dependent, treat one \"No\" as if it were a \"Yes\"."
+        },
+        {
+            "title": "Guardian (+)",
+            "description": "When you worry about your dependent, you may mark a Condition to ask the GM a question about their location, activities, or wellbeing, and they will answer truthfully. When you **End the Session**, if you feel your dependent mostly did what you wanted, gain 1 XP."
+        },
+        {
+            "title": "Troublesome (-)",
+            "description": "When you hurt them or fail to protect them (GM's call), mark a Condition."
+        }
+    ]
+  },
+  {
+    "id": "str004",
+    "title": "Coward",
+    "hideCheckbox": true,
+    "description": "Most adventurers are used to frequent dangers and near death experiences. You are not one of them.",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Who did you once abandon? __str4_0__\n\n- How do you try to fight your fears? __str4_1__\n\n- How do you (over)compensate for them? __str4_2__"
+        },
+        {
+            "title": "Skittish (+)",
+            "description": "While Frightened, you have **adv** on rolls made to flee or hide from danger, and you mark 1 XP when you make such a roll."
+        },
+        {
+            "title": "Brave Face (+)",
+            "description": "You may clear Frightened by landing the final blow on an enemy, or taking credit for such a blow."
+        },
+        {
+            "title": "Terrified (-)",
+            "description": "When you mark Frightened, and when you mark a Condition while already Frightened (other than from this Move), mark an additional Condition."
+        }
+    ]
+  },
+  {
+    "id": "str005",
+    "title": "Dark Whisperer",
+    "hideCheckbox": true,
+    "description": "A voice tells you truths you couldn't know, and lies you can't discern.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Whispers",
+            "max": 5,
+            "shape": "circle"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- How does the voice communicate with you? __str5_0__\n\n- Which other PC did they warn you about? __str5_1__\n\n- How did they help you when no one else could? __str5_2__"
+        },
+        {
+            "title": "Shoulder Devil (+)",
+            "description": "Your Dark Whisperer is an NPC that no one else can perceive and that you can't **Sense Motive** against. When you ask your Dark Whisperer a question, they will usually tell you the truth or what they want you to do next. If you accept their words, gain **adv** on your next roll, but mark a Whisper (max 5)."
+        },
+        {
+            "title": "Shadow Puppet (-)",
+            "description": "When you try to reject your Dark Whisperer's words, roll+Whispers, then erase your Whispers.",
+            "outcomes": [
+                {
+                    "range": "10+",
+                    "text": "You obey them, perhaps without realizing it. Mark 1 XP and the GM makes a Move."
+                },
+                {
+                    "range": "7-9",
+                    "text": "Their words echo in your mind; mark two Conditions."
+                },
+                {
+                    "range": "6-",
+                    "text": "You shut them down; mark 1 XP."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "str006",
+    "title": "Disillusioned",
+    "hideCheckbox": true,
+    "description": "You were once a true believer, a champion, a paragon. No more.",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What was the cause? __str6_0__\n\n- What defeat or revelation showed you the meaninglessness of it all? __str6_1__\n\n- Is there any way to make you believe again? __str6_2__"
+        },
+        {
+            "title": "Cynic (+)",
+            "description": "You can always ask one extra question when you **Sense Motive**, even on a 6-. You also get **adv** to **Defy Danger** when you try to overcome deceptions of any kind."
+        },
+        {
+            "title": "Pessimist (-)",
+            "description": "The comforted gets one less option when you **Comfort or Support** them."
+        }
+    ]
+  },
+  {
+    "id": "str007",
+    "title": "Doomed",
+    "hideCheckbox": true,
+    "description": "A terrible affliction will claim your life (or worse), unless you can find a cure.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Doom",
+            "max": 5,
+            "shape": "circle"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- How were you afflicted? __str7_0__\n\n- What are the symptoms so far? __str7_1__\n\n- What dubious lead do you have on a potential cure? __str7_2__"
+        },
+        {
+            "title": "Good Days (+)",
+            "description": "When you **End the Session**, ask the group \"Did I learn more about my affliction, or made notable progress towards a cure?\" If \"Yes\", mark 1 XP, clear a Condition, and clear 1 Doom."
+        },
+        {
+            "title": "Bad Days (-)",
+            "description": "If the answer to the question above is \"No\", mark 1 Doom and a Condition. Doom starts at 0 and represents your affliction's progress. At 5 Doom, it's too late for a cure; your affliction will claim you the next session."
+        },
+        {
+            "title": "Not Like This (+)",
+            "description": "When you would **Face Death**, you may instead Invoke Your Doom—say how your affliction (or how others view it) helps you survive, then mark 1 Doom and regain 1 HP."
+        }
+    ]
+  },
+  {
+    "id": "str008",
+    "title": "Folk Hero",
+    "hideCheckbox": true,
+    "description": "You once saved a humble community all on your own, and some now see you as a symbol of hope.",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What heroic deed did you accomplish in your community? __str8_0__\n\n- What did you lose? __str8_1__\n\n- What prophecy of your heroic future have you heard? __str8_2__"
+        },
+        {
+            "title": "Inspiring Presence (+)",
+            "description": "Anybody who isn't a noble or someone with power will treat you as family, offering you shelter & whatever resources they have. When you **Trade Blows** to defend ordinary people, on a 10+, you can have another PC clear a Condition (instead of the other options)."
+        },
+        {
+            "title": "Burdened (-)",
+            "description": "When you refuse a chance to help the common folk, mark a Condition."
+        }
+    ]
+  },
+  {
+    "id": "str009",
+    "title": "Forbidden Romance",
+    "hideCheckbox": true,
+    "description": "You and an NPC are deeply in love, but you must remain apart.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Power of Love",
+            "startLabel": "Once per session",
+            "shape": "hexagon",
+            "max": 1
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Who is your loved one? __str9_0__\n\n- What impossible obstacle stands in your way? __str9_1__\n\n- What far-fetched solution could bring you together? __str9_2__"
+        },
+        {
+            "title": "The Power of Love (+)",
+            "description": "Once per session, when you share a memory of your loved one with another PC, clear Conditions equal to your Depth with them (min. 1)."
+        },
+        {
+            "title": "Soft Spot (-)",
+            "description": "When you get news that your beloved is in danger, mark a Condition, plus another one if you don't immediately drop everything to go and try saving them."
+        }
+    ]
+  },
+  {
+    "id": "str010",
+    "title": "Hunted",
+    "hideCheckbox": true,
+    "description": "A powerful individual or organization is actively hunting you down.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Heat",
+            "max": 3,
+            "shape": "circle"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Who leads the hunt for you? __str10_0__\n\n- How did they once almost catch you? __str10_1__\n\n- What have you sacrificed to escape them? __str10_2__"
+        },
+        {
+            "title": "Catch Me If You Can (+)",
+            "description": "When you would mark a Condition, you may instead mark Heat. How do you leave evidence of your presence behind? When you **Enjoy Downtime**, you may spend 1 Treasure to erase your Heat."
+        },
+        {
+            "title": "Reckoning (-)",
+            "description": "When you reach 3 Heat, or **Make Camp** with 1 or more Heat, roll+Heat then erase your Heat.",
+            "outcomes": [
+                {
+                    "range": "10+",
+                    "text": "Hunters arrive in force here and now."
+                },
+                {
+                    "range": "7-9",
+                    "text": "Hunters arrive, but you have a chance to act before they spot you."
+                },
+                {
+                    "range": "6-",
+                    "text": "Hunters get distressingly close to finding you, but you slip away; mark 1 XP."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "str011",
+    "title": "Indebted",
+    "hideCheckbox": true,
+    "description": "You owe a steep debt to some very dangerous people.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Debt",
+            "max": 5,
+            "shape": "circle"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Who do you owe? __str11_0__\n\n- What makes them so dangerous? __str11_1__\n\n- Who or what did they take as collateral? __str11_2__"
+        },
+        {
+            "title": "Keep Digging (+)",
+            "description": "When you would spend Treasure, you may instead mark an equal amount of Debt, which represents additional dues beyond what you initially owed. When you give your creditor something they really want (GM's call), reset Debt to 0."
+        },
+        {
+            "title": "Collectors (-)",
+            "description": "After you **Enjoy Downtime**, agents of your creditor approach; roll+Debt.",
+            "outcomes": [
+                {
+                    "range": "10+",
+                    "text": "They want something big, and are prepared to force your hand."
+                },
+                {
+                    "range": "7-9",
+                    "text": "They want a small favor or item; mark a Condition if you refuse them."
+                },
+                {
+                    "range": "6-",
+                    "text": "They only want to remind you of your dues; mark XP."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "str012",
+    "title": "Innocent",
+    "hideCheckbox": true,
+    "description": "You're new to this life, and are still figuring out yourself and the world.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Wide-Eyed",
+            "startLabel": "Once per session",
+            "shape": "hexagon",
+            "max": 1
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What other PC first took you in? __str12_0__\n\n- What do you accept without question? __str12_1__\n\n- What do you endlessly interrogate? __str12_2__"
+        },
+        {
+            "title": "Wide-Eyed (+)",
+            "description": "Once per session, when another PC receives **Comfort or Support** near you, you can also receive the same number of benefits (though can make different choices)."
+        },
+        {
+            "title": "Impressionable (-)",
+            "description": "Once per scene, when you reject the words of a PC or NPC, mark a Condition."
+        }
+    ]
+  },
+  {
+    "id": "str013",
+    "title": "Loner",
+    "hideCheckbox": true,
+    "description": "You're a misunderstood renegade who doesn't need any friends... right?",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What is your (presumably tragic) backstory? __str13_0__\n\n- How did the last person who got close to you suffer or betray you? __str13_1__"
+        },
+        {
+            "title": "Guarded (+)",
+            "description": "When you use or receive **Comfort or Support**, you may also answer \"Did I show that I really do care?\" If \"Yes\", the comforted gains a benefit like the other questions. If \"No\", you mark 1 XP."
+        },
+        {
+            "title": "Aloof (-)",
+            "description": "**Forge a Bond** requires 1 additional Depth from both you and the other PC."
+        }
+    ]
+  },
+  {
+    "id": "str014",
+    "title": "Lost Heritage",
+    "hideCheckbox": true,
+    "description": "You search for your people (or whatever's left of them), lost long ago to conquering or catastrophe.",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Who or what took your people away? __str14_0__\n\n- How did you manage to escape and/or survive? __str14_1__\n\n- Who or what's keeping you from learning more? __str14_2__"
+        },
+        {
+            "title": "Seeker (+)",
+            "description": "When you **Unearth Secrets** or **Sneak Past** in pursuit of something or someone related to your people, roll with **adv**. Once per session, when you find and study a relic of your people, tell the group what you learned and mark 1 XP."
+        },
+        {
+            "title": "Open Wound (-)",
+            "description": "When you encounter an incomplete, lost part of your people's culture, or a stolen relic, mark a Condition."
+        }
+    ]
+  },
+  {
+    "id": "str015",
+    "title": "Ominous Dreams",
+    "hideCheckbox": true,
+    "description": "You've begun experiencing confusing visions of an upcoming danger or catastrophic event.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Wyrd",
+            "max": 3,
+            "shape": "circle",
+            "dynamic": true
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What one aspect of your prophetic dreams is consistently clear? __str15_0__\n\n- Do you know who sends you these visions? __str15_1__\n\n- Who among your beloved is in danger in them? __str15_2__"
+        },
+        {
+            "title": "Saw It Coming (+)",
+            "description": "When you finish **Make Camp** successfully, gain Wyrd equal to your WIS. When something terrible happens to another PC (your call), you may spend 1 or 2 Wyrd to allow their Player to re-roll that number of dice after making a roll."
+        },
+        {
+            "title": "No Rest for the All-Seeing (-)",
+            "description": "When you finish **Make Camp** successfully you recover only half the amount of HP you normally would (rounded down)."
+        }
+    ]
+  },
+  {
+    "id": "str016",
+    "title": "Pariah",
+    "hideCheckbox": true,
+    "description": "You're reviled by polite society, and most who learn who you really are reject you.",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What aspect about you is reviled? __str16_0__\n\n- Do you hide your reviled aspect or revel in it? __str16_1__\n\n- If you could, would you get rid of it? __str16_2__"
+        },
+        {
+            "title": "Monster (+)",
+            "description": "When you first reveal your reviled aspect to an NPC, they're surprised for a moment and they're now **afraid** of you (GM's call). You get **adv** to **Defy Danger**, **Pull Strings**, or **Trade Blows** against any NPC who's afraid of you."
+        },
+        {
+            "title": "Wretch (-)",
+            "description": "You get **dis** to **Defy Danger**, **Pull Strings**, or **Trade Blows** against any NPC who isn't afraid of you."
+        }
+    ]
+  },
+  {
+    "id": "str017",
+    "title": "Reformed",
+    "hideCheckbox": true,
+    "description": "You did terrible things in the past, and now seek atonement.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Guilt",
+            "max": 3,
+            "shape": "circle"
+        },
+        {
+            "name": "Reparations",
+            "startLabel": "Once per session",
+            "shape": "hexagon",
+            "max": 1
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Which PC used to be your enemy? __str17_0__\n\n- Who doesn't think you've changed? __str17_1__\n\n- What do you regret the most? __str17_2__"
+        },
+        {
+            "title": "Haunted (+)(-)",
+            "description": "You start with 2 Guilt; mark it now. When you act selfishly, you may mark Guilt to gain **adv** on a roll. Whenever you have fewer marked+locked conditions than your Guilt, including when you first gain this Struggle, immediately mark Conditions until they match."
+        },
+        {
+            "title": "Reparations (+)",
+            "description": "Once per session, when you significantly help an NPC (GM's call), clear 1 Guilt and a Condition."
+        },
+        {
+            "title": "Retribution (-)",
+            "description": "When you **Trade Blows** with someone from your dark past, add your Guilt to all dmg dealt to them."
+        }
+    ]
+  },
+  {
+    "id": "str018",
+    "title": "Renowned",
+    "hideCheckbox": true,
+    "description": "Stories of your exploits have spread far and wide. Some are true, others are brazenly false.\n\nFame:__fame__ (-1 to +3)",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- How do the stories depict you? __str18_0__\n\n- What's the most difficult part to live up to? __str18_1__\n\n- What other PC is a frequent side character? __str18_2__"
+        },
+        {
+            "title": "Rumors & Legends (+)(-)",
+            "description": "Your Fame starts at 1. At the start of each session, tell the group a story someone heard about you. If your Fame is 2 or more, the GM may then add a twist or complication someone else heard. When you **End the Session**, if you lived up to the story (GM's final say), gain 1 Fame (max 3). Otherwise, lose 1 Fame (min -1) and mark a Condition."
+        },
+        {
+            "title": "Larger Than Life (-)",
+            "description": "When you interact with the public, or try to live up to this session's story, you may roll+Fame instead of another stat. If you do, on a 9 or lower, you also reduce Fame by 1."
+        }
+    ]
+  },
+  {
+    "id": "str019",
+    "title": "Secret Identity",
+    "hideCheckbox": true,
+    "description": "You've been keeping your true identity a secret this whole time, and the wrong people are looking for you.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Lore",
+            "max": 1,
+            "shape": "square"
+        },
+        {
+            "name": "Resource",
+            "max": 1,
+            "shape": "square"
+        },{
+            "name": "Treasure",
+            "max": 1,
+            "shape": "square"
+        },{
+            "name": "Allies",
+            "max": 1,
+            "shape": "square"
+        },{
+            "name": "Magic",
+            "max": 1,
+            "shape": "square"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What's your real name and appearance? __str19_0__\n\n- Who are \"the wrong people\"? __str19_1__\n\n- What nefarious scheme do they want you for? __str19_2__"
+        },
+        {
+            "title": "Scion (+)",
+            "description": "Once per session, you can mark one of the following to get temporary access to:",
+            "outcomes": [
+                {
+                    "text": "When you assume your real identity, clear one of the boxes.",
+                    "bullets": [
+                        "Ancient lore",
+                        "Bountiful resources",
+                        "Iconic treasure",
+                        "Powerful allies",
+                        "Unique magic source"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Unmasked (-)",
+            "description": "When your real identity is revealed, the GM may have the wrong people get news of you or the GM advances a Threat (GM's call)."
+        }
+    ]
+  },
+  {
+    "id": "str020",
+    "title": "Traumatized",
+    "hideCheckbox": true,
+    "description": "Your past was dark, violent, and still haunts you. Were you a victim or a perpetrator?",
+    "details": true,
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What other PC was affected by your dark past? __str20_0__\n\n- How do you calm down or cope with the stress? __str20_1__\n\n- What mystery from your past was never answered? __str20_2__"
+        },
+        {
+            "title": "Don't Provoke Me (+)",
+            "description": "You have **adv** on rolls intended to directly prevent or de-escalate violence."
+        },
+        {
+            "title": "Instincts (-)",
+            "outcomes": [
+                {
+                    "text": "Once per scene, when you get hurt or witness unexpected violence, choose one instinct below. Until the violence is over or the scene ends, when you act in a way that doesn't follow this instinct, mark a Condition.",
+                    "bullets": [
+                        "Freeze: stop, stare, follow orders, hold tightly",
+                        "Flee: hide, escape, run, fortify",
+                        "Fight: charge, attack, throw, destroy"
+                    ]
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "str021",
+    "title": "Treasure Obsession",
+    "hideCheckbox": true,
+    "description": "You're consumed with finding a legendary lost treasure, to succeed where so many have failed and died.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Lead",
+            "max": 5,
+            "shape": "circle"
+        },
+        {
+            "name": "On The Trail",
+            "startLabel": "Once per session",
+            "shape": "hexagon",
+            "max": 1
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- What is the treasure and what the legends say about it? __str21_0__\n\n- Why is it so important to you? __str21_1__\n\n- Who is a dangerous and deadly competitor for it? __str21_2__"
+        },
+        {
+            "title": "On The Trail (+)",
+            "description": "Once per session, after you **Spout Lore** or **Unearth Secrets**, mark a Lead to ask the GM a question about your treasure, such as: who guards it, who could abuse it, or what curse it supposedly places on whoever finds it, just to name a few. When you mark your 5th Lead, you can ask the GM: where exactly can I find my treasure?"
+        },
+        {
+            "title": "Dragon Sickness (-)",
+            "description": "You can only **Comfort or Support** (or receive it) from other PCs who have promised to help you obtain your treasure."
+        }
+    ]
+  },
+  {
+    "id": "str022",
+    "title": "Vengeful",
+    "hideCheckbox": true,
+    "description": "There's no justice in this world, but the one you make.",
+    "details": true,
+    "tracks": [
+        {
+            "name": "Unwavering",
+            "startLabel": "Once per session",
+            "shape": "hexagon",
+            "max": 1
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "- Who's your archenemy? __str22_0__\n\n- What did they take from you? __str22_1__\n\n- What stands between you and satisfaction? __str22_2__"
+        },
+        {
+            "title": "Unwavering (+)",
+            "description": "When you **Trade Blows** with your archenemy (or anyone associated with them), roll dmg with **adv**. Once per session, while pursuing your archenemy, when you would **Face Death** you instead stay at 1 HP."
+        },
+        {
+            "title": "Consumed (-)",
+            "description": "When you would take a course of action that pulls you away from vengeance against your archenemy, mark a Condition."
+        }
+    ]
   }
 ]
