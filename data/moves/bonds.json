@@ -139,5 +139,29 @@
     "takeFrom": [
       "*"
     ]
+  },
+  {
+    "id": "bon008",
+    "title": "Mystical Vessel",
+    "hideCheckbox": true,
+    "tracks": [
+      {
+        "name": "Depth",
+        "max": 3
+      }
+    ],
+    "details": true,
+    "description": "**Special:** This Bond can only be gained from the move **Living Saint** within the Cleric's Oracle Path. While other Bonds are between two PCs, this is between a PC and their deity (controlled by the GM).",
+    "outcomes": [
+      {
+        "range": "Altar of the Heart",
+        "text": "When you **Make Camp** with 3 Depth with your deity, you **Forge a Bond** with them. They don't track Depth with you.\n\nWhen you mark Depth with your deity, you may mark a Condition to mark one more Depth.\n\nWhen you **Invoke the Divine**, after the roll you may spend 1 Depth to treat a 6- as a 7-9, or a 7-9 as a 10+."
+      }
+    ],
+    "pick": [
+      "**Transfiguration** - Choose a feature associated with your deity (e.g. rending claws, sapphire wings, all-seeing third eye). Your deity bestows this gift upon you. Work with your GM to decide what it looks like, when it manifests, and what you might do with it.",
+      "**Thaumaturgy** - When you petition your deity to perform a great wonder that pertains to their domains, treat it as **Perform a Ritual**, but after the GM tells you the requirements, you may spend Depth with your deity 1-for-1 to negate them.",
+      "**Apotheosis** - You learn your deity's greatest secret and how to use it. Choose the effect its use will have, or create a new one, then work with the GM to define the secret and how to unleash it.\n- It will destroy or imprison your deity\n- You will ascend to become a deity yourself; retire your character\n- You can fundamentally alter the world in a way related to your deity's domains\n\nAfter you unleash this secret, erase this Bond. You can never take it again with this deity.\n\nHow does this affect your view of your deity? Are they aware that you know their secret?"
+    ]
   }
 ]

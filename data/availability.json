@@ -54,7 +54,8 @@
     "bon004": true,
     "bon005": true,
     "bon006": true,
-    "bon007": true
+    "bon007": true,
+    "bon008": true
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
