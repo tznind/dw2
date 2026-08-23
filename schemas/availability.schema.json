@@ -38,6 +38,10 @@
           },
           "default": []
         },
+        "level1Help": {
+          "type": "string",
+          "description": "Role-specific Level 1 stat guidance, shown by the help icon next to the Level/Xp/HP/Armor row in cs.html"
+        },
         "default-gear": {
           "type": "array",
           "description": "Starting equipment choices for this role, consumed by the 'Starting Equipment' wizard button on the equipment card (data/cards/equipment)",

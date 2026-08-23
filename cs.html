@@ -48,6 +48,7 @@
     align-items: center;
     gap: 6px;
   }
+
 </style>
 
 </head>
@@ -156,6 +157,35 @@
 
     <hr>
     <div id="stats-container"></div>
+
+    <div class="stats-controls-box">
+      <div class="all-stats">
+        <label for="level">
+          Level
+          <input type="text" id="level" name="level">
+        </label>
+
+        <label>
+          <div id="xp_track"
+               data-track
+               data-track-name="Xp"
+               data-track-max="5"
+               data-track-shape="circle"></div>
+        </label>
+
+        <label for="hp">
+          HP
+          <input type="text" id="hp" name="hp">
+        </label>
+
+        <label for="armor">
+          Armor
+          <input type="text" id="armor" name="armor">
+        </label>
+
+        <button type="button" id="level1-help-button" class="help-icon" title="Show Level 1 stat guidance">?</button>
+      </div>
+    </div>
     <hr>
     
     <!-- UI Control -->
@@ -233,6 +263,9 @@
 
 <!-- Module attribution banner -->
 <script src="module-attribution.js"></script>
+
+<!-- Level 1 stat guidance help icon (role-specific, from availability.json) -->
+<script src="level1-help.js"></script>
 
 </body>
 </html>

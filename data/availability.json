@@ -2,6 +2,7 @@
   "The Bard": {
     "_movesFile": "data/moves/bard.json",
     "description": "An artist through and through, with ambitions far beyond merely pleasing an audience",
+    "level1Help": "At Level 1 your max hp is 8 and your cha is +2. Choose dex or int to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
