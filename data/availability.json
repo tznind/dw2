@@ -30,7 +30,8 @@
   "Dabbler": {
     "_movesFile": "data/moves/dabbler.json",
     "description": "Jack of all trades, master of none",
-    "dab001": false
+    "dab001": false,
+    "dab002": true
   },
   "Diplomat": {
     "_movesFile": "data/moves/diplomat.json",

@@ -2,5 +2,33 @@
   {
     "id": "dab001",
     "title": "Placeholder Move"
+  },
+  {
+    "id": "dab002",
+    "title": "Bardic Lore",
+    "hideCheckbox": true,
+    "description": "You've studied a variety of arcane subjects, including:",
+    "pickOne": [
+        "A Bestiary of Creatures Most Unusual",
+        "Gods and Their Servants",
+        "Grand Histories of the Known World",
+        "Legends of Heroes Past",
+        "Spells and Magicks",
+        "The Dead and Undead",
+        "The Planar Spheres"
+    ],
+    "tracks": [
+        {
+            "name": "Uses",
+            "max": 1,
+            "shape": "circle",
+            "dynamic": true
+        }
+    ],
+    "outcomes": [
+        {
+            "text": "Mark one as active when you choose this Move. You can ask the GM questions about your active subject times per session equal to your int; the GM will answer truthfully.\n\nWhen you **Make Camp**, you can spend some time studying and/or remembering your training to change your active subject."
+        }
+    ]
   }
 ]
