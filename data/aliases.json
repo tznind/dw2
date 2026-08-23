@@ -2,5 +2,13 @@
   {
     "alias": "Reaching Your Limit",
     "move": "Reach Your Limit"
+  },
+  {
+    "alias": "adv",
+    "term": "Advantage"
+  },
+  {
+    "alias": "dis",
+    "term": "Disadvantage"
   }
 ]

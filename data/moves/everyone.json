@@ -74,7 +74,7 @@
     "title": "Aid A PC",
     "category": "Core Moves",
     "hideCheckbox": true,
-    "description": "While you **help another PC**, they have Advantage on their rolls. Before the helped PC rolls, you must either: \n\n- erase 1 Depth with them \n\n - expose yourself to their same risks and consequences\n\n - or mark a Condition"
+    "description": "While you **help another PC**, they have **Advantage** on their rolls. Before the helped PC rolls, you must either: \n\n- erase 1 Depth with them \n\n - expose yourself to their same risks and consequences\n\n - or mark a Condition"
   },
   {
     "id": "evy004",
@@ -219,7 +219,7 @@
     "outcomes": [
         {
             "range": "10+",
-            "text": "The GM answers generously, and you or an ally also gain Advantage the first time someone acts on the answer."
+            "text": "The GM answers generously, and you or an ally also gain **Advantage** the first time someone acts on the answer."
         },
         {
             "range": "7-9",

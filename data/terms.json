@@ -1,18 +1,54 @@
 [
   {
-    "term": "Debility",
-    "description": "A lasting condition that hampers your effectiveness. When you suffer a Debility, mark it on your character sheet. Choose from\n- Weakened\n- Miserable\n- Broken."
-  },
-  {
-    "term":"+1 forward",
-    "description":"Your next roll gets a +1 bonus."
-  },
-  {
     "term":"piercing",
     "description":"Cuts or bypasses thick armor and shielding. dmg of this type ignores armor and shield protection"
   },
   {
+    "term": "Advantage",
+    "description": "Roll three dice (3d6) and ignore the lowest result, keeping the highest two."
+  },
+  {
+    "term": "Disadvantage",
+    "description": "Roll three dice (3d6) and ignore the highest result, keeping the lowest two."
+  },
+  {
     "term":"precise",
     "description": "Requires quick and careful aim to use well; Trade Blows+DEX (instead of +STR)."
+  },
+  {
+    "term": "ammo",
+    "description": "It needs ammunition to work. By default you always have enough, but you might run out as a result of a GM Move"
+  },
+  {
+    "term": "close",
+    "description": "Meant for a target a few paces away, close enough to see their face expressions but not to touch"
+  },
+  {
+    "term": "concealed",
+    "description": "Easy to hide from others unless they search you thoroughly"
+  },
+  {
+    "term": "far",
+    "description": "Meant for a target close enough to speak to, even if you may have to raise your voice"
+  },
+  {
+    "term": "hand",
+    "description": "Meant for a target close enough to grab"
+  },
+  {
+    "term": "holy",
+    "description": "Blessed by a divine power, and thus especially effective against a deity's enemies; adv on dmg rolls against them"
+  },
+  {
+    "term": "near",
+    "description": "Meant for a target close enough to speak to, even if you may have to raise your voice"
+  },
+  {
+    "term": "reload",
+    "description": "After you use it, you need to spend time reloading, rearming, or recharging it to use it again"
+  },
+  {
+    "term": "two-handed",
+    "description": "Needs two hands to use properly, maybe for weight, balance, a second part of it, etc."
   }
 ]
