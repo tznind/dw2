@@ -36,5 +36,47 @@
       "Killer Combo - When you **Trade Blows** with your bondmate's Aid, on a 12+ make an additional choice from the 10+ list.",
       "Training Exercise - When you **Make Camp**, you and your bondmate can choose the same Condition together. Until you next **Make Camp**, you both ignore penalties from that Condition. Condition: __bon2_c__"
     ]
+  },
+  {
+    "id": "bon003",
+    "title": "Enthusiasts",
+    "hideCheckbox": true,
+    "description": "You share a passion for a topic, hobby, craft, or similar\nShared Interest: __bon3_si:e.g. cooking, secret history, magic, arena fights, political rumors, birds__",
+    "outcomes": [
+      {
+        "range": "Joy of Discovery",
+        "text": "Once per session, when you discover something new related to your Interest, clear a Condition. If your bondmate is present for the discovery, or when you tell/show them later, choose one from **Comfort or Support**."
+      }
+    ],
+    "pick": [
+      "Paired Project - When you **Enjoy Downtime**, you may begin working together on a project related to your Shared Interest. Say what it is, and the GM will give you 1-4 requirements (similar to **Perform a Ritual**). When you meet the requirements, you finish the project and each mark 1 Depth with each other (in addition to the project's effects). When you **Enjoy Downtime** with a paired project already underway, together you may ask the GM any one question about it.",
+      "Specialists - When you **Defy Danger** in direct relation to your Shared Interest, ignore penalties from Conditions.",
+      "Great Minds - When you **Spout Lore** about your Interest, if your fellow enthusiast could answer yes to a question, then you can too, even if they aren't nearby. On a 12+ they may answer instead of the GM."
+    ]
+  },
+  {
+    "id": "bon004",
+    "title": "True Lovers",
+    "hideCheckbox": true,
+    "description": "You both share a rare and powerful reciprocated love\nWith:__bon4_wi__ (which PC)",
+    "tracks": [
+      {
+        "name": "Always on my mind",
+        "max": 1,
+        "shape": "hexagon",
+        "dynamic": true
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "Always on My Mind",
+        "text": "Once per session each of you can ask the other, *\"Are you thinking about me right now?\"* If \"Yes\", then the responder can **Aid** the asker as if they were in close proximity, with no cost."
+      }
+    ],
+    "pick": [
+      "Handfasting - When you **both commit to a lifelong partnership**, each of you can now use Always on My Mind a number of times per session equal to your current Depth with your lover (instead of once, min 1).",
+      "Let Me Tell You All About Them - When you **wax poetically about your lover to an NPC**, you can **Pull Strings**+your Depth with your lover (instead of +CHA).",
+      "Together Forever - When **either of you dies**, the GM will tell the other how to bring you back to life. At the end of the next session (not this one), if you haven't revived your lover, you follow them in death."
+    ]
   }
 ]

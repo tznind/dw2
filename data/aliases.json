@@ -14,5 +14,9 @@
   {
     "alias": "Go Out in a Blaze of Glory",
     "move": "Face Death"
+  },
+  {
+    "alias": "Aid",
+    "move": "Aid A PC"
   }
 ]

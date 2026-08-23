@@ -49,7 +49,9 @@
     "_movesFile": "data/moves/bonds.json",
     "description": "Meaningful connections your PC forms with others over the course of a campaign",
     "bon001": false,
-    "bon002": true
+    "bon002": true,
+    "bon003": true,
+    "bon004": true
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
