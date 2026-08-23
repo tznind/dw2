@@ -2821,3 +2821,9 @@ body > .track-counter {
     padding: 8px 10px;
   }
 }
+
+.origins-hint {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}

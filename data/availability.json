@@ -59,6 +59,7 @@
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
+    "cards": ["relationships", "origins"],
     "evy001": false,
     "evy002": true,
     "evy003": true,

@@ -1,0 +1,7 @@
+{
+  "id": "origins",
+  "title": "Origins Card",
+  "path": "data/cards/origins",
+  "version": "1.0.0",
+  "files": { "html": "card.html", "js": "card.js" }
+}
