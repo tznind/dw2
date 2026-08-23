@@ -3,5 +3,5 @@
   "title": "Relationships Card",
   "path": "data/cards/relationships",
   "version": "1.0.0",
-  "files": { "html": "card.html" }
+  "files": { "html": "card.html", "css": "card.css" }
 }

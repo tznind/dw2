@@ -2,6 +2,28 @@
   "The Bard": {
     "_movesFile": "data/moves/bard.json",
     "description": "An artist through and through, with ambitions far beyond merely pleasing an audience",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "a noble's crossbow", "details": "1d10 dmg #ammo #near #far #precise #piercing #reload #two-handed", "uses": "" },
+          { "name": "deadly-sharp sword cane", "details": "1d8 dmg #concealed #hand #precise #two-handed", "uses": "" },
+          { "name": "decorated long sword + buckler", "details": "1d8 dmg #hand. Mark to ignore half dmg (rounded down) from one attack", "uses": "1" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "artistic samples", "details": "Mark once to share with an NPC while you Sense Motive to roll with adv", "uses": "2" },
+          { "name": "bag of books", "details": "Mark to find a record of relevant information", "uses": "3" },
+          { "name": "fine delicacies", "details": "Mark while you Make Camp to recover all hp. You can share with any number of PCs. Everyone who eats gets the benefit", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
+        ]
+      }
+    ],
     "brd001": true
   },
   "Dabbler": {
@@ -59,7 +81,7 @@
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
-    "cards": ["relationships", "origins"],
+    "cards": ["origins","relationships","equipment"],
     "evy001": false,
     "evy002": true,
     "evy003": true,

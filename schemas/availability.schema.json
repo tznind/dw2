@@ -37,6 +37,49 @@
             "pattern": "^[a-zA-Z0-9-]+$"
           },
           "default": []
+        },
+        "default-gear": {
+          "type": "array",
+          "description": "Starting equipment choices for this role, consumed by the 'Starting Equipment' wizard button on the equipment card (data/cards/equipment)",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["get", "pickOne", "pick"],
+                "description": "'get' items are granted automatically; 'pickOne' offers a radio choice; 'pick' offers a multi-select choice"
+              },
+              "title": {
+                "type": "string",
+                "description": "Heading shown above this choice group in the wizard (omit for 'get')"
+              },
+              "options": {
+                "type": "array",
+                "description": "Equipment options for this group",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Item name, goes in the equipment table's Name column"
+                    },
+                    "details": {
+                      "type": "string",
+                      "description": "Damage/tags/effect text, goes in the equipment table's Details column"
+                    },
+                    "uses": {
+                      "type": "string",
+                      "description": "Freetext use count, goes in the equipment table's Uses column (empty string if not applicable)"
+                    }
+                  },
+                  "required": ["name"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["type", "options"],
+            "additionalProperties": false
+          }
         }
       },
       "patternProperties": {

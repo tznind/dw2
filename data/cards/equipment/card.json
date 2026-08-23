@@ -1,0 +1,7 @@
+{
+  "id": "equipment",
+  "title": "Equipment Card",
+  "path": "data/cards/equipment",
+  "version": "1.0.0",
+  "files": { "html": "card.html", "css": "card.css", "js": "card.js" }
+}

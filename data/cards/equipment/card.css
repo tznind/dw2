@@ -1,0 +1,30 @@
+.equipment-card table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.equipment-card th:nth-child(1),
+.equipment-card td:nth-child(1) {
+  width: 20%;
+}
+
+.equipment-card th:nth-child(2),
+.equipment-card td:nth-child(2) {
+  width: auto;
+}
+
+.equipment-card th:nth-child(3),
+.equipment-card td:nth-child(3) {
+  width: 20%;
+}
+
+.equipment-card th:nth-child(4),
+.equipment-card td:nth-child(4) {
+  width: 30px;
+}
+
+.equipment-card td input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}

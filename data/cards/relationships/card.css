@@ -1,0 +1,30 @@
+.relationships-card table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.relationships-card th:nth-child(1),
+.relationships-card td:nth-child(1) {
+  width: 25%;
+}
+
+.relationships-card th:nth-child(2),
+.relationships-card td:nth-child(2) {
+  width: auto;
+}
+
+.relationships-card th:nth-child(3),
+.relationships-card td:nth-child(3) {
+  width: 90px;
+}
+
+.relationships-card th:nth-child(4),
+.relationships-card td:nth-child(4) {
+  width: 30px;
+}
+
+.relationships-card td input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}
