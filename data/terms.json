@@ -6,5 +6,13 @@
   {
     "term":"+1 forward",
     "description":"Your next roll gets a +1 bonus."
+  },
+  {
+    "term":"piercing",
+    "description":"Cuts or bypasses thick armor and shielding. dmg of this type ignores armor and shield protection"
+  },
+  {
+    "term":"precise",
+    "description": "Requires quick and careful aim to use well; Trade Blows+DEX (instead of +STR)."
   }
 ]

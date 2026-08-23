@@ -3,7 +3,8 @@
     "id": "str001",
     "title": "Amnesia",
     "hideCheckbox": true,
-    "description": "You have no memory of your past. You know one thing, though: you may not want to remember it.",
+    "description": "You have no memory of your past. You know one thing, though: you may not want to remember it.",    
+    "details": true,
     "tracks": [
         {
             "name": "Memories",
@@ -21,21 +22,21 @@
             "description": "Once per session, when you would mark your last condition (thus **Reaching Your Limit**), you can instead mark Memories and *Have a Flashback*. When you do, you discover an important part of your past; mark 1 XP and the GM advances a Threat.\n\nWhen you reach 5 Memories, the picture of your past is complete; this Struggle is resolved."
         }
     ]
-    ,"details": true
   },
   {
     "id": "str002",
     "title": "Betrayed",
     "hideCheckbox": true,
     "description": "A dearly beloved double-crossed you, and you've never been able to trust again.",
+    "details": true,
     "submoves": [
         {
             "title": "Questions",
-            "description": "Who was the betrayer to you? How did they betray you? How can you heal that wound?"
+            "description": "- Who was the betrayer to you? __str2_0__\n\n- How did they betray you? __str2_1__\n\n- How can you heal that wound? __str2_2__"
         },
         {
             "title": "Driven & Hurting (+)",
-            "description": "You can suffer 1d6 dmg #piercing to ignore all Condition penalties for your next roll. When you **Comfort or Support** (or receive it), you may also ask, \"Did I tell them about my betrayer?\". If \"Yes\", the comforted gets an extra option."
+            "description": "You can suffer 1d6 dmg **piercing** to ignore all Condition penalties for your next roll. When you **Comfort or Support** (or receive it), you may also ask, \"Did I tell them about my betrayer?\". If \"Yes\", the comforted gets an extra option."
         },
         {
             "title": "Guarded (-)",
