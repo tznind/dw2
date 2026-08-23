@@ -11,9 +11,9 @@
       }
     ],
     "pick": [
-      "Return the Favor - When you help or save a relevant NPC, they now support your Cause. Once in the campaign per helped/saved NPC you may request their aid; they will appear as soon as possible and help you with any current predicament you're in.",
-      "You Cannot Kill an Idea - When you **Face Death** while fighting for your Cause, you may choose to **Go Out in a Blaze of Glory** without dying. Each of you can use this Move once in a campaign.",
-      "United We Stand - Each of you, once per session, may Aid the other while pursuing your Cause without paying any cost. When either of you **Sense Motive**, you can always ask \"Do you believe in my cause?\" no matter the result."
+      "**Return the Favor** - When you help or save a relevant NPC, they now support your Cause. Once in the campaign per helped/saved NPC you may request their aid; they will appear as soon as possible and help you with any current predicament you're in.",
+      "**You Cannot Kill an Idea** - When you **Face Death** while fighting for your Cause, you may choose to **Go Out in a Blaze of Glory** without dying. Each of you can use this Move once in a campaign.",
+      "**United We Stand** - Each of you, once per session, may Aid the other while pursuing your Cause without paying any cost. When either of you **Sense Motive**, you can always ask \"Do you believe in my cause?\" no matter the result."
     ]
   },
   {
@@ -32,9 +32,9 @@
       }
     ],
     "pick": [
-      "Let It All Out - When you **Comfort or Support** your bondmate by dueling, brawling, or fighting them, they either choose an extra option or mark 1 XP (their choice).",
-      "Killer Combo - When you **Trade Blows** with your bondmate's Aid, on a 12+ make an additional choice from the 10+ list.",
-      "Training Exercise - When you **Make Camp**, you and your bondmate can choose the same Condition together. Until you next **Make Camp**, you both ignore penalties from that Condition. Condition: __bon2_c__"
+      "**Let It All Out** - When you **Comfort or Support** your bondmate by dueling, brawling, or fighting them, they either choose an extra option or mark 1 XP (their choice).",
+      "**Killer Combo** - When you **Trade Blows** with your bondmate's Aid, on a 12+ make an additional choice from the 10+ list.",
+      "**Training Exercise** - When you **Make Camp**, you and your bondmate can choose the same Condition together. Until you next **Make Camp**, you both ignore penalties from that Condition. Condition: __bon2_c__"
     ]
   },
   {
@@ -49,9 +49,9 @@
       }
     ],
     "pick": [
-      "Paired Project - When you **Enjoy Downtime**, you may begin working together on a project related to your Shared Interest. Say what it is, and the GM will give you 1-4 requirements (similar to **Perform a Ritual**). When you meet the requirements, you finish the project and each mark 1 Depth with each other (in addition to the project's effects). When you **Enjoy Downtime** with a paired project already underway, together you may ask the GM any one question about it.",
-      "Specialists - When you **Defy Danger** in direct relation to your Shared Interest, ignore penalties from Conditions.",
-      "Great Minds - When you **Spout Lore** about your Interest, if your fellow enthusiast could answer yes to a question, then you can too, even if they aren't nearby. On a 12+ they may answer instead of the GM."
+      "**Paired Project** - When you **Enjoy Downtime**, you may begin working together on a project related to your Shared Interest. Say what it is, and the GM will give you 1-4 requirements (similar to **Perform a Ritual**). When you meet the requirements, you finish the project and each mark 1 Depth with each other (in addition to the project's effects). When you **Enjoy Downtime** with a paired project already underway, together you may ask the GM any one question about it.",
+      "**Specialists** - When you **Defy Danger** in direct relation to your Shared Interest, ignore penalties from Conditions.",
+      "**Great Minds** - When you **Spout Lore** about your Interest, if your fellow enthusiast could answer yes to a question, then you can too, even if they aren't nearby. On a 12+ they may answer instead of the GM."
     ]
   },
   {
@@ -74,9 +74,70 @@
       }
     ],
     "pick": [
-      "Handfasting - When you **both commit to a lifelong partnership**, each of you can now use Always on My Mind a number of times per session equal to your current Depth with your lover (instead of once, min 1).",
-      "Let Me Tell You All About Them - When you **wax poetically about your lover to an NPC**, you can **Pull Strings**+your Depth with your lover (instead of +CHA).",
-      "Together Forever - When **either of you dies**, the GM will tell the other how to bring you back to life. At the end of the next session (not this one), if you haven't revived your lover, you follow them in death."
+      "**Handfasting** - When you **both commit to a lifelong partnership**, each of you can now use Always on My Mind a number of times per session equal to your current Depth with your lover (instead of once, min 1).",
+      "**Let Me Tell You All About Them** - When you **wax poetically about your lover to an NPC**, you can **Pull Strings**+your Depth with your lover (instead of +CHA).",
+      "**Together Forever** - When **either of you dies**, the GM will tell the other how to bring you back to life. At the end of the next session (not this one), if you haven't revived your lover, you follow them in death."
+    ]
+  },
+  {
+    "id": "bon005",
+    "title": "Mentor & Ward",
+    "hideCheckbox": true,
+    "description": "One protects and guides the other through life and its dangers\nWith:__bon5_wi__ (which PC), I am the __bon5_role:Mentor/Ward__",
+    "outcomes": [
+      {
+        "range": "Words of Wisdom",
+        "text": "Once per session, when **the Mentor gives advice or guidance to the Ward**, the Mentor says what the Ward should do. If the Ward accepts, their first roll in pursuit of it has **adv**. If the Ward rejects it, the Mentor marks a Condition but the Ward clears one. Either way, if the Ward later achieves it, the Ward marks 1 XP and the Mentor clears a Condition."
+      }
+    ],
+    "pick": [
+      "**The Sincerest Form of Flattery** - When the Mentor **Sense Motive** the Ward, they may always ask one additional question, even if they're Sensing another. When **the Ward imitates a mannerism or ability from the Mentor**, the Ward may mark a Condition to gain access to one of the Mentor's Moves for the rest of the scene (Ward's call which Move).",
+      "**Just Like We Practiced** - Once per session each, the Mentor and Ward can **Aid** the other without any cost or risk.",
+      "**Heroic Sacrifice** - When the Ward would **Face Death**, the Mentor may take their place, clearing a Condition (and joining the scene if they were absent). When the Mentor dies, they can give the Ward a final word of guidance, either here and now or based on their last conversation. From now until they see the Mentor again (if ever), when the Ward **End the Session** having followed that guidance, they mark 1 XP."
+    ]
+  },
+  {
+    "id": "bon006",
+    "title": "Rivals",
+    "hideCheckbox": true,
+    "description": "Each of you refuses to be outdone by the other\nWith:__bon6_wi__ (which PC)",
+    "tracks": [
+      {
+        "name": "Upper Hand",
+        "shape": "hexagon",
+        "max": 1
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "Always a Competition",
+        "text": "When you **start each session**, neither of you has the Upper Hand. When you **End the Session**, whoever has the Upper Hand marks 1 XP. Between the two of you, only one can have the Upper Hand at a time.\n\nWhen you **pull off an impressive feat or dangerous trick**, ask your rival if they agree. If they do, gain the Upper Hand. If they don't, either gain **adv** on your next roll or erase 1 Depth with them to gain the Upper Hand anyways (your call)."
+      }
+    ],
+    "pick": [
+      "**Try to Keep Up** - When you **gain the Upper Hand**, you may taunt your rival to clear a Condition. If you do, they gain **adv** on their next roll.",
+      "**That Only Counts as One** - Once per session, when you **admit that your rival went above and beyond or did the impossible**, they may make one choice from **Comfort or Support**.",
+      "**I Can Do That** - When you **Aid your rival by copying their actions**, instead of giving them **adv** you may roll at the same time with your own Stat (or other questions, or similar). If your result is higher, they can use it instead and you gain the Upper Hand."
+    ]
+  },
+  {
+    "id": "bon007",
+    "title": "Siblings",
+    "hideCheckbox": true,
+    "description": "You know each other more than most... For better and for worse\nWith:__bon7_wi__ (which PC)",
+    "outcomes": [
+      {
+        "range": "Look Out For Each Other",
+        "text": "When your sibling is about to **mark a Condition or suffer dmg**, if it makes sense in the fiction, you can mark the Condition or suffer the dmg instead."
+      }
+    ],
+    "pick": [
+      "**Shared Past** - When you **Comfort or Support** your sibling, you can also ask *\"Did we talk about a happy memory we share?\"*",
+      "**I Carry Your Heart with Me** - When **your sibling dies**, they choose one of their Advanced Moves; you can now use it, even after you erase this Bond.",
+      "**Push Your Buttons** - When you **try and convince your sibling to do something they don't want to**, they can clear a Condition if they reluctantly go along—or mark a Condition if they don't."
+    ],
+    "takeFrom": [
+      "*"
     ]
   }
 ]
