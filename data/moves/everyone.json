@@ -468,7 +468,14 @@
     "title": "Struggle",
     "description": "Take when you **Reveal your struggle**",
     "category": "Character",
-    "hideCheckbox": true,
     "takeFrom": ["Struggles"]
+  },
+  {
+    "id": "evy023",
+    "title": "Bonds",
+    "category": "Character",
+    "multiple": 6,
+    "takeFromAllowsDuplicates": true,
+    "takeFrom": ["Bonds"]
   }
 ]

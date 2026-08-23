@@ -45,6 +45,11 @@
     "str021": true,
     "str022": true
   },
+  "Bonds": {
+    "_movesFile": "data/moves/bonds.json",
+    "description": "Meaningful connections your PC forms with others over the course of a campaign",
+    "bon001": false
+  },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
     "evy001": false,
@@ -68,7 +73,8 @@
     "evy019": true,
     "evy020": true,
     "evy021": true,
-    "evy022": true,
+    "evy022": false,
+    "evy023":false,
     "evya": true
   }
 }

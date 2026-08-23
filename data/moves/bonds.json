@@ -1,0 +1,19 @@
+[
+  {
+    "id": "bon001",
+    "title": "Champions",
+    "hideCheckbox": true,
+    "description": "You both share a set of beliefs, morals, values or maybe a faith\nWith:__bon1_wi__ (which PC). Your Cause: __bon1_c__",
+    "outcomes": [
+      {
+        "range": "One Vision",
+        "text": "When you **End the Session** also ask, *\"Did we significantly support our cause?\" If \"Yes\", both of you mark 1 XP"
+      }
+    ],
+    "pick": [
+      "Return the Favor - When you help or save a relevant NPC, they now support your Cause. Once in the campaign per helped/saved NPC you may request their aid; they will appear as soon as possible and help you with any current predicament you're in.",
+      "You Cannot Kill an Idea - When you **Face Death** while fighting for your Cause, you may choose to Go Out in a Blaze of Glory without dying. Each of you can use this Move once in a campaign.",
+      "United We Stand - Each of you, once per session, may Aid the other while pursuing your Cause without paying any cost. When either of you **Sense Motive**, you can always ask \"Do you believe in my cause?\" no matter the result."
+    ]
+  }
+]
