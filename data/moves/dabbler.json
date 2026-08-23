@@ -1,9 +1,5 @@
 [
   {
-    "id": "dab001",
-    "title": "Placeholder Move"
-  },
-  {
     "id": "dab002",
     "title": "Bardic Lore",
     "hideCheckbox": true,
@@ -30,5 +26,90 @@
             "text": "Mark one as active when you choose this Move. You can ask the GM questions about your active subject times per session equal to your int; the GM will answer truthfully.\n\nWhen you **Make Camp**, you can spend some time studying and/or remembering your training to change your active subject."
         }
     ]
+  },
+  {
+    "id": "dab003",
+    "title": "A Kind of Magic",
+    "description": "You can **Cast a Spell** + int by combining a verb and a substance from the Wizard's **Enchantment** or **Illusion** Schools.",
+    "tracks":[
+        {
+            "name": "Aether",
+            "max": 3,
+            "shape": "circle"
+        }
+    ],
+    "outcomes": [
+        {
+            "text": "To Cast a Spell you need to do a performance. At the start of each session, you get Aether equal to your int. When you **Cast a Spell**, On a 7-9, you can spend Aether equal to the spell's mag instead of the other options."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Enchantment",
+            "outcomes": [
+                {
+                    "range": "Substance",
+                    "text": "Sapient Beings"
+                },
+                {
+                    "range": "Verbs",
+                    "text": "Modify Emotions;Temporarily Charm"
+                }
+            ]
+        },
+        {
+            "title": "Illusion",
+            "outcomes": [
+                {
+                    "range": "Substance",
+                    "text": "Sight and/or sounds"
+                },
+                {
+                    "range": "Verbs",
+                    "text": "Cloak; Disguise"
+                }
+
+            ]
+        }
+    ]
+  },
+  {
+    "id": "dab004",
+    "title": "A Knave, a Rascal",
+    "outcomes": [
+    {
+        "text": "You get access to the following Roguish Skills. When you apply one of your Roguish Skills, **Defy Danger**+int.",
+        "bullets": [
+            "Climb walls",
+            "Detect noises",
+            "Pick pockets",
+            "Understand languages"
+        ]
+    }
+    ]
+  },
+  {
+    "id": "dab005",
+    "title": "Countercharm",
+    "description": "When you try to impede a mind-influencing effect, roll+int.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "It doesn't affect you or your allies."
+        },
+        {
+            "range": "7-9",
+            "text": "You or your allies are unaffected (your call)."
+        },
+        {
+            "range": "6-",
+            "text": "It's beyond your ken; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "dab006",
+    "title": "Virtuoso's Mind",
+    "description": "When you **Spout Lore**, you may ignore the questions and instead roll+int. If you have a relevant record of information, you get **adv** on the roll. On a 12+, you may answer instead of the GM."
   }
 ]
