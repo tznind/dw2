@@ -456,12 +456,19 @@
     "title": "Reveal Your Struggle",
     "category": "Campaign Moves",
     "hideCheckbox": true,
-    "description": "When you **Make Camp** with a locked Condition, or when you **Level Up**, you may choose to confess a new, terrible truth about your PC's Struggle. If you do, reveal a new Struggle or add a new detail to an already revealed one (and clear the locked Condition if any).",
+    "description": "When you **Make Camp** with a locked Condition, or when you **Level Up**, you may choose to confess a new, terrible truth about your PC's Struggle. If you do, reveal a new **Struggle** or add a new detail to an already revealed one (and clear the locked Condition if any).",
     "outcomes": [
         {
             "text": "You can only have one revealed Struggle at a time. When your revealed Struggle is resolved, **Level Up** (keeping marked XP), erase the Struggle, and lose both its Benefits (+) and Drawbacks (-). Clear the Advancement box if marked; you can choose a new Struggle in the future."
         }
-    ],
+    ]
+  },
+  {
+    "id": "evy022",
+    "title": "Struggle",
+    "description": "Take when you **Reveal your struggle**",
+    "category": "Character",
+    "hideCheckbox": true,
     "takeFrom": ["Struggles"]
   }
 ]

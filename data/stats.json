@@ -5,9 +5,11 @@
     "shape": "square",
     "tracks": [
       {
-        "startLabel": "Exhausted",
+        "name": "Exhausted",
+        "startLabel": "M",
+        "endLabel": "L",
         "shape": "circle",
-        "max": 1
+        "max": 2
       }
     ]
   },
@@ -17,9 +19,11 @@
     "shape": "square",
     "tracks": [
       {
-        "startLabel": "Frightened",
+        "name": "Frightened",
+        "startLabel": "M",
+        "endLabel": "L",
         "shape": "circle",
-        "max": 1
+        "max": 2
       }
     ]
   },
@@ -29,9 +33,11 @@
     "shape": "square",
     "tracks": [
       {
-        "startLabel": "Angry",
+        "name": "Angry",
+        "startLabel": "M",
+        "endLabel": "L",
         "shape": "circle",
-        "max": 1
+        "max": 2
       }
     ]
   },
@@ -41,9 +47,11 @@
     "shape": "square",
     "tracks": [
       {
-        "startLabel": "Distracted",
+        "name": "Distracted",
+        "startLabel": "M",
+        "endLabel": "L",
         "shape": "circle",
-        "max": 1
+        "max": 2
       }
     ]
   },
@@ -53,9 +61,11 @@
     "shape": "square",
     "tracks": [
       {
-        "startLabel": "Insecure",
+        "name": "Insecure",
+        "startLabel": "M",
+        "endLabel": "L",
         "shape": "circle",
-        "max": 1
+        "max": 2
       }
     ]
   }

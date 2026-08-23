@@ -14,7 +14,7 @@
     "submoves": [
         {
             "title": "Questions",
-            "description": "Where did you wake up without memory? What places, behaviours, or people feel familiar? What new identity are you building for yourself?"
+            "description": "- Where did you wake up without memory? __str1_0__\n\n- What places, behaviours, or people feel familiar? __str1_1__\n\n- What new identity are you building for yourself? __str1_2__"
         },
         {
             "title": "Shards (+)(-)",
@@ -22,5 +22,25 @@
         }
     ]
     ,"details": true
+  },
+  {
+    "id": "str002",
+    "title": "Betrayed",
+    "hideCheckbox": true,
+    "description": "A dearly beloved double-crossed you, and you've never been able to trust again.",
+    "submoves": [
+        {
+            "title": "Questions",
+            "description": "Who was the betrayer to you? How did they betray you? How can you heal that wound?"
+        },
+        {
+            "title": "Driven & Hurting (+)",
+            "description": "You can suffer 1d6 dmg #piercing to ignore all Condition penalties for your next roll. When you **Comfort or Support** (or receive it), you may also ask, \"Did I tell them about my betrayer?\". If \"Yes\", the comforted gets an extra option."
+        },
+        {
+            "title": "Guarded (-)",
+            "description": "When you gain Depth with another PC, mark a Condition."
+        }
+    ]
   }
 ]

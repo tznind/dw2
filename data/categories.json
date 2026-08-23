@@ -1,5 +1,6 @@
 {
   "order": [
+    "Character",
     "Moves",
     "Equipment",
     "Advancement",
