@@ -1,6 +1,73 @@
 [
   {
     "id": "swb001",
-    "title": "Placeholder Move"
+    "title": "Style is Everything",
+    "description": "Once per Scene, when you **do something in an unnecessarily dramatic manner**, mark a Condition and reset Panache to equal your cha.\n\nWhen you **Trade Blows** using a **precise** weapon, you can spend 1 Panache to roll+cha (instead of +dex).",
+    "tracks": [
+        {
+            "name": "Panache",
+            "max": 3,
+            "shape": "circle",
+            "dynamic": true
+        }
+    ]
+  },
+  {
+    "id": "swb002",
+    "title": "Fly Into the Face of Danger",
+    "description": "When you **Defy Danger** by attempting something you've never tried before, you may spend 1 Panache to roll with adv.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "Mark 1 XP."
+        }
+    ]
+  },
+  {
+    "id": "swb003",
+    "title": "Countercharm",
+    "outcomes": [
+    {
+        "text": "When you **Trade Blows**, you can spend 1 Panache to do one of the following:",
+        "bullets": [
+            "Disarm — ✴On a 10+, you can choose to have your opponent drop something they're holding (instead of the other choices)",
+            "Feint — ✴On a 10+, you can choose to grant yourself a small window of opportunity to act unimpeded (instead of the other choices)",
+            "Parry — ✴On a 6-, when an opponent inflicts max dmg to you, you can block the dmg",
+            "Riposte — When an opponent inflicts 1 dmg to you (or less), you can inflict your dmg in return"
+        ]
+    }
+    ]
+  },
+  {
+    "id": "swb004",
+    "title": "Very Intricate Backstory",
+    "description": "You can have two Struggles active at the same time. Now or the next time you **Make Camp**, clear a locked Condition (if possible) or **Level Up** and Reveal a Struggle.",
+    "takeFrom": [
+      "struggles"
+    ]
+  },
+  {
+    "id": "swb005",
+    "title": "Watch Me Shine",
+    "description": "When you **draw attention by doing something unnecessarily dramatic**, spend 1 Panache to roll+dex.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "Choose two.",
+            "bullets": [
+                "Defuse or intensify a situation (your call)",
+                "Your allies are ignored; they get an opportunity",
+                "Your drama isn't interrupted, by word or by violence"
+            ]
+        },
+        {
+            "range": "7-9",
+            "text": "Choose one from the 10+ list."
+        },
+        {
+            "range": "6-",
+            "text": "The attention is followed by violent action; mark 1 XP and the GM makes a Move."
+        }
+    ]
   }
 ]

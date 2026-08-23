@@ -1,6 +1,96 @@
 [
   {
     "id": "dip001",
-    "title": "Placeholder Move"
+    "title": "The Oldest Game",
+    "description": "When you accomplish a significant task for a relevant NPC (GM's call), now you hold a Debt against them. While you hold a Debt over someone:",
+    "details": true,
+    "outcomes": [
+        {
+            "text": "",
+            "bullets": [
+                "Treat any 6- when you **Pull Strings** on them as a 7-9",
+                "You can always ask them \"What do you really need right now?\" when you **Sense Motive**, regardless of the roll",
+                "They'll give you small favors (in their eyes), such as: minor funding; introduction; lent items; etc."
+            ]
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Cash in your Debt",
+            "description": "When you cash in your Debt, choose one:",
+            "outcomes": [
+                {
+                    "text": "",
+                    "bullets": [
+                        "Name something they have; they'll give it to you",
+                        "Point them at an enemy or obstacle; they'll act against it",
+                        "Tell them you're in trouble; they'll protect you"
+                    ]
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "dip002",
+    "title": "Friends in High Places",
+    "description": "When you **seek the help of a relevant NPC**, roll+cha. If you owe them a favor (your call) or hold a Debt against them, roll with adv.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "They're free and able to help."
+        },
+        {
+            "range": "7-9",
+            "text": "They're in trouble and can't help until that's dealt with."
+        },
+        {
+            "range": "6-",
+            "text": "You find only treachery or tragedy; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "dip003",
+    "title": "Heart On Your Sleeve",
+    "description": "When you **Sense Motive** **by speaking openly and honestly**, you can either ask an extra question, or forgo rolling and ask questions equal to your cha (even on a 6-). For each question you ask, they may ask you one in return. If you answer with lies, mark a Condition per question you asked."
+  },
+  {
+    "id": "dip004",
+    "title": "Parley",
+    "description": "When you **call for a truce or ceasefire**, roll+cha. If you know what all other parties want (or you hold a Debt against them), roll with adv.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "Hostilities pause and you get a chance to negotiate; you can also ask them one question as if you **Sense Motive**."
+        },
+        {
+            "range": "7-9",
+            "text": "You only get the chance to negotiate."
+        },
+        {
+            "range": "6-",
+            "text": "They misread or exploit your intent; mark 1 XP and the GM makes a Move."
+        }
+    ]
+  },
+  {
+    "id": "dip005",
+    "title": "'Truth' is a Complicated Thing",
+    "description": "When you **tell an outrageous lie**, roll+cha.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "NPCs believe you until convinced otherwise."
+        },
+        {
+            "range": "7-9",
+            "text": "They're fooled, but not for long."
+        },
+        {
+            "range": "6-",
+            "text": "It badly backfires; mark 1 XP and the GM makes a Move."
+        }
+    ]
   }
 ]

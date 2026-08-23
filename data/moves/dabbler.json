@@ -2,7 +2,6 @@
   {
     "id": "dab002",
     "title": "Bardic Lore",
-    "hideCheckbox": true,
     "description": "You've studied a variety of arcane subjects, including:",
     "pickOne": [
         "A Bestiary of Creatures Most Unusual",

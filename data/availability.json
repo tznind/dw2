@@ -39,12 +39,20 @@
   "Diplomat": {
     "_movesFile": "data/moves/diplomat.json",
     "description": "Mastery of people is an art in and unto itself",
-    "dip001": false
+    "dip001": true,
+    "dip002": false,
+    "dip003": false,
+    "dip004": false,
+    "dip005": false
   },
   "Swashbuckler": {
     "_movesFile": "data/moves/swashbuckler.json",
     "description": "There's beauty in all things, even fighting!",
-    "swb001": false
+    "swb001": true,
+    "swb002": false,
+    "swb003": false,
+    "swb004": false,
+    "swb005": false
   },
   "Struggles": {
     "_movesFile": "data/moves/struggles.json",
@@ -87,7 +95,6 @@
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
     "cards": ["origins","relationships","equipment"],
-    "evy001": false,
     "evy002": true,
     "evy003": true,
     "evy004": true,
