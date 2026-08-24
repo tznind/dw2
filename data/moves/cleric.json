@@ -1,0 +1,24 @@
+[
+  {
+    "id": "clr001",
+    "title": "Invoke the Divine",
+    "description": "You have a close connection with a deity who empowers you to spread their ideals. Give them a name and pronouns: __dna:Deity Name__, __dpr:Pronouns__.",
+    "outcomes": [
+        {
+            "text": "You can **Cast a Spell**+wis with any effect under your deity's Domain(s). To Cast a Spell you need to invoke your deity's name aloud.\n\nWrite a 2-Depth Relationship with them. When you **Cast a Spell**, ✴On a 7-9, you can erase 1 Depth with your deity instead of the other options.\n\nYou can gain Depth with your deity by protecting their worshippers, spreading their faith, and vanquishing their enemies (GM's call)."
+        },
+        {
+            "range": "Domain",
+            "text": " __ddom:Craft, Light, Nature, Order, Travel etc__"
+        },
+        {
+            "range": "Worshippers",
+            "text": " __dwor:artists, explorers, farmers, merchants, nobles etc__"
+        },
+        {
+            "range": "Enemies",
+            "text": " __dene:bandits, industrialists, nocturnal monsters, rebels, undead etc__"
+        }
+    ]
+  }
+]

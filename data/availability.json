@@ -27,6 +27,48 @@
     ],
     "brd001": true
   },
+  "The Cleric": {
+    "_movesFile": "data/moves/cleric.json",
+    "description": "No mere priest, a divine emissary armed with steel and powers from above",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a blunt weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "consecrated mace", "details": "1d6 dmg #hand + shield. Mark to ignore all dmg from one attack", "uses": "1" },
+          { "name": "plain quarterstaff", "details": "1d6 dmg #close #hand", "uses": "" },
+          { "name": "reinforced net", "details": "0 dmg #close #hand. Mark to trap one medium or some small creatures under it", "uses": "1" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two items below:",
+        "options": [
+          { "name": "holy water vials", "details": "#holy #close. Mark to ignore all Resistances of an enemy of your deity until the end of the Scene", "uses": "3" },
+          { "name": "leather armor", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or clear one Condition/affliction", "uses": "2" },
+          { "name": "pious supplies", "details": "Mark to rummage through and find an item used in your deity's worship, such as candles, censer, incense, or holy vestments", "uses": "3" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
+        ]
+      }
+    ],
+    "clr001": true
+  },
+  "Healer": {
+    "_movesFile": "data/moves/healer.json",
+    "description": "Your touch mends flesh and spirit alike, a conduit for your deity's mercy",
+    "hlr001": false
+  },
+  "Oracle": {
+    "_movesFile": "data/moves/oracle.json",
+    "description": "Fate speaks through you, if you're willing to listen to the price it asks",
+    "orc001": false
+  },
+  "Warpriest": {
+    "_movesFile": "data/moves/warpriest.json",
+    "description": "You carry the front line of your faith, where prayer and violence meet",
+    "wpr001": false
+  },
   "Dabbler": {
     "_movesFile": "data/moves/dabbler.json",
     "description": "Jack of all trades, master of none",

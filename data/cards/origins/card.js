@@ -8,6 +8,11 @@ window.CardInitializers.origins = function(container, suffix) {
             ancestry: "e.g. gnome, orc, giantkin, etc. What makes your art different from your people's?",
             community: "e.g. ever-curious scholars, filthy rich people, reclusive artists, etc. How do your life circumstances still influence your art?",
             background: "e.g. gladiator, librarian, performer, etc. Why did you choose art and danger over a simpler life?"
+        },
+        "The Cleric": {
+            ancestry: "e.g. halfling, owlkin, tiefling, etc. What is their view of your faith?",
+            community: "e.g. a bunch of lowlifes, devout people, law enforcers, etc. What traditions do you still honor separately from your deity?",
+            background: "e.g. sheriff, urchin, wizard's apprentice, etc. What \"divine intervention\" made you quit and become a cleric?"
         }
     };
 
