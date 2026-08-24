@@ -1,0 +1,107 @@
+[
+  {
+    "id": "spb001",
+    "title": "Swords & Wizardry",
+    "description": "You can **Cast a Spell**+int by combining a verb and a substance from the Wizard's **Abjuration** or **Evocation** Schools.",
+    "tracks": [
+        {
+            "name": "Aether",
+            "max": 3,
+            "shape": "circle"
+        }
+    ],
+    "outcomes": [
+        {
+            "text": "When you swing your weapon, you can choose to **Cast a Spell** (instead of **Trade Blows**).\n\nAt the start of each session, you get Aether equal to your int. When you **Cast a Spell**, On a 7-9, you can spend Aether equal to the spell's mag instead of the other options."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Abjuration",
+            "outcomes": [
+                {
+                    "range": "Substance",
+                    "text": "magic itself"
+                },
+                {
+                    "range": "Verbs",
+                    "text": "temporarily disable; protect from"
+                }
+            ]
+        },
+        {
+            "title": "Evocation",
+            "outcomes": [
+                {
+                    "range": "Substance",
+                    "text": "elemental energies"
+                },
+                {
+                    "range": "Verbs",
+                    "text": "lesser sculpt; minor channel"
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "spb002",
+    "title": "Arcane Shield",
+    "description": "When you suffer dmg, you may spend 1 Aether to reduce it by your int (min 0)."
+  },
+  {
+    "id": "spb003",
+    "title": "Detect Magic",
+    "outcomes": [
+      {
+        "text": "When you **open your senses to the magic surrounding you**, the GM will tell you what you sense. Then you may spend 1 Aether to ask a number of the following questions equal to your int:",
+        "bullets": [
+          "What type of magic is it?",
+          "Where is precisely located?",
+          "What's dangerous about it?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spb004",
+    "title": "ESP (Extrasensory Perception)",
+    "description": "When you **magically connect with an important object for the first time**, roll+int.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Ask the GM two questions about its history, origins, functionalities, properties, etc."
+      },
+      {
+        "range": "7-9",
+        "text": "Only one."
+      },
+      {
+        "range": "6-",
+        "text": "The item curses or haunts you; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "spb005",
+    "title": "Magebane",
+    "description": "When an NPC **close** to you is about to create a magical effect, you can spend 1 Aether to lunge towards them to try and interrupt them; roll+str.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "You successfully interrupt it."
+      },
+      {
+        "range": "7-9",
+        "text": "The magic is diminished or redirected (GM's call)."
+      },
+      {
+        "range": "6-",
+        "text": "Your intervention makes things worse; mark 1 XP and the GM makes a Move."
+      },
+      {
+        "text": "When **an NPC within** **hand** **reach of you creates a magical effect**, you inflict min dmg on them, even if you just lunged towards them with this move."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "brw001",
+    "title": "Dirty Fighting",
+    "outcomes": [
+      {
+        "text": "When you **Trade Blows** bare-handed and without any armor and/or shield, your body inflicts 1d6 dmg. You also get access to the following maneuvers (in addition to the usual choices on Trade Blows):",
+        "bullets": [
+          "*Elbows & knees* — Increase your damage die by one step",
+          "*Head-butt* — On a 10+, you create a fleeting opening for another PC",
+          "*Kick* — On a 10+, you can impede any of their movement",
+          "*Pow, pow* — Get adv to your dmg roll"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Signature Weapon",
+        "description": "If you're a Fighter, your signature weapon is replaced by your whole body. Change any range, properties, or enchantments that wouldn't make sense, as well as any items or appearance."
+      }
+    ]
+  },
+  {
+    "id": "brw002",
+    "title": "Advanced Scuffling",
+    "outcomes": [
+      {
+        "text": "Add the following maneuvers to your **Dirty Fighting**:",
+        "bullets": [
+          "*Grapple* — On a 10+, you can put an opponent your size on the ground and impede their movement. While you maintain this, you can inflict 1d4 dmg to them every time they act",
+          "*Haymaker* — You can choose to get **dis** to your **Trade Blows**. If you do, on a 7+, you inflict max dmg",
+          "*Hip toss* — On a 10+, you can choose to throw an opponent your size up to **close**",
+          "*Knockout* — On a 10+, you can knock a Bloodied foe unconscious"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "brw003",
+    "title": "Second Wind",
+    "description": "Once per session, when you **grit your teeth and force yourself through the pain**, restore half your lost HP (rounded down) and clear a Condition."
+  },
+  {
+    "id": "brw004",
+    "title": "Swift-footed",
+    "description": "While you wear no armor or shield, you get +dex to your armor."
+  },
+  {
+    "id": "brw005",
+    "title": "Vanderbal's Improvised Style",
+    "description": "You can wield any object that would normally not be considered a weapon as one. When you do, it has the same range, properties, and enhancements as your body, and it inflicts the same dmg.\n\nYou also get **adv** to **Defy Danger** using an unorthodox solution."
+  }
+]
