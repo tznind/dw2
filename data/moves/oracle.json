@@ -1,6 +1,65 @@
 [
   {
     "id": "orc001",
-    "title": "Placeholder Move"
+    "title": "Visions From Above",
+    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the Knowledge Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **Knowledge** (or another Domain from Invoke the Divine) to your deity's Domains.",
+    "outcomes": [{
+      "text": "At the start of each session, roll 1d6 as your Fate Die and keep its result. **After someone rolls**, you may switch one die with your Fate Die. The die that was switched out becomes your new Fate Die."
+    },
+    {
+      "range": "Fate Die",
+      "text": "__orfd:Roll D6__"
+    }
+  ]
+  },
+  {
+    "id": "orc002",
+    "title": "Haruspication",
+    "description": "When you **ritually sacrifice something important**, ask your deity one question about your sacrifice or something associated with it (owners, loved ones, history, etc.), and roll+wis.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Your deity shows you a vivid vision that answers your question fully."
+      },
+      {
+        "range": "7-9",
+        "text": "The vision is cryptic and it'll need deciphering."
+      },
+      {
+        "range": "6-",
+        "text": "Your vision includes an omen of doom; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "orc003",
+    "title": "True Colors",
+    "outcomes": [
+      {
+        "text": "When you **Sense Motive**, you can also ask one of the following questions, even on a 6-.",
+        "bullets": [
+          "What are your true feelings about me?",
+          "What do you not want to admit (to me, to another, to yourself, etc.)?",
+          "Who or what do you care for most of all?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "orc004",
+    "title": "Living Saint",
+    "description": "You share a profound connection with the divine. When you take this move, lock a Condition to reflect this and **Forge a Bond** (**Mystical Vessel**) with your deity.\n\nIf you ever clear that Condition or break the Bond, this deeper union with the divine dissolves. In that case, lose this Move and immediately take another one in its place."
+  },
+  {
+    "id": "orc005",
+    "title": "Not the End",
+    "outcomes": [
+      {
+        "text": "When you **Face Death**, you also have access to the following option:",
+        "bullets": [
+          "*Divine Intervention*. Your deity miraculously saves your life, banishes a danger, enemy or obstacle, then restores all your HP. You're no longer helpless"
+        ]
+      }
+    ]
   }
 ]

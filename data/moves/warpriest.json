@@ -1,6 +1,72 @@
 [
   {
     "id": "wpr001",
-    "title": "Placeholder Move"
+    "title": "Punishment Divine",
+    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the War Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **War** (or another Domain from Invoke the Divine) to your deity's Domains.",
+    "outcomes": [{
+      "text": "You can wear **heavy armor**, ignoring the STR requirement, and can wield non-blunt weapons. You can erase 1 Depth with your deity to get adv to **Trade Blows** for a Scene. If you're fighting enemies of your deity, you get adv to dmg rolls."
+    }]
+  },
+  {
+    "id": "wpr002",
+    "title": "Rebuke the Unholy",
+    "description": "When you **shout your deity's name like a battle cry**, erase 1 Depth with them and roll+cha. If you're facing enemies of your deity, you don't need to erase the Depth.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Your opposition is dazed or flees (GM's call)."
+      },
+      {
+        "range": "7-9",
+        "text": "They mark a Condition but stand their ground."
+      },
+      {
+        "range": "6-",
+        "text": "Your cry falls on deaf ears; mark 1 XP and the GM makes a move."
+      }
+    ]
+  },
+  {
+    "id": "wpr003",
+    "title": "A Moth to the Sacred Flame",
+    "description": "When you **willingly expose yourself to an enemy attack**, roll+cha; if you're vulnerable while doing so, roll with **adv**.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "They boast and babble at you, and you can ask any two questions about them or their superiors."
+      },
+      {
+        "range": "7-9",
+        "text": "You can ask one question, but after answering they'll turn to violence."
+      },
+      {
+        "range": "6-",
+        "text": "They're far more cunning or powerful than they appear (GM's call); mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "wpr004",
+    "title": "Circle of Protection",
+    "description": "When you **draw a** **holy** **circle on the floor or ground**, erase 1 Depth with your deity and roll+wis.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "It will keep spirits, ghosts, and outsiders in or out until someone else breaks it."
+      },
+      {
+        "range": "7-9",
+        "text": "It will keep them in or out momentarily, but not for long."
+      },
+      {
+        "range": "6-",
+        "text": "Your deity's enemies are closer than you think; mark 1 XP and the GM makes a move."
+      }
+    ]
+  },
+  {
+    "id": "wpr005",
+    "title": "Divine Intuition",
+    "description": "When you **encounter a creature, manifestation, or power from another plane of existence**, you may erase 1 Depth with your deity to ask the GM questions equal to your wis. You get **adv** on your first roll related to the answer(s)."
   }
 ]

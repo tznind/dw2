@@ -50,5 +50,17 @@
   {
     "term": "two-handed",
     "description": "Needs two hands to use properly, maybe for weight, balance, a second part of it, etc."
+  },
+  {
+    "term":"Light Armor",
+    "description":"Such as sturdy hides and padded gambesons, has DMG reduction 1 (to a minimum of 1) and it requires a minimum STR+1 to use properly."
+  },
+  {
+    "term":"Medium Armor",
+    "description":"Like a chain shirt, breastplate, or scale mail, has DMG reduction 2 (to a minimum of 1) and it requires a minimum STR+2 to use properly."
+  },
+  {
+    "term":"Heavy Armor",
+    "description":"Like a proper chainmail or full plate, has DMG reduction 3 (to a minimum of 1) and it requires a minimum STR+2 to use properly."
   }
 ]

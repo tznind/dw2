@@ -333,7 +333,12 @@
     "title": "Face Death",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "When you **reach 0 HP**, you're Helpless until you recover HP or the Scene ends. While Helpless, if you lose any HP, you die. When you recover any HP, lock one of your Conditions and you're no longer Helpless.\n\nWhen you take decisive action while Helpless, choose one before resolving the action:",
+    "description": "When you **reach 0 HP**, you're Helpless until you recover HP or the Scene ends.",
+    "outcomes": [
+        {
+            "text": "While Helpless, if you lose any HP, you die. When you recover any HP, lock one of your Conditions and you're no longer Helpless.\n\nWhen you take decisive action while Helpless, choose one before resolving the action:"
+        }
+    ],
     "submoves": [
         {
             "title": "Gamble with Death",

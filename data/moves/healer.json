@@ -2,9 +2,9 @@
   {
     "id": "hlr001",
     "title": "The Greatest Miracle",
-    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the Life Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**",
+    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the Life Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **Life** (or another Domain from Invoke the Divine) to your deity's Domains.",
     "outcomes": [{
-      "text": "If you're a Cleric, you can add **Life** (or another Domain from Invoke the Divine) to your deity's Domains.\n\nWhenever you try to **Cast a Spell** to restore someone's HP, increase the dice size rolled one step"
+      "text": "Whenever you try to **Cast a Spell** to restore someone's HP, increase the dice size rolled one step"
     }]
   },
   {

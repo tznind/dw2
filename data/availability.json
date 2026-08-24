@@ -66,12 +66,20 @@
   "Oracle": {
     "_movesFile": "data/moves/oracle.json",
     "description": "Things that were, are, and yet may be",
-    "orc001": false
+    "orc001": true,
+    "orc002": false,
+    "orc003": false,
+    "orc004": false,
+    "orc005": false
   },
   "Warpriest": {
     "_movesFile": "data/moves/warpriest.json",
     "description": "Evil cannot be allowed to exist",
-    "wpr001": false
+    "wpr001": true,
+    "wpr002": false,
+    "wpr003": false,
+    "wpr004": false,
+    "wpr005": false
   },
   "Dabbler": {
     "_movesFile": "data/moves/dabbler.json",
