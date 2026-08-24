@@ -18,5 +18,10 @@
   {
     "alias": "Aid",
     "move": "Aid A PC"
+  },
+  {
+    "alias":"Faces Death",
+    "move":"Face Death"
+
   }
 ]

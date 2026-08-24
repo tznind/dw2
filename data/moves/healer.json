@@ -1,6 +1,47 @@
 [
   {
     "id": "hlr001",
-    "title": "Placeholder Move"
+    "title": "The Greatest Miracle",
+    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the Life Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**",
+    "outcomes": [{
+      "text": "If you're a Cleric, you can add **Life** (or another Domain from Invoke the Divine) to your deity's Domains.\n\nWhenever you try to **Cast a Spell** to restore someone's HP, increase the dice size rolled one step"
+    }]
+  },
+  {
+    "id": "hlr002",
+    "title": "Awake! The Shadow Is Gone",
+    "outcomes": [
+      {
+        "text": "When someone else **Faces Death** in your presence, you may parley with Death and grant the agonizing character access to the following option:",
+        "bullets": [
+          "Revivified — You're no longer Helpless and you recover half your max HP"
+        ]
+      },
+      {
+        "text": "If they choose this option, you cannot use this Move again until you've settled your deal with Death."
+      }
+    ]
+  },
+  {
+    "id": "hlr003",
+    "title": "Emotional Transference",
+    "description": "When you **touch someone else and offer yourself as a sacrifice**, erase 1 Depth with your deity so they clear Conditions up to your wis. For each Condition they clear, you mark one."
+  },
+  {
+    "id": "hlr004",
+    "title": "Face of an Angel",
+    "outcomes": [
+      {
+        "text": "No one will attack you directly and unprovoked, unless they've seen you fight or have a score to settle. When you **Pull Strings**, you get access to the following approach:",
+        "bullets": [
+          "If you implore them to turn away from violence, they might get away now or change their mind later."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hlr005",
+    "title": "Mass Cure Wounds",
+    "description": "When you **proclaim your faith**, erase 1 Depth with your deity to restore half of your and your #close allies lost HP (rounded down)."
   }
 ]

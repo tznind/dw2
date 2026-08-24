@@ -57,7 +57,11 @@
   "Healer": {
     "_movesFile": "data/moves/healer.json",
     "description": "Your touch mends flesh and spirit alike, a conduit for your deity's mercy",
-    "hlr001": false
+    "hlr001": true,
+    "hlr002": false,
+    "hlr003": false,
+    "hlr004": false,
+    "hlr005": false
   },
   "Oracle": {
     "_movesFile": "data/moves/oracle.json",
