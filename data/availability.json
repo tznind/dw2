@@ -54,6 +54,11 @@
     ],
     "clr001": true
   },
+  "The Fighter": {
+    "_movesFile": "data/moves/fighter.json",
+    "description": "An expert in arms and armor; a professional in the deadliest proving ground",
+    "fgh001": false
+  },
   "Healer": {
     "_movesFile": "data/moves/healer.json",
     "description": "What good is a faith that doesn't make the world whole?",

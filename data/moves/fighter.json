@@ -1,0 +1,33 @@
+[
+  {
+    "id": "fgh001",
+    "title": "Signature Weapon",
+    "description": "Create your own unique, distinctive weapon. It starts with one-handed and inflicts 1d8 DMG. Choose one per row (or create a new one with the GM)",
+    "details": true,
+    "outcomes": [
+      {
+        "range": "Range",
+        "text": "**hand**, **close**, **near**, **far**"
+      },
+      
+      {
+        "range": "Properties",
+        "text": "**adaptable** (choose an extra range), **piercing**, **precise**, **sharp** (increase DMG size **one step**), **two-handed** (increase DMG to 1d12)"
+      },
+      
+      {
+        "range": "Enchantments",
+        "text": "",
+        "bullets": [
+          "Adamantine - it's indestructible",
+          "Alarming - it glows in the presence of one creature type",
+          "Bane - has **piercing** against one creature type",
+          "Destructive - inflicts max DMG against inanimate objects",
+          "Grappling - after inflicting DMG, you can pull a target closer to you)",
+          "Pinning - after inflicting DMG on a creature your size or smaller, you can have it stay there and immobilize them"
+
+        ]
+      }
+    ]
+  }
+]

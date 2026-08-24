@@ -13,6 +13,11 @@ window.CardInitializers.origins = function(container, suffix) {
             ancestry: "e.g. halfling, owlkin, tiefling, etc. What is their view of your faith?",
             community: "e.g. a bunch of lowlifes, devout people, law enforcers, etc. What traditions do you still honor separately from your deity?",
             background: "e.g. sheriff, urchin, wizard's apprentice, etc. What \"divine intervention\" made you quit and become a cleric?"
+        },
+        "The Fighter": {
+            ancestry: "e.g. dragonborn, human, nephilim, etc. What fighting lesson from your childhood still stays with you?",
+            community: "e.g. peaceful farmers, self-sacrificing miners, tough sailors, etc. Did they appreciate fighting prowess? Why?",
+            background: "e.g. feral child, healer, miner, etc. What cause made you leave your former life of peace behind?"
         }
     };
 

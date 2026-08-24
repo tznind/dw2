@@ -62,5 +62,9 @@
   {
     "term":"Heavy Armor",
     "description":"Like a proper chainmail or full plate, has DMG reduction 3 (to a minimum of 1) and it requires a minimum STR+2 to use properly."
+  },
+  {
+    "term":"Damage Steps",
+    "description":"Indicates how much damage a source does, they are d4, d6, d8, d10, d12 [ed: then maybe d8+d6 - like for MAG 4 spells?]"
   }
 ]

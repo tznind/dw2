@@ -22,5 +22,9 @@
   {
     "alias":"Faces Death",
     "move":"Face Death"
+  },
+  {
+    "alias":"one step",
+    "term":"Damage Steps"
   }
 ]
