@@ -103,7 +103,11 @@
   "Tactician": {
     "_movesFile": "data/moves/tactician.json",
     "description": "Audacious & cunning in planning, firm & persevering in execution",
-    "tac001": false
+    "tac001": true,
+    "tac002": false,
+    "tac003": false,
+    "tac004": false,
+    "tac005": false
   },
   "Healer": {
     "_movesFile": "data/moves/healer.json",

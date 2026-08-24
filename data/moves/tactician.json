@@ -1,6 +1,84 @@
 [
   {
     "id": "tac001",
-    "title": "Placeholder Move"
+    "title": "Plans Within Plans",
+    "description": "At the start of each battle you get Prep equal to your int. When a fight ends, lose all Prep. During a combat you can always mark a Condition to get 1 Prep, and you can spend 1 Prep to execute one of the following stratagems:",
+    "tracks": [
+        {
+            "name": "Prep",
+            "max": 3,
+            "shape": "circle",
+            "dynamic": true
+        }
+    ],
+    "outcomes": [
+        {
+            "text": "",
+            "bullets": [
+                "Bait & Switch — When an ally **close** to you would take dmg, exchange positions unimpeded and suffer the dmg yourself",
+                "Charge! — You and willing allies rapidly move towards different foes. You, foes, and allies all get adv to their next dmg rolls",
+                "Flanking Tactic — When an ally **Trades Blows** with an opponent you're engaged with, they get adv to their dmg roll",
+                "Hammer & Anvil — When you suffer max dmg, an ally gets adv to their next **Trade Blows** against that same opponent"
+            ]
+        }
+    ]
+  },
+  {
+    "id": "tac002",
+    "title": "Attack of Opportunity",
+    "description": "When you react to an NPC in **hand** reach moving away, roll+int.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two from the following.",
+        "bullets": [
+          "An ally freely moves towards or away from them",
+          "The NPC can't move",
+          "You inflict min dmg to them"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one from the 10+ list."
+      },
+      {
+        "range": "6-",
+        "text": "The NPC escapes too quickly; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "tac003",
+    "title": "Know Thy Enemy",
+    "description": "When you're about to **Trade Blows** with an NPC, you can spend 1 Prep to ask GM what they Resist. You can spend 1 additional Prep to produce the tools necessary to ignore one of those Resists."
+  },
+  {
+    "id": "tac004",
+    "title": "Old Comrades & Former Foes",
+    "outcomes": [
+      {
+        "text": "When you **go looking for someone from a past battle, friend or foe**, choose one from the following list—or two if you owe them or put them at risk (your call):",
+        "bullets": [
+          "They're willing to assist you with a current conflict",
+          "They offer guidance, advice, or safety for some time",
+          "They reveal a significant secret or opportunity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tac005",
+    "title": "Veteran of a Hundred Battles",
+    "outcomes": [
+      {
+        "text": "Add the following stratagems to your **Plans Within Plans**:",
+        "bullets": [
+          "Demoralize — A Bloodied opponent surrenders or flees",
+          "First Strike — An ally acts now, even if they're surprised",
+          "Ralling Cry — Other allies **near** you clears a Condition",
+          "Taunt — An opponent has **dis** to dmg rolls unless they include you as a target"
+        ]
+      }
+    ]
   }
 ]
