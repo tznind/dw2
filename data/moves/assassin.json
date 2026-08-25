@@ -1,0 +1,113 @@
+[
+  {
+    "id": "asn001",
+    "title": "Dirty Deeds",
+    "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Employ/cure poison",
+          "Identify weakness"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Sneak Attack",
+        "description": "When you **Trade Blows**, if your opponent is distracted or unaware of you, and you aren't wearing medium or heavy armor (or a shield), and using a **precise** weapon,",
+        "outcomes": [
+          {
+            "range": "10+",
+            "text": "You can choose to suffer min dmg for free."
+          },
+          {
+            "range": "7-9",
+            "text": "You suffer min dmg."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asn002",
+    "title": "Always a Way Out",
+    "description": "When **you're in too deep and look for a way out**, roll+dex.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "You and your allies are gone."
+      },
+      {
+        "range": "7-9",
+        "text": "You need to leave something behind; the GM will say what."
+      },
+      {
+        "range": "6-",
+        "text": "It was a trick or a trap; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "asn003",
+    "title": "Backstab",
+    "description": "When you **ambush a surprised or defenseless opponent with a** **precise** **weapon**, roll+dex.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two from the following.",
+        "bullets": [
+          "Their armor is reduced by 1 until they repair it",
+          "You create a fleeting opportunity; you or an ally get adv to your or their next roll",
+          "You inflict your dmg+1d6"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Only one from the 10+ list."
+      },
+      {
+        "range": "6-",
+        "text": "They were ready; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "asn004",
+    "title": "Poisoncraft",
+    "description": "You get **adv** to **Defy Danger** against poison. You also get a poisoner's kit. Mark to produce a poison on the spot and then choose two from the following:",
+    "tracks": [
+      {
+        "name": "Poisoner's Kit",
+        "max": 3,
+        "shape": "circle"
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "it can be delivered by touch (otherwise it's ingestion)",
+          "it takes effect exactly when you want",
+          "it's as strong as you wanted",
+          "it's undetectable"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asn005",
+    "title": "Shadowmancy",
+    "description": "You can **Cast a Spell**+dex to manipulate shadows around you (but not create them). On a 7-9, you can draw unwanted attention to you instead of the other options. Examples include:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "create shadow knives 1d4 dmg #hand #close #piercing #precise. If you Trade Blows with one in each hand, roll dmg with adv",
+          "move from shadow to shadow in a single step",
+          "shrink, grow, or reshape nearby shadows"
+        ]
+      }
+    ]
+  }
+]

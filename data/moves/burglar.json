@@ -1,0 +1,77 @@
+[
+  {
+    "id": "bur001",
+    "title": "Expert Treasure-hunter",
+    "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Climb walls",
+          "Fit into tight spaces"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Nose for Treasure",
+        "description": "When you **Unearth Secrets**, no matter the outcome of the roll, you may also ask, Are there valuables here I don't know about? If yes, gain adv on the next roll to pursue them."
+      }
+    ]
+  },
+  {
+    "id": "bur002",
+    "title": "Better Lucky Than Good",
+    "description": "When you take this Move you get Luck equal to your cha. When you **Defy Danger** or **Trade Blows**, on a 7-9, you can mark Luck instead of the other options.",
+    "outcomes": [
+      {
+        "text": "When you **Enjoy Downtime**, you can spend 1 Treasure helping an NPC(s) to regain Luck equal to your cha."
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Luck",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ]
+  },
+  {
+    "id": "bur003",
+    "title": "Breaking & Entering",
+    "description": "When you make a plan to steal something, name the thing and ask the GM questions equal to your int. You and your allies get adv the first time they act following the plan.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "What's its most powerful defence?",
+          "Who else wants it?",
+          "Who will come after it?",
+          "Who will notice it's missing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bur004",
+    "title": "Quick on the Draw",
+    "description": "When the GM or another Player is about to make a Move, with their permission (out of character) you can mark a Condition to interrupt it and act immediately instead."
+  },
+  {
+    "id": "bur005",
+    "title": "Vanishing Act",
+    "description": "When you **are sure no one is paying attention directly to you**, you can disappear from a Scene entirely, not rejoining the narrative until the Scene ends. If you're in trouble or a bind, ask the GM what you must do to disappear and they will tell you (4 - int) of the following requirements:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "When you reappear, it will come with trouble",
+          "You first need to risk/trick/steal...",
+          "You must leave something significant behind",
+          "You must mark a Condition in the process"
+        ]
+      }
+    ]
+  }
+]

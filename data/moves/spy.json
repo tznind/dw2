@@ -1,0 +1,104 @@
+[
+  {
+    "id": "spy001",
+    "title": "The One for the Job",
+    "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Forge documents",
+          "Understand languages"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Smooth Operator",
+        "description": "When you **disguise yourself as someone specific**, roll+cha.",
+        "outcomes": [
+          {
+            "range": "10+",
+            "text": "Only their most intimate associates can tell the difference."
+          },
+          {
+            "range": "7-9",
+            "text": "Only those who do not know them are fooled."
+          },
+          {
+            "range": "6-",
+            "text": "An unfortunate encounter occurs; mark 1 XP and the GM makes a Move."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spy002",
+    "title": "Hand Trick",
+    "description": "When you leave a room or other location, you can name something small that you saw that no one else was using or playing particular attention to. You took it with you."
+  },
+  {
+    "id": "spy003",
+    "title": "Maven Saboteur",
+    "description": "When you **reveal that you have previously sabotaged a mechanism**, right as it becomes relevant in the fiction, roll+int.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "It goes off with a bang, creating the perfect opportunity."
+      },
+      {
+        "range": "7-9",
+        "text": "The opportunity is fleeting—act right now or it'll be gone before you know it."
+      },
+      {
+        "range": "6-",
+        "text": "A tiny overlooked detail becomes a huge problem; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "spy004",
+    "title": "Underworld Connections",
+    "description": "When you **put the word out that you're looking for something**, roll+cha. No matter the result, someone comes back to you with a lead.",
+    "details": true,
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose one complication below.",
+        "bullets": [
+          "Instead of the thing itself, you get a prime but ephemeral opportunity",
+          "Someone who doesn't know or like you has it",
+          "You'll owe someone a steep debt to get it. Until you repay them you get dis on this move and can't choose this option again"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose two from the 10+ list."
+      },
+      {
+        "range": "6-",
+        "text": "The lead might be a fake, a trap, or already be claimed by an enemy; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "spy005",
+    "title": "You Know My Name",
+    "description": "When you **first meet someone who's heard of you**, roll+cha.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Tell the GM two things they've heard about you."
+      },
+      {
+        "range": "7-9",
+        "text": "Tell the GM one thing, and the GM tells you the other."
+      },
+      {
+        "range": "6-",
+        "text": "They don't like what they've heard; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  }
+]
