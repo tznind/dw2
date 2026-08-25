@@ -87,6 +87,7 @@
   "The Wizard": {
     "_movesFile": "data/moves/wizard.json",
     "description": "A life of sacrifice & dedication with a single goal: master reality",
+    "level1Help": "At Level 1 your max hp is 6 and your int is +2. Choose dex or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
