@@ -15,7 +15,7 @@
     "submoves": [
       {
         "title": "Nose for Treasure",
-        "description": "When you **Unearth Secrets**, no matter the outcome of the roll, you may also ask, Are there valuables here I don't know about? If yes, gain adv on the next roll to pursue them."
+        "description": "When you **Unearth Secrets**, no matter the outcome of the roll, you may also ask, Are there valuables here I don't know about? If yes, gain **adv** on the next roll to pursue them."
       }
     ]
   },
@@ -40,7 +40,7 @@
   {
     "id": "bur003",
     "title": "Breaking & Entering",
-    "description": "When you make a plan to steal something, name the thing and ask the GM questions equal to your int. You and your allies get adv the first time they act following the plan.",
+    "description": "When you make a plan to steal something, name the thing and ask the GM questions equal to your int. You and your allies get **adv** the first time they act following the plan.",
     "outcomes": [
       {
         "text": "",

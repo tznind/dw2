@@ -42,6 +42,6 @@
   {
     "id": "hlr005",
     "title": "Mass Cure Wounds",
-    "description": "When you **proclaim your faith**, erase 1 Depth with your deity to restore half of your and your #close allies lost HP (rounded down)."
+    "description": "When you **proclaim your faith**, erase 1 Depth with your deity to restore half of your and your **close** allies lost HP (rounded down)."
   }
 ]

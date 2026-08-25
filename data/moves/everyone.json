@@ -108,7 +108,7 @@
                 },
                 {
                     "range": "mag 1",
-                    "text": "Example effects include: shoot an acid arrow (1d8 dmg); read someone's thoughts; turn someone invisible until they trigger a Move; float up to a #near distance"
+                    "text": "Example effects include: shoot an acid arrow (1d8 dmg); read someone's thoughts; turn someone invisible until they trigger a Move; float up to a **near** distance"
                 },
                 {
                     "range": "mag 2",
@@ -116,7 +116,7 @@
                 },
                 {
                     "range": "mag 3",
-                    "text": "Example effects include: vomit a cloud of poison that damages anyone any time they breath the gas (1d12 dmg); create a door to another dimension; polymorph someone into another natural creature of their same size or smaller; lift a creature or object of up to 1,000 pounds and move it to a #near location and hold it in place"
+                    "text": "Example effects include: vomit a cloud of poison that damages anyone any time they breath the gas (1d12 dmg); create a door to another dimension; polymorph someone into another natural creature of their same size or smaller; lift a creature or object of up to 1,000 pounds and move it to a **near** location and hold it in place"
                 },
                 {
                     "range": "mag 4",

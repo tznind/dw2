@@ -58,7 +58,7 @@
         "text": "Choose two from the following.",
         "bullets": [
           "Their armor is reduced by 1 until they repair it",
-          "You create a fleeting opportunity; you or an ally get adv to your or their next roll",
+          "You create a fleeting opportunity; you or an ally get **adv** to your or their next roll",
           "You inflict your dmg+1d6"
         ]
       },
@@ -103,7 +103,7 @@
       {
         "text": "",
         "bullets": [
-          "create shadow knives 1d4 dmg #hand #close #piercing #precise. If you Trade Blows with one in each hand, roll dmg with adv",
+          "create shadow knives 1d4 dmg **hand** **close** **piercing** **precise**. If you **Trade Blows** with one in each hand, roll dmg with **adv**",
           "move from shadow to shadow in a single step",
           "shrink, grow, or reshape nearby shadows"
         ]

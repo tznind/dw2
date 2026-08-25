@@ -34,7 +34,7 @@
   {
     "id": "dip002",
     "title": "Friends in High Places",
-    "description": "When you **seek the help of a relevant NPC**, roll+cha. If you owe them a favor (your call) or hold a Debt against them, roll with adv.",
+    "description": "When you **seek the help of a relevant NPC**, roll+cha. If you owe them a favor (your call) or hold a Debt against them, roll with **adv**.",
     "outcomes": [
         {
             "range": "10+",
@@ -58,7 +58,7 @@
   {
     "id": "dip004",
     "title": "Parley",
-    "description": "When you **call for a truce or ceasefire**, roll+cha. If you know what all other parties want (or you hold a Debt against them), roll with adv.",
+    "description": "When you **call for a truce or ceasefire**, roll+cha. If you know what all other parties want (or you hold a Debt against them), roll with **adv**.",
     "outcomes": [
         {
             "range": "10+",

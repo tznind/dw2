@@ -4,7 +4,7 @@
     "title": "Punishment Divine",
     "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the War Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **War** (or another Domain from Invoke the Divine) to your deity's Domains.",
     "outcomes": [{
-      "text": "You can wear **heavy armor**, ignoring the STR requirement, and can wield non-blunt weapons. You can erase 1 Depth with your deity to get adv to **Trade Blows** for a Scene. If you're fighting enemies of your deity, you get adv to dmg rolls."
+      "text": "You can wear **heavy armor**, ignoring the STR requirement, and can wield non-blunt weapons. You can erase 1 Depth with your deity to get **adv** to **Trade Blows** for a Scene. If you're fighting enemies of your deity, you get **adv** to dmg rolls."
     }]
   },
   {

@@ -15,7 +15,7 @@
   {
     "id": "swb002",
     "title": "Fly Into the Face of Danger",
-    "description": "When you **Defy Danger** by attempting something you've never tried before, you may spend 1 Panache to roll with adv.",
+    "description": "When you **Defy Danger** by attempting something you've never tried before, you may spend 1 Panache to roll with **adv**.",
     "outcomes": [
         {
             "range": "10+",

@@ -16,9 +16,9 @@
             "text": "",
             "bullets": [
                 "Bait & Switch — When an ally **close** to you would take dmg, exchange positions unimpeded and suffer the dmg yourself",
-                "Charge! — You and willing allies rapidly move towards different foes. You, foes, and allies all get adv to their next dmg rolls",
-                "Flanking Tactic — When an ally **Trades Blows** with an opponent you're engaged with, they get adv to their dmg roll",
-                "Hammer & Anvil — When you suffer max dmg, an ally gets adv to their next **Trade Blows** against that same opponent"
+                "Charge! — You and willing allies rapidly move towards different foes. You, foes, and allies all get **adv** to their next dmg rolls",
+                "Flanking Tactic — When an ally **Trades Blows** with an opponent you're engaged with, they get **adv** to their dmg roll",
+                "Hammer & Anvil — When you suffer max dmg, an ally gets **adv** to their next **Trade Blows** against that same opponent"
             ]
         }
     ]
