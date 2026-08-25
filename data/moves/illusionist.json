@@ -1,0 +1,63 @@
+[
+  {
+    "id": "ill001",
+    "title": "Illusion Magic",
+    "description": "If you aren't a Wizard, you can **Cast a Spell**+int by combining a verb and a substance from the **Illusion** (substance: sight and/or sounds; verbs: cloak; disguise) School of Magic. At the start of each session you get Aether equal to your int. For more details, see the Wizard Starting Move, **Weave the Arcane**.",
+    "tracks": [
+      {
+        "name": "Aether",
+        "max": 3,
+        "shape": "circle"
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "If you're a Wizard, add the following verbs to your repertoire:",
+        "bullets": [
+          "Make permanent",
+          "Substantiate"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "",
+        "description": "Once per Scene, when someone believes in one of your illusions, clear a Condition."
+      }
+    ]
+  },
+  {
+    "id": "ill002",
+    "title": "Alter Perception",
+    "description": "When you **touch someone or something**, spend 1 Aether to alter one of their perceptible aspects. For example, you can make it seem like they're from a different ancestry, or that an item is magical when it really isn't (and vice versa). This effect lasts until you dismiss it or until the end of the Scene."
+  },
+  {
+    "id": "ill003",
+    "title": "Mirror Image",
+    "description": "When you **would suffer damage**, you may spend 1 Aether to reveal that you were an illusion and prevent all dmg; say where **near** you actually are."
+  },
+  {
+    "id": "ill004",
+    "title": "Color Spray",
+    "description": "When you **spray an array of flashing, colored light from your hands**, spend 1 Aether and roll+dex.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "A group of **close** NPCs are dazed for a while. You and your allies get **adv** on their next roll against them."
+      },
+      {
+        "range": "7-9",
+        "text": "They're dazed only for a moment."
+      },
+      {
+        "range": "6-",
+        "text": "The magic is countered or backfires; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "ill005",
+    "title": "Near-Death Experience",
+    "description": "When you or an ally would kill an NPC, spend 1 Aether to have the killing blow exist only as an illusion. They feel all the pain and trauma, but it wasn't real. They're alive and shaken to their core; the would-be killer gets **adv** to **Pull Strings** on them by threatening their safety or interests."
+  }
+]

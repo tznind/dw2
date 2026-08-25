@@ -1,0 +1,92 @@
+[
+  {
+    "id": "evk001",
+    "title": "Evocation Magic",
+    "description": "If you aren't a Wizard, you can **Cast a Spell**+int by combining a verb and a substance from the **Evocation** (substance: elemental energies; verbs: lesser sculpt; minor channel) School of Magic. At the start of each session, you get Aether equal to your int. For more details, see the Wizard Starting Move, **Weave the Arcane**.",
+    "tracks": [
+      {
+        "name": "Aether",
+        "max": 3,
+        "shape": "circle"
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "If you're a Wizard, add the following verbs to your repertoire:",
+        "bullets": [
+           "Detonate",
+           "Magnify"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "",
+        "description": "You can mark 1-3 Conditions to recover the same amount of Aether."
+      }
+    ]
+  },
+  {
+    "id": "evk002",
+    "title": "Contingency",
+    "description": "Spend 1-3 Aether then choose a spell or a Move that you have access to that you could reasonably prepare in advance. Also, define a specific circumstance. When the **circumstance occurs**, roll+Aether spent; use the result to resolve the spell or Move.",
+    "details": true
+  },
+  {
+    "id": "evk003",
+    "title": "Elemental Cloak",
+    "description": "Spend 1-3 Aether to evoke a cloak made of one of the following elements. Replace X with the amount of Aether spent:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Cascading flames — Up to X opponents who inflict dmg to you suffer Xd6 dmg",
+          "Rock protrusions — Add +X to your armor for X attacks",
+          "Water tentacles — Up to X opponents who inflict dmg to you have **dis** to their dmg rolls",
+          "Wild gale — You can move unimpeded up to **near** X times"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evk004",
+    "title": "Instant Fireball!",
+    "description": "Spend 1-3 Aether, then a **near** target and everyone **close** to them suffers Xd6 dmg #piercing, where X is the amount of spent Aether."
+  },
+  {
+    "id": "evk005",
+    "title": "Power Weapon",
+    "description": "When you shape an elemental energy in the form of a weapon, spend 1-3 Aether and roll+Aether spent.",
+    "tracks": [
+      {
+        "name": "Uses",
+        "max": 3,
+        "shape": "hexagon"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two of the following tags.",
+        "bullets": [
+          "Close",
+          "Piercing"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Only one from the 10+ list."
+      },
+      {
+        "range": "6-",
+        "text": "The element breaks free; mark 1 XP and the GM makes a Move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "",
+        "description": "By default the weapon inflicts 1d6 dmg, is **hand**, and has 3 uses. When you **Trade Blows** with this weapon, roll+int (instead of +str or +dex) and mark one use."
+      }
+    ]
+  }
+]

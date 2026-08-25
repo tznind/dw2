@@ -87,6 +87,28 @@
   "The Wizard": {
     "_movesFile": "data/moves/wizard.json",
     "description": "A life of sacrifice & dedication with a single goal: master reality",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose an additional weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "bejeweled skull cap", "details": "Add 1 to your Armor", "uses": "" },
+          { "name": "delicate grimoire", "details": "Once per Scene, you may reference or study it to recover 1 Aether", "uses": "" },
+          { "name": "unwieldy staff", "details": "1d6 dmg #close #hand #two-handed", "uses": "" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "bag of books", "details": "Mark to find a record of relevant information", "uses": "3" },
+          { "name": "dagger", "details": "1d4 dmg #ammo #hand #close #piercing #precise", "uses": "" },
+          { "name": "potion of healing", "details": "Mark to recover half your lost HP (rounded down) or clear one locked Condition", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
+        ]
+      }
+    ],
     "wiz001": true
   },
   "The Rogue": {
@@ -143,6 +165,33 @@
     "spy003": false,
     "spy004": false,
     "spy005": false
+  },
+  "Evoker": {
+    "_movesFile": "data/moves/evoker.json",
+    "description": "There's a simple beauty in utter destruction",
+    "evk001": true,
+    "evk002": false,
+    "evk003": false,
+    "evk004": false,
+    "evk005": false
+  },
+  "Illusionist": {
+    "_movesFile": "data/moves/illusionist.json",
+    "description": "How do you define ‘real’?",
+    "ill001": true,
+    "ill002": false,
+    "ill003": false,
+    "ill004": false,
+    "ill005": false
+  },
+  "Necromancer": {
+    "_movesFile": "data/moves/necromancer.json",
+    "description": "The greatest taboo among magic practitioners—for a reason",
+    "nec001": true,
+    "nec002": false,
+    "nec003": false,
+    "nec004": false,
+    "nec005": false
   },
   "Brawler": {
     "_movesFile": "data/moves/brawler.json",
