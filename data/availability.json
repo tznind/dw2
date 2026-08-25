@@ -30,6 +30,7 @@
   "The Cleric": {
     "_movesFile": "data/moves/cleric.json",
     "description": "No mere priest, a divine emissary armed with steel and powers from above",
+    "level1Help": "At Level 1 your max hp is 8 and your wis is +2. Choose str or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
@@ -57,6 +58,7 @@
   "The Fighter": {
     "_movesFile": "data/moves/fighter.json",
     "description": "An expert in arms and armor; a professional in the deadliest proving ground",
+    "level1Help": "At Level 1 your max hp is 10. Choose str or dex to be +2 and the other to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
@@ -82,9 +84,15 @@
     ],
     "fgh001": true
   },
+  "The Wizard": {
+    "_movesFile": "data/moves/wizard.json",
+    "description": "A life of sacrifice & dedication with a single goal: master reality",
+    "wiz001": true
+  },
   "The Rogue": {
     "_movesFile": "data/moves/rogue.json",
     "description": "The ultimate survivalist, every tool—legal or not—is at their disposal",
+    "level1Help": "At Level 1 your max hp is 8 and your dex is +2. Choose int or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",

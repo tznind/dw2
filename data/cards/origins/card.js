@@ -23,6 +23,11 @@ window.CardInitializers.origins = function(container, suffix) {
             ancestry: "e.g. catfolk, halfling, oozeling, etc. Were your parents law-abiding people?",
             community: "e.g. denizens of the Underdark, homeless people, privileged pricks, etc. Did you experience a lot of crime firsthand?",
             background: "e.g. criminal, squire, teacher, etc. Was it a slippery slope or a conscious decision to become who you are now?"
+        },
+        "The Wizard": {
+            ancestry: "e.g. dwarf, elf, golem, etc. What event in your childhood drew you to the arcane?",
+            community: "e.g. amateur magicians, landed gentry, nomadic people, etc. Was magic valued among your people? Why?",
+            background: "e.g. cursed person, mercenary, street magician, etc. How much did you pay or sacrifice to learn the impossible?"
         }
     };
 

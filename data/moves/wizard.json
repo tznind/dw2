@@ -1,0 +1,78 @@
+[
+  {
+    "id": "wiz001",
+    "title": "Weave the Arcane",
+    "description": "You can **Cast a Spell**+int by combining a verb and a substance from the eight major Schools of Magic. You can combine verbs and substances from different Schools. To **Cast a Spell** you need your arcane focus, both hands otherwise free, and the ability to speak aloud.",
+    "tracks": [
+        {
+            "name": "Aether",
+            "max": 3,
+            "shape": "circle"
+        }
+    ],
+    "outcomes": [
+        {
+            "text": "At the start of each Scene you have Aether equal to your int. When you **Cast a Spell**, On a 7-9, you can spend Aether equal to the spell's mag instead of the other options."
+        }
+    ],
+    "useTwoColumnsForSubmoves": true,
+    "submoves": [
+        {
+            "title": "Abjuration",
+            "outcomes": [
+                { "range": "Substance", "text": "Magic itself" },
+                { "range": "Verbs", "text": "Temporarily disable; Protect from" }
+            ]
+        },
+        {
+            "title": "Conjuration",
+            "outcomes": [
+                { "range": "Substance", "text": "Objects or outsiders" },
+                { "range": "Verbs", "text": "Briefly create; Momentarily summon" }
+            ]
+        },
+        {
+            "title": "Divination",
+            "outcomes": [
+                { "range": "Substance", "text": "Past, present, and future visions" },
+                { "range": "Verbs", "text": "Convey; Discern" }
+            ]
+        },
+        {
+            "title": "Enchantment",
+            "outcomes": [
+                { "range": "Substance", "text": "Sapient beings" },
+                { "range": "Verbs", "text": "Modify emotions; Temporarily charm" }
+            ]
+        },
+        {
+            "title": "Evocation",
+            "outcomes": [
+                { "range": "Substance", "text": "Elemental energies" },
+                { "range": "Verbs", "text": "Lesser sculpt; Minor channel" }
+            ]
+        },
+        {
+            "title": "Illusion",
+            "outcomes": [
+                { "range": "Substance", "text": "Sight and/or sounds" },
+                { "range": "Verbs", "text": "Cloak; Disguise" }
+            ]
+        },
+        {
+            "title": "Necromancy",
+            "outcomes": [
+                { "range": "Substance", "text": "Unlife" },
+                { "range": "Verbs", "text": "Briefly bestow; Radiate" }
+            ]
+        },
+        {
+            "title": "Transmutation",
+            "outcomes": [
+                { "range": "Substance", "text": "Matter" },
+                { "range": "Verbs", "text": "Momentarily alter; Repair" }
+            ]
+        }
+    ]
+  }
+]
