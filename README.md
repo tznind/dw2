@@ -19,33 +19,6 @@ https://github.com/tznind/lc
 </tr>
 </table>
 
-
-## Creating Moves
-
-Moves are designed for flexibility and ease writing. Simply enter moves into the json file and add to the availability map to relevant role(s).
-
-<a href="https://github.com/tznind/st/tree/main/data/moves"/>
-<img src="https://github.com/user-attachments/assets/d8efa576-ee04-4549-9699-ae3caa280952"/>
-</a>
-
-_All moves are defined in json files with schemas for helpful autocompletion_
-
-## Getting Started
-
-To create your own game system:
-
-- Create a new repository using this template
-
-<img width="132" height="82" alt="GitHub template button" src="https://github.com/user-attachments/assets/6c97f925-6db8-4687-ba26-101705bf736e" />
-
-- Update the JSON files in the [data](./data) folder with your content.  
-- Enable **GitHub Pages** in your repository settings (Settings=>Pages).
-- Visit your sheet at:  
-
-```
-https://your_name.github.io/your_repository_name/cs.html
-```
-
 ### Cookbook
 
 For more detailed description of how to create various types of moves see [Cookbook.md](./Cookbook.md)
