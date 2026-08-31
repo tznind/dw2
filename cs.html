@@ -49,6 +49,22 @@
     gap: 6px;
   }
 
+  /* .all-stats vertically centers its items by default, but the Level/HP/
+     Armor labels stack a caption above their control while the help icon
+     has no caption - so centering lines the button up with the middle of
+     the whole caption+control stack, not with the controls themselves,
+     making it look too high. Bottom-align instead so the button sits level
+     with the XP track and the input boxes. */
+  .all-stats {
+    align-items: flex-end;
+  }
+
+  /* Nudge up slightly from the exact bottom edge - flush bottom-alignment
+     sits a touch low against the input boxes. */
+  #level1-help-button {
+    margin-bottom: 3px;
+  }
+
 </style>
 
 </head>
