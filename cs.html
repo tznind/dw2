@@ -314,7 +314,7 @@
     return select.value !== previousValue;
   }
 
-  function refreshPathSelectors() {
+  function refreshPathSelectors(notifyOnChange) {
     var classSelect = document.getElementById(CLASS_SELECT_ID);
     var classPaths = classSelect ? pathsForClass(classSelect.value) : null;
     var changed = false;
@@ -326,9 +326,7 @@
       if (rebuildOptions(select, roles)) changed = true;
     });
 
-    // A selection only changes here if it was no longer valid for the newly
-    // selected class - keep the URL and rendered moves in sync with that.
-    if (changed) {
+    if (changed && notifyOnChange) {
       var form = document.querySelector('form');
       if (form && window.Persistence) window.Persistence.saveToURL(form);
       if (window.Layout) window.Layout.layoutApplication();
@@ -338,10 +336,15 @@
   function wireUp() {
     var classSelect = document.getElementById(CLASS_SELECT_ID);
     if (classSelect) {
-      classSelect.addEventListener('change', refreshPathSelectors);
+      // The class 'change' event itself still bubbles to persistence.js's
+      // form-level listener after this runs, which re-renders once already.
+      classSelect.addEventListener('change', function() {
+        refreshPathSelectors(false);
+      });
     }
-    // Narrow Path 1/2 to whatever class the page loaded with (e.g. from a shared URL).
-    refreshPathSelectors();
+    // Narrow Path 1/2 to whatever class the page loaded with (e.g. from a
+    // shared URL). No event is bubbling here, so trigger the re-render ourselves.
+    refreshPathSelectors(true);
   }
 
   if (window.AppEvents) {
