@@ -61,7 +61,7 @@
 
   <!-- Attribution banner -->
   <div id="attribution-banner" style="font-size: 12px; color: #666; text-align: center; padding: 6px 10px; margin-bottom: 10px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 6px;">
-    Content by Spencer Moore and Helena Real &bull; Work in progress &bull; <a href="https://www.dungeon-world.com/beta/" target="_blank" style="color: #007bff;">Dungeon World 2 Beta</a>
+    Content by Spencer Moore and Helena Real &bull; <a href="https://www.dungeon-world.com/beta/" target="_blank" style="color: #007bff;">Dungeon World 2 Beta</a>
   </div>
 
   <!-- Module attribution banner (shown when modules with attribution data are enabled) -->
@@ -266,6 +266,91 @@
 
 <!-- Level 1 stat guidance help icon (role-specific, from availability.json) -->
 <script src="level1-help.js"></script>
+
+<!-- Narrow Path 1 / Path 2 down to the selected class's own paths (e.g. The
+     Bard -> Dabbler, Diplomat, Swashbuckler), driven by the "paths" array on
+     each class in data/availability.json. Kept self-contained here (rather
+     than in the shared engine .js files) so upstream engine updates keep
+     merging cleanly. Multiclass 1/2 deliberately keep their full data-roles
+     list, since multiclassing pulls a path from a *different* class. If a
+     class has no "paths" defined (or none is selected yet), Path 1/2 fall
+     back to their own data-roles list, same as before this script existed. -->
+<script>
+(function() {
+  'use strict';
+
+  var CLASS_SELECT_ID = 'role';
+  var PATH_SELECT_IDS = ['role2', 'role3'];
+
+  function pathsForClass(className) {
+    var roleData = className && window.availableMap && window.availableMap[className];
+    return (roleData && Array.isArray(roleData.paths)) ? roleData.paths : null;
+  }
+
+  function fallbackRolesFor(select) {
+    var attr = select.getAttribute('data-roles') || '';
+    return attr.split(',').map(function(role) { return role.trim(); }).filter(Boolean);
+  }
+
+  // Rebuilds a select's <option> list from `roles`, keeping the current
+  // selection if it's still offered. Returns true if the selection changed.
+  function rebuildOptions(select, roles) {
+    var previousValue = select.value;
+
+    while (select.children.length > 1) {
+      select.removeChild(select.lastChild);
+    }
+
+    roles.forEach(function(role) {
+      var roleData = window.availableMap && window.availableMap[role];
+      if (!roleData) return;
+      var option = document.createElement('option');
+      option.value = role;
+      option.textContent = roleData.name || role;
+      select.appendChild(option);
+    });
+
+    select.value = roles.indexOf(previousValue) !== -1 ? previousValue : '';
+    return select.value !== previousValue;
+  }
+
+  function refreshPathSelectors() {
+    var classSelect = document.getElementById(CLASS_SELECT_ID);
+    var classPaths = classSelect ? pathsForClass(classSelect.value) : null;
+    var changed = false;
+
+    PATH_SELECT_IDS.forEach(function(id) {
+      var select = document.getElementById(id);
+      if (!select) return;
+      var roles = (classPaths && classPaths.length) ? classPaths : fallbackRolesFor(select);
+      if (rebuildOptions(select, roles)) changed = true;
+    });
+
+    // A selection only changes here if it was no longer valid for the newly
+    // selected class - keep the URL and rendered moves in sync with that.
+    if (changed) {
+      var form = document.querySelector('form');
+      if (form && window.Persistence) window.Persistence.saveToURL(form);
+      if (window.Layout) window.Layout.layoutApplication();
+    }
+  }
+
+  function wireUp() {
+    var classSelect = document.getElementById(CLASS_SELECT_ID);
+    if (classSelect) {
+      classSelect.addEventListener('change', refreshPathSelectors);
+    }
+    // Narrow Path 1/2 to whatever class the page loaded with (e.g. from a shared URL).
+    refreshPathSelectors();
+  }
+
+  if (window.AppEvents) {
+    window.AppEvents.on('initializationComplete', wireUp);
+  } else {
+    document.addEventListener('DOMContentLoaded', wireUp);
+  }
+})();
+</script>
 
 </body>
 </html>

@@ -120,12 +120,19 @@ window.JsonLoader = (function() {
                 const moduleCards = roleData.cards || [];
                 const mergedCards = [...existingCards, ...moduleCards.filter(c => !existingCards.includes(c))];
 
+                // Merge paths arrays (so independent modules can each add a path
+                // to an existing class without needing to know each other's paths)
+                const existingPaths = result[roleName].paths || [];
+                const modulePaths = roleData.paths || [];
+                const mergedPaths = [...existingPaths, ...modulePaths.filter(p => !existingPaths.includes(p))];
+
                 // Merge all properties
                 result[roleName] = {
                     ...result[roleName],
                     ...roleData,
                     _movesFiles: existingMovesFiles.length > 0 ? existingMovesFiles : undefined,
-                    cards: mergedCards.length > 0 ? mergedCards : undefined
+                    cards: mergedCards.length > 0 ? mergedCards : undefined,
+                    paths: mergedPaths.length > 0 ? mergedPaths : undefined
                 };
 
                 // Keep original _movesFile for backwards compatibility
