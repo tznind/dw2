@@ -67,9 +67,9 @@
         "type": "pickOne",
         "title": "Choose an additional weapon (or create a new one with the GM):",
         "options": [
-          { "name": "intimidating greataxe", "details": "1d12 dmg #hand #two-handed", "uses": "" },
-          { "name": "twin shortswords", "details": "1d6 dmg #hand #precise #two-handed. adv on dmg rolls", "uses": "" },
-          { "name": "yew longbow", "details": "1d8 dmg #close #far #near #two-handed", "uses": "" }
+          { "name": "intimidating greataxe", "details": "1d8 dmg #hand #two-handed", "uses": "" },
+          { "name": "twin shortswords", "details": "1d6 dmg #hand #light #precise", "uses": "" },
+          { "name": "yew longbow", "details": "1d6 dmg #close #far #near #two-handed", "uses": "" }
         ]
       },
       {
@@ -79,7 +79,7 @@
           { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
           { "name": "breastplate", "details": "dmg reduction 2 (reduces all incoming dmg by 2, to a min of 1). Min STR+2 to use properly", "uses": "" },
           { "name": "studded leather", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
-          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or clear one Condition/affliction", "uses": "2" },
+          { "name": "medicine", "details": "Mark to cure an affliction or double the next healing received", "uses": "2" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
           { "name": "shield", "details": "Mark to ignore all dmg from one attack", "uses": "1" }
         ]
