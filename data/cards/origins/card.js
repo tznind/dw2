@@ -26,7 +26,7 @@ window.CardInitializers.origins = function(container, suffix) {
         },
         "The Rogue": {
             ancestry: "e.g. catfolk, firbolg, oozeling, etc. Were your parents law-abiding people?",
-            community: "e.g. denizens of the Underdark, homeless people, privileged pricks, etc. Did you experience a lot of crime firsthand?",
+            community: "e.g. denizens of the Underdark, a street gang, privileged pricks, etc. Did you experience a lot of crime firsthand?",
             background: "e.g. criminal, squire, teacher, etc. Was it a slippery slope or a conscious decision to become who you are now?"
         },
         "The Wizard": {

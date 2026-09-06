@@ -2,7 +2,7 @@
   {
     "id": "rgu001",
     "title": "Tricks of the Trade",
-    "description": "When you **Defy Danger** or **Sneak Past** by applying one of your Roguish Skills, roll with 1d8+1d6 (instead of 2d6).",
+    "description": "When you **Defy Danger** or **Sneak Past** by applying one of your Roguish Skills, you cheat; roll with 1d8+1d6 (instead of 2d6).",
     "outcomes": [
       {
         "text": "You start with the following Roguish Skills, plus any other Skills provided by your Rogue Paths:",

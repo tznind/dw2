@@ -156,7 +156,7 @@
         "title": "Choose an additional weapon (or create a new one with the GM):",
         "options": [
           { "name": "collapsible shortbow", "details": "1d6 dmg #ammo #close #near #precise #two-handed", "uses": "" },
-          { "name": "hidden daggers", "details": "1d4 dmg #ammo #hand #close #piercing #precise. If you Trade Blows with one in each hand, roll dmg with adv", "uses": "" },
+          { "name": "hidden daggers", "details": "1d4 dmg #ammo #concealed #hand #close #light #piercing #precise. **adv** on **dmg** rolls", "uses": "" },
           { "name": "reliable whip", "details": "1d4 dmg #close #near #precise. When you Defy Danger or Trade Blows, on a 10+, you can choose to have the target drop something they're holding or grab one of their extremities", "uses": "" }
         ]
       },
