@@ -30,20 +30,16 @@
   },
   {
     "id": "wpr002",
-    "title": "Rebuke the Unholy",
-    "description": "When you **shout your deity's name like a battle cry**, erase 1 Depth with them and roll+cha. If you're facing enemies of your deity, you don't need to erase the Depth.",
+    "title": "Spiritual Weapon",
+    "description": "When you **shout your deity's name like a battle cry**, their power fills any weapon you wield until the end of the scene. Choose one blessing below, or erase 1 Depth with your deity to choose two.",
     "outcomes": [
       {
-        "range": "10+",
-        "text": "Your opposition is dazed or flees (GM's call)."
-      },
-      {
-        "range": "7-9",
-        "text": "They mark a Condition but stand their ground."
-      },
-      {
-        "range": "6-",
-        "text": "Your cry falls on deaf ears; mark 1 XP and the GM makes a move."
+        "text": "",
+        "bullets": [
+          "Add +1 to all dmg it deals",
+          "It #pierces the armor of your deity's enemies",
+          "It can hover and fight on its own as an extension of your will; treat it as a loyal NPC, when it takes dmg it loses this benefit unless you feed it your lifeforce to continue (lose 1 HP)"
+        ]
       }
     ]
   },
@@ -54,33 +50,24 @@
       {
         "text": "When you **Face Death**, you also have access to the following option:",
         "bullets": [
-          "*Divine Intervention*. Your deity miraculously saves your life, banishes a danger, enemy or obstacle, then restores all your HP. You're no longer helpless"
+          "*Divine Intervention*. Your deity miraculously saves your life, banishes a danger, enemy or obstacle, then restores all your HP. You're no longer helpless. You still **lock** a Condition after Facing Death."
         ]
       }
     ]
   },
   {
     "id": "wpr004",
-    "title": "Circle of Protection",
-    "description": "When you **draw a** **holy** **circle on the floor or ground**, erase 1 Depth with your deity and roll+wis.",
+    "title": "Drink From the Cup of Wrath",
+    "description": "When you **condemn someone for their evil ways**, instead of gaining 1 Depth with your deity, you may make the condemned an enemy of your deity (if they aren't already).",
     "outcomes": [
       {
-        "range": "10+",
-        "text": "It will keep spirits, ghosts, and outsiders in or out until someone else breaks it."
-      },
-      {
-        "range": "7-9",
-        "text": "It will keep them in or out momentarily, but not for long."
-      },
-      {
-        "range": "6-",
-        "text": "Your deity's enemies are closer than you think; mark 1 XP and the GM makes a move."
+        "text": "When you **petition your deity to harm or curse a collective enemy** (e.g. a faction, creature type, inhabitants of a location, etc.), treat it as **Perform a Ritual**, but after the GM tells you the requirements you may erase Depth with your deity, 1-for-1, to miraculously fulfill them."
       }
     ]
   },
   {
     "id": "wpr005",
     "title": "Divine Intuition",
-    "description": "When you **encounter a creature, manifestation, or power from another plane of existence**, you may erase 1 Depth with your deity to ask the GM questions equal to your wis. You get **adv** on your first roll related to the answer(s)."
+    "description": "When you **first encounter an enemy of your deity**, you may ask the GM questions about it equal to your wis. You get **adv** on your first roll related to the answer(s)."
   }
 ]
