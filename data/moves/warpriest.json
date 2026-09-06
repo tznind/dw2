@@ -20,7 +20,7 @@
     "submoves": [
       {
         "title": "Divine Shield",
-        "description": "Once per scene, when you take dmg, you may erase 1 Depth with your deity to ignore it, even if it is #piercing."
+        "description": "Once per scene, when you take dmg, you may erase 1 Depth with your deity to ignore it, even if it is **piercing**."
       },
       {
         "title": "Rebuke",
