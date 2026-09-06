@@ -2,7 +2,7 @@
   {
     "id": "tac001",
     "title": "Plans Within Plans",
-    "description": "When you **enter a combat situation**, gain Prep equal to your INT (min 1). When the combat situation ends, lose all Prep. During the combat situation, you can spend 1 Prep to execute one of the following stratagems:",
+    "description": "When you **enter a combat situation**, gain Prep equal to your INT (min 1). During the combat situation, you can spend 1 Prep to execute one of the following stratagems:",
     "tracks": [
         {
             "name": "Prep",
