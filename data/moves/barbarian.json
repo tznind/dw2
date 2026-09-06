@@ -1,0 +1,19 @@
+[
+  {
+    "id": "bar001",
+    "title": "Rage!",
+    "description": "When you enter a rage, mark Angry. When you calm down, you may mark a different Condition to clear Angry. While Angry, you get the following penalties and benefits:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "When you deal **MAX DMG**, increase the dmg by str",
+          "Ignore penalties from Conditions when you **Trade Blows**+str or **Defy Danger**+str",
+          "Whenever you would mark a Condition (including from calming down), you may instead suffer 1d4 dmg **piercing**",
+          "You can't benefit from wearing armor (you can still wear a shield, though)",
+          "If you don't act on your Rage at least once per scene you're in (usually attacking someone or something), mark an additional Condition at the end of that scene"
+        ]
+      }
+    ]
+  }
+]

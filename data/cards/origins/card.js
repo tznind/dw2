@@ -4,6 +4,11 @@ window.CardInitializers.origins = function(container, suffix) {
     const helpers = suffix ? window.CardHelpers.createScopedHelpers(container, suffix) : window.CardHelpers;
 
     const hintsByRole = {
+        "The Barbarian": {
+            ancestry: "e.g. construct, minotaur, nephilim, etc. What makes your homeland so different from places here?",
+            community: "e.g. brutal warriors, hospitable travelers, isolated devotees, etc. How did they adapt to your homeland's environment?",
+            background: "e.g. dangerous bandit, powerful leader, renowned gladiator, etc. What betrayal or calamity caused your departure?"
+        },
         "The Bard": {
             ancestry: "e.g. gnome, orc, giantkin, etc. What makes your art different from your people's?",
             community: "e.g. ever-curious scholars, filthy rich people, reclusive artists, etc. How do your life circumstances still influence your art?",

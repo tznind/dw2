@@ -116,6 +116,34 @@
     ],
     "wiz001": true
   },
+  "The Barbarian": {
+    "_movesFile": "data/moves/barbarian.json",
+    "description": "A mighty stranger from an even stranger land",
+    "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "ancestral longsword", "details": "1d6 #close + shield. Mark to ignore all dmg from one attack", "uses": "1" },
+          { "name": "bloodstained greataxe", "details": "1d8 dmg #close #two-handed #forceful", "uses": "" },
+          { "name": "dual hammers", "details": "1d6 dmg #close. adv on dmg rolls", "uses": "" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "hearty feast", "details": "Mark to share it with your allies; everyone recovers half their max HP (rounded down)", "uses": "1" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP or clear a locked Condition", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
+          { "name": "trap kit", "details": "When you spend time setting up a trap, mark once to create a dangerous, impeding hazard for anyone in its range; it typically deals 1d4 dmg", "uses": "2" }
+        ]
+      }
+    ],
+    "bar001": true
+  },
   "The Rogue": {
     "_movesFile": "data/moves/rogue.json",
     "description": "The ultimate survivalist, every tool—legal or not—is at their disposal",
