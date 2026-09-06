@@ -50,5 +50,9 @@
   {
     "alias":"min dmg",
     "term":"Max/Min Dmg"
+  },
+  {
+    "alias":"Sense the Motive",
+    "move":"Sense Motive"
   }
 ]
