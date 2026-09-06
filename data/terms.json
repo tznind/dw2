@@ -16,8 +16,16 @@
     "description": "Roll three dice (3d6) and ignore the lowest result, keeping the highest two."
   },
   {
+      "term":"area",
+      "description":"Can affect multiple targe5ts in close proximity"
+  },
+  {
     "term": "Disadvantage",
     "description": "Roll three dice (3d6) and ignore the highest result, keeping the lowest two."
+  },
+  {
+    "term":"Distinctive",
+    "description":"Has an obvious sound or appearance that attracts attention"
   },
   {
     "term":"precise",
@@ -38,6 +46,14 @@
   {
     "term": "far",
     "description": "Meant for a target close enough to speak to, even if you may have to raise your voice"
+  },
+  {
+    "term":"Forceful",
+    "description":"inflicts powerful blows that knock targets back down"
+  },
+  {
+    "term":"light",
+    "description":"easily **dual wielded** with similar weapons (roll **dmg** for both and keep highest)"
   },
   {
     "term": "hand",

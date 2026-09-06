@@ -77,27 +77,46 @@
     "title": "Cast a Spell (+Variable)",
     "category": "Core Moves",
     "hideCheckbox": true,
-    "description": "When you **invoke magic you can use**, say what you want to happen and roll+the corresponding Stat (see your Class or Paths) with a penalty equal to the spell's **MAG** (GM's call).",
+    "description": "When you **invoke magic you can use**, say what you want to happen; the GM will tell you the effect's MAG and then you compare it to your Casting Stat (see the Class or Path that is your magic's source).",
     "outcomes": [
         {
-            "range": "10+",
-            "text": "The spell is successfully cast."
+            "range": "MAG > Casting Stat",
+            "text": "The spell is beyond you; negotiate a lesser effect or **Perform a Ritual** to achieve it"
         },
         {
-            "range": "7-9",
-            "text": "It goes off but choose one:",
-            "bullets": [
-                "A unique option depending on the source of your magic (see your Class or Paths)",
-                "The effort is tiresome; mark Conditions equal to the spell's mag",
-                "There's a twist; the GM will add an \"and\" or \"but\" to its effect"
-            ]
+            "range": "MAG equals Casting Stat",
+            "text": "Roll + Casting Stat with **Dis**"
         },
         {
-            "range": "6-",
-            "text": "Something goes terribly wrong; mark 1 XP and the GM makes a Move."
+            "range": "MAG < Casting Stat",
+            "text": "Roll + Casting Stat"
         }
-    ],
+    ]
+    ,
     "submoves": [
+        {
+            "title": "Result",
+            "outcomes": [
+                {
+                    "range": "10+",
+                    "text": "The effect comes to fruition as intended."
+                },
+                {
+                    "range": "7-9",
+                    "text": "It happens, but choose one:",
+                    "bullets": [
+                        "A unique option depending on your magic's source",
+                        "The effort is tiresome; mark a Condition",
+                        "There's a twist; the GM will add an **\"and\"** or **\"but\"** to its effect"
+                    ]
+                },
+                {
+                    "range": "6-",
+                    "text": "Something goes terribly wrong; mark 1 XP and the GM makes a Move."
+                }
+            ]
+
+        },
         {
             "title": "Spell Magnitude",
             "description": "Magnitude (mag) represents the scale and power of a spell. The GM has the final say on a spell's mag, but these guidelines below should help:",
