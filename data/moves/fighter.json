@@ -2,23 +2,17 @@
   {
     "id": "fgh001",
     "title": "Signature Weapon",
-    "description": "Create your own unique, distinctive weapon. To start with, **choose its base** (or create a new one with the GM).  Choose 2 enhancements and then name it (Ataraxia, Cryptbreaker etc)",
-    "details": true,
+    "description": "Create your own unique, distinctive weapon. To start with, **choose its base** (or create a new one with the GM).  Choose 2 enhancements and then name it __fghsn__(Ataraxia, Cryptbreaker etc)",
     "pickOne": [
       "*A small pair* - 1d4  DMG **hand**, **precise** **light** (**adv** on **dmg** rolls)",
       "*Medium-sized & versatile* - 1d6  DMG **close**",
       "*Large-sized & powerful* - 1d8  DMG **close**, **two-handed**",
       "*Ranged* - 1d6  DMG **near**, **ammo** **reload**, **two-handed**"
     ],
-    "outcomes": [      
+    "submoves": [
       {
-        "range": "Enhancements",
-        "text": "**piercing**, **precise**, **sharp** (increase DMG size **one step**), **two-handed** (increase DMG to 1d12)"
-      },
-      {
-        "range": "Enchantments",
-        "text": "",
-        "bullets": [
+        "title": "Enhancements (choose 2)",
+        "pick":  [
           "Adaptable - choose an extra range (**hand**, **close**, **near**, **far**",
           "Adamantine - it's indestructible",
           "Alarming - it glows in the presence of one creature type",

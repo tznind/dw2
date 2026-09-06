@@ -60,7 +60,7 @@
   "The Fighter": {
     "_movesFile": "data/moves/fighter.json",
     "description": "An expert in arms and armor; a professional in the deadliest proving ground",
-    "paths": ["Brawler", "Spellblade", "Tactician"],
+    "paths": ["Bulwark", "Spellblade", "Tactician"],
     "level1Help": "At Level 1 your max hp is 10. Choose str or dex to be +2 and the other to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
@@ -255,14 +255,14 @@
     "nec004": false,
     "nec005": false
   },
-  "Brawler": {
-    "_movesFile": "data/moves/brawler.json",
-    "description": "You know how to fight and need no silly arms or fancy protections",
-    "brw001": true,
-    "brw002": false,
-    "brw003": false,
-    "brw004": false,
-    "brw005": false
+  "Bulwark": {
+    "_movesFile": "data/moves/bulwark.json",
+    "description": "Unstoppable force? Meet immovable object!",
+    "bul001": true,
+    "bul002": false,
+    "bul003": false,
+    "bul004": false,
+    "bul005": false
   },
   "Spellblade": {
     "_movesFile": "data/moves/spellblade.json",
