@@ -50,8 +50,6 @@
             ]
         }
     ],
-
-
     "if": [
         {
             "condition": {"hasMove": "wiz001"},

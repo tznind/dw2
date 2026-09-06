@@ -5,11 +5,11 @@
     "description": "You have a close connection with a deity who empowers you to spread their ideals. Give them a name and pronouns: __dna:Deity Name__, __dpr:Pronouns__.",
     "outcomes": [
         {
-            "text": "You can **Cast a Spell**+wis with any effect under your deity's Domain(s). To Cast a Spell you need to invoke your deity's name aloud.\n\nWrite a 2-Depth Relationship with them. When you **Cast a Spell**, ✴On a 7-9, you can erase 1 Depth with your deity instead of the other options.\n\nYou can gain Depth with your deity by protecting their worshippers, spreading their faith, and vanquishing their enemies (GM's call)."
+            "text": "You can **Cast a Spell**+wis with any effect under your deity's Domain(s). To Cast a Spell you need to invoke your deity's name aloud.\n\nWrite a 2-Depth Relationship with them. When you **Cast a Spell** this way, your unique 7-9 option is:\n\n- your deity disapproves; erase 1 Depth with them.\n\nYou can gain Depth with your deity by protecting their worshippers, spreading their faith, and vanquishing their enemies (GM's call)."
         },
         {
             "range": "Domain",
-            "text": " __ddom:Craft, Light, Nature, Order, Travel etc__"
+            "text": " __ddom:Craft, Law, Light, Nature, Travel etc__"
         },
         {
             "range": "Worshippers",
@@ -18,6 +18,34 @@
         {
             "range": "Enemies",
             "text": " __dene:bandits, industrialists, nocturnal monsters, rebels, undead etc__"
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Domains",
+            "description": "**\"Any effect under your deity's Domain(s)\"** is intentionally broad. Here are some examples for each domain:",
+            "outcomes": [
+                {
+                    "range": "Craft",
+                    "text": "assemble or create objects, dismantle crafted objects, know who created something"
+                },
+                {
+                    "range": "Law",
+                    "text": "command someone, detect deceit, summon enforcers"
+                },
+                {
+                    "range": "Light",
+                    "text": "light up a room, conjure light-based illusions, call down searing light from above"
+                },
+                {
+                    "range": "Nature",
+                    "text": "rapidly grow vegetation, summon animals to your aid, change the weather"
+                },
+                {
+                    "range": "Travel",
+                    "text": "find or create shelter, carve a path through a hazard or obstacle, teleport somewhere"
+                }
+            ]
         }
     ]
   }

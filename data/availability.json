@@ -31,7 +31,7 @@
   "The Cleric": {
     "_movesFile": "data/moves/cleric.json",
     "description": "No mere priest, a divine emissary armed with steel and powers from above",
-    "paths": ["Healer", "Oracle", "Warpriest"],
+    "paths": ["Caregiver", "Oracle", "Warpriest"],
     "level1Help": "At Level 1 your max hp is 8 and your wis is +2. Choose str or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
@@ -282,8 +282,8 @@
     "tac004": false,
     "tac005": false
   },
-  "Healer": {
-    "_movesFile": "data/moves/healer.json",
+  "Caregiver": {
+    "_movesFile": "data/moves/caregiver.json",
     "description": "What good is a faith that doesn't make the world whole?",
     "hlr001": true,
     "hlr002": false,
