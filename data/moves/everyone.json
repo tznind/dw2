@@ -306,7 +306,7 @@
   {
     "id": "evy011",
     "title": "Comfort or Support",
-    "category": "Extra Moves",
+    "category": "Core Moves",
     "hideCheckbox": true,
     "outcomes": [
        
@@ -395,22 +395,27 @@
     "title": "Make Camp",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "Once per session, when you **spend a few hours resting** (even while adventuring), describe cooperatively what each PC is up to. Things in the world worsen each time you **Make Camp**.\n\nWhen you **finish Making Camp**, each PC regains half their lost HP (rounded down) and clears one marked Condition."
+    "description": "Once per session, when you **spend a few hours resting** (even while adventuring), describe cooperatively what each PC is up to. Things in the world worsen each time you **Make Camp**.\n\nWhen you **finish Making Camp**, each PC regains all HP and clears one marked Condition."
   },
   {
     "id": "evy016",
     "title": "Perform a Ritual",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "When you **draw on a font of magical power** (object, person, or place) to create an effect, tell the GM what you're trying to achieve. The GM will ask for requirements equal to the effect's mag (min. 1) from the following (filling in the blanks or making choices when needed):\n- First you must ...\n- It's going to take days/weeks/months\n- It will require ...\n- The effect will be unreliable or limited\n- You and your allies will risk ...\n- You'll need help from ...\n- You'll have to destroy ... to do it\n\nOnce all requirements are fulfilled, the ritual is complete and the magical effect takes place."
+    "description": "When you **draw on a font of magical power** (object, person, or place) to create an effect, tell the GM what you're trying to achieve. The GM will ask for requirements up to the effect's mag (min. 1) from the following (filling in the blanks or making choices when needed):\n- First you must ...\n- It's going to take days/weeks/months\n- It will require ...\n- The effect will be unreliable or limited\n- You and your allies will risk ...\n- You'll need help from ...\n- You'll have to destroy ... to do it\n\nOnce all requirements are fulfilled, the ritual is complete and the magical effect takes place."
   },
   {
     "id": "evy017",
     "title": "Reach Your Limit",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:\n- **Angry** — Lash out at your allies or break something important\n- **Distracted** — Wander off alone or miss something relevant\n- **Exhausted** — Collapse or give up when it matters\n- **Frightened** — Hide or flee from danger\n- **Insecure** — Overcompensate or harshly criticize someone\n\nAfter the outburst, lock the chosen Condition."
-  },
+    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:\n- **Angry** — Lash out at your allies or break something important\n- **Distracted** — Wander off alone or miss something relevant\n- **Exhausted** — Collapse or give up when it matters\n- **Frightened** — Hide or flee from danger\n- **Insecure** — Overcompensate or harshly criticize someone\n\nAfter the outburst, lock the chosen Condition.",
+    "submoves": [
+        {
+            "title": "Note:",
+            "description": "If your outburst isn't extreme enough, the GM may ask you to go further."
+        }
+    ]},
   {
     "id": "evy018",
     "title": "Undertake a Perilous Journey",
