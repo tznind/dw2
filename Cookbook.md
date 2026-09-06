@@ -645,6 +645,8 @@ Beyond basic roll-based moves, the system supports several specialized move type
 - Creates dropdown menus populated with moves from those roles
 - Allows character versatility and cross-class abilities
 - By default, filters out moves you already have from current roles
+- Optional `takeMoves` restricts the dropdown to specific move IDs (e.g. `"takeMoves": ["battlehard"]`) - handy for granting one specific move with its own flavour text instead of a whole role/category
+- If filtering (via `takeCategory`, `takeMoves`, or just a role with one eligible move) leaves only one option, it's preselected automatically - same as the role dropdown when only one role qualifies
 
 **Allow Duplicates:**
 
@@ -685,6 +687,37 @@ Create a dedicated "Equipment" role with gear options, then allow players to sel
 ```
 
 This creates a dropdown showing all Equipment moves (Weapon, Armor, Vehicle, etc.). Players can select the same item multiple times - perfect for tracking multiple weapons, armor sets, or other gear with individual customization.
+
+### Conditional Moves (if/then/else)
+
+**When to use:** A move's content should change depending on whether the character already has a specific other move.
+
+```json
+{
+  "id": "nav-bh",
+  "title": "Battlehardeneder",
+  "description": "You gain the **Battle Hard** move. If you have it instead add the following extra options:",
+  "if": [
+    {
+      "condition": { "hasMove": "battlehard" },
+      "then": {
+        "outcomes": [
+          { "text": "You can spend a **Valor** to ignore damage from a single attack" }
+        ]
+      },
+      "else": {
+        "takeFrom": ["Lord Commander"],
+        "takeMoves": ["battlehard"]
+      }
+    }
+  ]
+}
+```
+
+**Key Features:**
+- `if` is an array of rules, evaluated in order; each rule's `then` (condition true) or `else` (condition false) properties are merged verbatim into the move's root, later rules winning on conflicts
+- Only `hasMove` is currently supported as a condition - true if the character already has that move natively from one of their current roles (not counting moves picked up via someone else's `takeFrom`)
+- Only affects the move's own root properties (outcomes, takeFrom, etc.) - not evaluated inside submoves
 
 ### Move Categories
 
