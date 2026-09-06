@@ -10,7 +10,7 @@
             "bullets": [
                 "Treat any 6- when you **Pull Strings** on them as a 7-9",
                 "You can always ask them \"What do you really need right now?\" when you **Sense Motive**, regardless of the roll",
-                "They'll give you small favors (in their eyes), such as: minor funding; introduction; lent items; etc."
+                "They'll give you insignificant favors (in their eyes), such as: small funding; introduction; borrowing of possessions for a limited time; etc."
             ]
         }
     ],
@@ -33,6 +33,45 @@
   },
   {
     "id": "dip002",
+    "title": "Cards on the Table",
+    "description": "When you **reveal your true intentions to a foe or stranger**, you may ask them a number of questions from the list below, up to your CHA (min 1). They will answer honestly, but ask a question back from the list in return each time. At the end of the scene, if you lied in your own answers, lock a Condition.",
+    "outcomes": [
+        {
+            "text": "",
+            "bullets": [
+                "How might I convince you to ...?",
+                "What do you most want me to do?",
+                "What leverage or advantage do you have?",
+                "What obligation or vulnerability is limiting you?",
+                "Who or what do you serve?"
+            ]
+        }
+    ]
+  },
+  {
+    "id": "dip003",
+    "title": "Countercharm",
+    "description": "When you try to impede a mind-influencing effect, roll+CHA.",
+    "outcomes": [
+        {
+            "range": "10+",
+            "text": "It doesn't affect you or your allies."
+        },
+        {
+            "range": "7-9",
+            "text": "You or your allies are unaffected (your call)."
+        },
+        {
+            "range": "6-",
+            "text": "It's beyond your ken; mark 1 XP and the GM makes a Move."
+        },
+        {
+            "text": "Once per scene, when you or an ally would mark a Condition due to external influence, you (or they) don't."
+        }
+    ]
+  },
+  {
+    "id": "dip004",
     "title": "Friends in High Places",
     "description": "When you **seek the help of a relevant NPC**, roll+cha. If you owe them a favor (your call) or hold a Debt against them, roll with **adv**.",
     "outcomes": [
@@ -51,12 +90,7 @@
     ]
   },
   {
-    "id": "dip003",
-    "title": "Heart On Your Sleeve",
-    "description": "When you **Sense Motive** **by speaking openly and honestly**, you can either ask an extra question, or forgo rolling and ask questions equal to your cha (even on a 6-). For each question you ask, they may ask you one in return. If you answer with lies, mark a Condition per question you asked."
-  },
-  {
-    "id": "dip004",
+    "id": "dip005",
     "title": "Parley",
     "description": "When you **call for a truce or ceasefire**, roll+cha. If you know what all other parties want (or you hold a Debt against them), roll with **adv**.",
     "outcomes": [
@@ -71,25 +105,6 @@
         {
             "range": "6-",
             "text": "They misread or exploit your intent; mark 1 XP and the GM makes a Move."
-        }
-    ]
-  },
-  {
-    "id": "dip005",
-    "title": "'Truth' is a Complicated Thing",
-    "description": "When you **tell an outrageous lie**, roll+cha.",
-    "outcomes": [
-        {
-            "range": "10+",
-            "text": "NPCs believe you until convinced otherwise."
-        },
-        {
-            "range": "7-9",
-            "text": "They're fooled, but not for long."
-        },
-        {
-            "range": "6-",
-            "text": "It badly backfires; mark 1 XP and the GM makes a Move."
         }
     ]
   }
