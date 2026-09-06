@@ -31,7 +31,7 @@ window.CardInitializers.origins = function(container, suffix) {
         },
         "The Wizard": {
             ancestry: "e.g. dwarf, elf, golem, etc. What event in your childhood drew you to the arcane?",
-            community: "e.g. amateur magicians, landed gentry, nomadic people, etc. Was magic valued among your people? Why?",
+            community: "e.g. amateur magicians, landed gentry, nomadic people, etc. Was magic valued among your people? Why? Why not?",
             background: "e.g. cursed person, mercenary, street magician, etc. How much did you pay or sacrifice to learn the impossible?"
         }
     };

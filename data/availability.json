@@ -89,7 +89,7 @@
   },
   "The Wizard": {
     "_movesFile": "data/moves/wizard.json",
-    "description": "A life of sacrifice & dedication with a single goal: master reality",
+    "description": "A lifetime of study & dedication in exchange for mastering reality",
     "paths": ["Evoker", "Illusionist", "Necromancer"],
     "level1Help": "At Level 1 your max hp is 6 and your int is +2. Choose dex or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
@@ -98,7 +98,7 @@
         "title": "Choose an additional weapon (or create a new one with the GM):",
         "options": [
           { "name": "bejeweled skull cap", "details": "Add 1 to your Armor", "uses": "" },
-          { "name": "delicate grimoire", "details": "Once per Scene, you may reference or study it to recover 1 Aether", "uses": "" },
+          { "name": "delicate grimoire", "details": "Once per session, you may reference or study it to Prepare a School instantly", "uses": "" },
           { "name": "unwieldy staff", "details": "1d6 dmg #close #hand #two-handed", "uses": "" }
         ]
       },
@@ -109,7 +109,7 @@
           { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
           { "name": "bag of books", "details": "Mark to find a record of relevant information", "uses": "3" },
           { "name": "dagger", "details": "1d4 dmg #ammo #hand #close #piercing #precise", "uses": "" },
-          { "name": "potion of healing", "details": "Mark to recover half your lost HP (rounded down) or clear one locked Condition", "uses": "1" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP (rounded down) or clear one locked Condition", "uses": "1" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
         ]
       }
