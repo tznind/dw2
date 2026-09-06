@@ -2,7 +2,23 @@
   {
     "id": "bur001",
     "title": "Expert Treasure-hunter",
-    "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**.",
+    "if": [
+      {
+        "condition": {"hasMove": "rgu001"},
+        "then": {
+          "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**."
+        },
+        "else": {
+          "description": "You don't have the **Tricks of the Trade** Rogue Starting Move, so you gain it, but only with these two Skills. If you already had any of these Roguish Skills, work with the GM to create a new one for each redundant Skill.",
+          "submoves": [
+            {
+              "title": "Tricks of the Trade",
+              "description": "When you **Defy Danger** or **Sneak Past** by applying one of your Roguish Skills, you cheat; roll with 1d8+1d6 (instead of 2d6)."
+            }
+          ]
+        }
+      }
+    ],
     "outcomes": [
       {
         "text": "",
@@ -25,7 +41,7 @@
     "description": "When you take this Move you get Luck equal to your WIS (min 1). When you **Defy Danger** or **Trade Blows**, on a 7-9, you can mark Luck instead of the other options.",
     "outcomes": [
       {
-        "text": "When you **Enjoy Downtime**, you can spend 1 Treasure helping an NPC(s) to regain Luck equal to your cha."
+        "text": "When you **Enjoy Downtime**, you can spend 1 Treasure helping an NPC(s) to regain Luck equal to your WIS (min 1)."
       }
     ],
     "tracks": [

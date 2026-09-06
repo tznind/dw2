@@ -2,7 +2,23 @@
   {
     "id": "asn001",
     "title": "Dirty Deeds",
-    "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**.",
+    "if": [
+      {
+        "condition": {"hasMove": "rgu001"},
+        "then": {
+          "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**."
+        },
+        "else": {
+          "description": "You don't have the **Tricks of the Trade** Rogue Starting Move, so you gain it, but only with these two Skills. If you already had any of these Roguish Skills, work with the GM to create a new one for each redundant Skill.",
+          "submoves": [
+            {
+              "title": "Tricks of the Trade",
+              "description": "When you **Defy Danger** or **Sneak Past** by applying one of your Roguish Skills, you cheat; roll with 1d8+1d6 (instead of 2d6)."
+            }
+          ]
+        }
+      }
+    ],
     "outcomes": [
       {
         "text": "",
@@ -98,7 +114,7 @@
   {
     "id": "asn005",
     "title": "Stalker in Shadows",
-    "description": "Add *hide in shadows* to your Roguish Skills.",
+    "description": "Add *hide in shadows* to your Roguish Skills. If you already have it, instead work with the GM to create a new Roguish Skill.",
     "outcomes": [
       {
         "text": "When you **Sneak Past** with a Roguish Skill, roll with 1d10+1d6 (instead of 1d8+1d6)"

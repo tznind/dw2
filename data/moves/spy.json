@@ -2,7 +2,23 @@
   {
     "id": "spy001",
     "title": "The One for the Job",
-    "description": "Add the following to your Roguish Skills.",
+    "if": [
+      {
+        "condition": {"hasMove": "rgu001"},
+        "then": {
+          "description": "Add the following to your Roguish Skills."
+        },
+        "else": {
+          "description": "You don't have the **Tricks of the Trade** Rogue Starting Move, so you gain it, but only with these two Skills. For each Skill that is redundant, work with the GM to create a new one.",
+          "submoves": [
+            {
+              "title": "Tricks of the Trade",
+              "description": "When you **Defy Danger** or **Sneak Past** by applying one of your Roguish Skills, you cheat; roll with 1d8+1d6 (instead of 2d6)."
+            }
+          ]
+        }
+      }
+    ],
     "tracks": [
       {
         "name": "Masks",
