@@ -2,27 +2,42 @@
   {
     "id": "ill001",
     "title": "Illusion Magic",
-    "description": "If you aren't a Wizard, you can **Cast a Spell**+int by combining a verb and a substance from the **Illusion** (substance: sight and/or sounds; verbs: cloak; disguise) School of Magic. At the start of each session you get Aether equal to your int. For more details, see the Wizard Starting Move, **Weave the Arcane**.",
-    "tracks": [
+    "if": [
       {
-        "name": "Aether",
-        "max": 3,
-        "shape": "circle"
-      }
-    ],
-    "outcomes": [
-      {
-        "text": "If you're a Wizard, add the following verbs to your repertoire:",
-        "bullets": [
-          "Make permanent",
-          "Substantiate"
-        ]
+        "condition": {"hasMove": "wiz001"},
+        "then": {
+          "description": "Add the verbs **make permanent** and **substantiate** to the Illusion School's repertoire, and when you **Make Camp** you can always mark Illusion in addition to your normal 3 Prepared Schools."
+        },
+        "else": {
+          "description": "Gain the **Weave the Arcane** Wizard Starting Move, though you only have access to Illusion. You start with Illusion Prepared; mark it now.\n\n You can **Cast a Spell**+int by combining a verb and a substance from Illusion to create an effect, as long as you have your arcane focus, both hands otherwise free, and the ability to speak aloud.",
+          "tracks": [
+            {
+              "name": "Illusion Prepared",
+              "shape": "hexagon",
+              "max": 1
+            }
+          ],
+          "outcomes": [
+            {
+              "text": "Your unique 7-9 option is: forget Illusion until you next **Make Camp**"
+            }
+          ],
+          "submoves": [
+            {
+              "title": "Illusion",
+              "outcomes": [
+                { "range": "Substance", "text": "Sights and/or sounds" },
+                { "range": "Verbs", "text": "Cloak; Disguise" }
+              ]
+            }
+          ]
+        }
       }
     ],
     "submoves": [
       {
-        "title": "",
-        "description": "Once per Scene, when someone believes in one of your illusions, clear a Condition."
+        "title": "Trickster",
+        "description": "Once per Scene, when **someone believes a lie because of one of your illusions**, clear a Condition."
       }
     ]
   },
@@ -34,7 +49,7 @@
   {
     "id": "ill003",
     "title": "Mirror Image",
-    "description": "When you **would suffer damage**, you may spend 1 Aether to reveal that you were an illusion and prevent all dmg; say where **near** you actually are."
+    "description": "When you **would suffer damage**, you may mark a Condition to reveal that you were an illusion and prevent all dmg; say where **near** you actually are."
   },
   {
     "id": "ill004",
