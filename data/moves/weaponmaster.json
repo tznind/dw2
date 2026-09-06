@@ -1,0 +1,74 @@
+[
+  {
+    "id": "wm001",
+    "title": "The Blade Reforged",
+    "description": "Gain a **Signature Weapon**, following the Fighter's Starting Move of the same name or give it two more enhancements or gain a second Signature Weapon.", 
+    "if": [
+      {
+        "condition": {"hasMove": "fgh001"},
+        "then": {
+          "outcomes": [
+            {               
+              "text": "Either give it two more enhancements or gain a second Signature Weapon."
+            }
+          ],
+          "pickOne": [
+              "Two extra enhancements",
+              "Gain a second signature weapon"
+            ]
+        },
+        "else": {
+          "takeFrom": ["The Fighter"],
+          "takeMoves": ["fgh001"]
+        }
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Enhance",
+        "description": "When you **Enjoy Downtime**, you may also do the following:",
+        "outcomes": [
+          {
+            "text": "*Enhance* - Spend 1 Treasure and choose a **magic item** or **Artifact**. It becomes part of your **Signature Weapon**, which gains the item's properties, Moves, and whichever **tags** make sense. A Signature Weapon may only be grafted with one item at a time; a previously-grafted item can be split as part of this activity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wm002",
+    "title": "Advanced Fighting Styles",
+    "description": "You've mastered an especially difficult or obscure fighting style. Choose one below:",
+    "pickOne": [
+      "Might of Arms. You can comfortably wield **two-handed** melee weapons in one hand, and even dual-wield them",
+      "Point Blank. All ranged weapons you wield gain **hand** and **close**. While using one up **close** or closer, deal +1 dmg",
+      "Spellbreaker. When a **close** NPC tries to create a magical effect, you may interrupt and stop it; mark a **Condition** from backlash"
+    ]
+  },
+  {
+    "id": "wm003",
+    "title": "Boot Knife",
+    "description": "Any weapon that isn't **two-handed** can be easily **concealed** by you. Gain a set of adventuring gear (even if you already have one). You may mark a use of adventuring gear to withdraw a mundane weapon; mark an additional use if the weapon is **two-handed**."
+  },
+  {
+    "id": "wm004",
+    "title": "Secret Weapon",
+    "description": "*The Hand That Wields* - When you **Trade Blows** with an ordinary weapon, or no weapon at all, on a 10+, you may instead choose to clear a Condition and, on a 6-, mark 2 XP instead of 1.",
+    "outcomes": [
+      {
+        "text": "When you finally draw your **Signature Weapon** after trying to defeat a foe without it, until the fight ends, after you roll to **Trade Blows** you may mark a Condition to increase the result by one step (6- → 7-9 → 10+)."
+      }
+    ]
+  },
+  {
+    "id": "wm005",
+    "title": "Snap the Blade",
+    "description": "When you inflict **dmg** with a weapon, after the dmg roll you may temporarily break the weapon (if it isn't indestructible) to instead deal max dmg. The weapon becomes nearly useless until repaired.",
+    "details": true,
+    "outcomes": [
+      {
+        "text": "When you **Make Camp**, you may repair one **Signature Weapon** or mundane weapon that has been broken in this or a similar way."
+      }
+    ]
+  }
+]

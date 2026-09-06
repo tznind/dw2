@@ -1,0 +1,89 @@
+[
+  {
+    "id": "out001",
+    "title": "Where I Come From…",
+    "description": "When you **tell someone a new story from your homeland** (or about its practices, stories, traditions, etc.), mark and answer a question below and clear a Condition. When all five are marked, gain 1 XP and clear all questions.",
+    "tracks": [
+      { "name": "Stories", "max": 5, "shape": "circle" }
+    ],
+    "submoves": [
+      {
+        "title": "Questions",
+        "pick": [
+              "What drawback or failure of your homeland still bothers you? __out1_0__",
+              "What heroes or monsters feature in your homeland's stories? __out1_1__",
+              "What unique wonder or danger is native to your homeland? __out1_2__",
+              "What food, art, or event is central to your homeland's lifestyle? __out1_3__",
+              "Who from your homeland do you look up to—or despise? __out1_4__"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "out002",
+    "title": "Pack Reader",
+    "description": "When you **Sense the Motive** **of a group of people**, you may ask an extra question below, no matter the roll.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "What recent event still troubles or excites them?",
+          "Who have they outcast recently, and where can I find them?",
+          "Who is hiding a secret from the others?",
+          "Who's really in charge here?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "out003",
+    "title": "Sacrificial Rite",
+    "description": "When you **ritually sacrifice something significant to your homeland's wardens** (be it ancestors, deities, spirits, totem, etc.), roll+WIS.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Gain all three.",
+        "bullets": [
+          "Ask the GM a question about an enemy; they'll answer honestly",
+          "Everyone who participated in the ritual clears a Condition",
+          "Gain a blessing proportional to the offering you made. Ask for what you want, the GM will say what you get."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose two."
+      },
+      {
+        "range": "6-",
+        "text": "Choose one, but the wardens will not accept your sacrifices again until you've fulfilled a demand ___o3dem___; mark XP and the GM makes a Move."
+      }
+    ]
+  },
+  {
+    "id": "out004",
+    "title": "Tread the Jeweled",
+    "description": "When you **Sense the Motive** **of someone more powerful than you** (politically, physically, economically, etc.), you may always also ask them:",
+    "outcomes": [
+      {"text": "How can I best ruin or humiliate you?. When you accomplish it, mark 1 XP and clear a Condition."}
+    ]
+  },
+  {
+    "id": "out005",
+    "title": "Unerring Intuition",
+    "description": "When you **arrive at a place you haven't visited before**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "The GM will tell you what's terribly wrong here; ask a follow-up question and gain **adv** to the first Move you roll when acting on the answer."
+      },
+      {
+        "range": "7-9",
+        "text": "As a 10+ but the answer disturbs or unsettles you; mark a Condition."
+      },
+      {
+        "range": "6-",
+        "text": "You get a cryptic hint…and nothing more; mark 1 XP and the GM makes a Move."
+      }
+    ]
+  }
+]

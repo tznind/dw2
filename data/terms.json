@@ -1,5 +1,13 @@
 [
   {
+      "term":"Condition",
+      "description":"Conditions represent exhaustion, frustration, maladies, or emotions that affect a PC as they adventure. They usually happen as a result of a Player's choices, and are rarely inflicted specifically upon you.  If **Marked** or **Locked** you have **dis** on its associated stat rolls.\n\nRare circumstances, such using certain magic items, may require a PC to mark a specific Condition. If they already have that Condition marked, they instead **lock it**. If it's already locked, then they mark another Condition of their choice."
+  },
+  {
+      "term":"Locked",
+      "description":"Not only is the Condition active and affecting your character, but it won't clear under normal circumstances. Only effects that specify that they clear locked Conditions can do so, such as **Enjoy Downtime** or **Reveal Your Struggle**."
+  },
+  {
     "term":"piercing",
     "description":"Cuts or bypasses thick armor and shielding. dmg of this type ignores armor and shield protection"
   },
@@ -8,8 +16,16 @@
     "description": "Roll three dice (3d6) and ignore the lowest result, keeping the highest two."
   },
   {
+      "term":"area",
+      "description":"Can affect multiple targe5ts in close proximity"
+  },
+  {
     "term": "Disadvantage",
     "description": "Roll three dice (3d6) and ignore the highest result, keeping the lowest two."
+  },
+  {
+    "term":"Distinctive",
+    "description":"Has an obvious sound or appearance that attracts attention"
   },
   {
     "term":"precise",
@@ -30,6 +46,14 @@
   {
     "term": "far",
     "description": "Meant for a target close enough to speak to, even if you may have to raise your voice"
+  },
+  {
+    "term":"Forceful",
+    "description":"inflicts powerful blows that knock targets back down"
+  },
+  {
+    "term":"light",
+    "description":"easily **dual wielded** with similar weapons (roll **dmg** for both and keep highest)"
   },
   {
     "term": "hand",
@@ -65,6 +89,22 @@
   },
   {
     "term":"Damage Steps",
-    "description":"Indicates how much damage a source does, they are d4, d6, d8, d10, d12 [ed: then maybe d8+d6 - like for MAG 4 spells?]"
+    "description":"Indicates how much damage a source does, they are d4, d6, d8, d10, d12, d12+d4, d12+d6, d12+d8, d12+d10"
+  },
+  {
+    "term":"Resistance",
+    "description":"When a PC or NPC [has Resistance], they *Resist* it, meaning it's nearly useless against them. Resistance does not provide dmg reduction like armor does, but instead influences the **Fictional Positioning** and whether dmg (and Moves) would be rolled at all.\n\nOvercoming such resistance usually requires imagination, special circumstances, or overwhelming power."
+  },
+  {
+    "term":"Max/Min Dmg",
+    "description":"Some effects, notably **Trade Blows**, say that minimum or maximum dmg is dealt. Instead of rolling, treat the roll as it was the lowest or highest possible.  This *does still count as rolling for damage* when it comes to triggering certain Moves and effects."
+  },
+  {
+    "term":"Dual Wielding",
+    "description":"When dealing **dmg** with two weapons at once, roll dmg for each and keep the highest result.  By default, only **light** weapons are designed to be wielded this way."
+  },
+  {
+    "term":"any effect under your deity's Domain",
+    "description":"Is intentionally broad. Here are some examples for each domain:\n- Law — command someone, detect deceit, summon enforcers\n- Light — light up a room, conjure light-based illusions, call down searing light from above\n- Craft — assemble or create objects, dismantle crafted objects, know who created something\n- Nature — rapidly grow vegetation, summon animals to your aid, change the weather\n- Travel — find or create shelter, carve a path through a hazard or obstacle, teleport somewhere"
   }
 ]

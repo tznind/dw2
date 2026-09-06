@@ -2,118 +2,88 @@
   {
     "id": "nec001",
     "title": "Necromantic Magic",
-    "description": "If you aren't a Wizard, you can **Cast a Spell**+int by combining a verb and a substance from the **Necromancy** (substance: unlife; verbs: briefly bestow; radiate) School of Magic. At the start of each session you get Aether equal to your int. For more details, see the Wizard Starting Move, **Weave the Arcane**.",
     "details": true,
-    "tracks": [
+    "if": [
       {
-        "name": "Aether",
-        "max": 3,
-        "shape": "circle"
-      }
-    ],
-    "outcomes": [
-      {
-        "text": "If you're a Wizard, add the substance **life** and the following verbs to your repertoire:",
-        "bullets": [
-          "Corrupt",
-          "Drain"
-        ]
+        "condition": {"hasMove": "wiz001"},
+        "then": {
+          "description": "Add the verbs **corrupt** and **drain** to the Necromancy School's repertoire, and when you **Make Camp** you can always mark Necromancy in addition to your normal 3 Prepared Schools."
+        },
+        "else": {
+          "description": "Gain the **Weave the Arcane** Wizard Starting Move, though you only have access to Necromancy. You start with Necromancy Prepared; mark it now.\n\n You can **Cast a Spell**+int by combining a verb and a substance from Necromancy to create an effect, as long as you have your arcane focus, both hands otherwise free, and the ability to speak aloud.",
+          "tracks": [
+            {
+              "name": "Necromancy Prepared",
+              "shape": "hexagon",
+              "max": 1
+            }
+          ],
+          "outcomes": [
+            {
+              "text": "Your unique 7-9 option is: forget Necromancy until you next **Make Camp**"
+            }
+          ],
+          "submoves": [
+            {
+              "title": "Necromancy",
+              "outcomes": [
+                { "range": "Substance", "text": "Unlife" },
+                { "range": "Verbs", "text": "Briefly bestow; Radiate" }
+              ]
+            }
+          ]
+        }
       }
     ],
     "submoves": [
       {
-        "title": "",
-        "description": "When you kill someone with a spell, they rise as a corporeal undead (ghoul, skeleton, zombie) under your command (3 HP, inflicts 1 dmg)."
+        "title": "Rise and Serve",
+        "description": "When you **kill a living creature with a spell**, you can create a ghoul, skeleton, or zombie from their body (2 HP, inflicts 1 dmg). Undead you create are loyal to you and follow your commands, though only #intelligent ones (which these are not) can understand complex tasks."
       }
     ]
   },
   {
     "id": "nec002",
     "title": "A Ghost at the Feast",
-    "description": "You can spend 1 Aether to see into the Ethereal Dimension, where ghosts and spirits reside. When you kill someone with a spell, they can rise as an incorporeal undead instead, such as a ghost, shade, or shadow (1 HP, inflicts 2 dmg **piercing** | **invisible** **immaterial**)."
+    "description": "When you **kill a living creature with a spell**, instead of creating something from their corpse, you can create a ghost, shade, or shadow from their soul (1 HP, inflicts 2 dmg #piercing | #invisible #immaterial). If you mark a Condition, you can create two undead—one from body and one from soul."
   },
   {
     "id": "nec003",
-    "title": "Consume Unlife",
-    "description": "Spend 1 Aether to sacrifice one or more of the undead under your command to recover HP equal to their current HP."
-  },
-  {
-    "id": "nec004",
-    "title": "Undead Horde",
-    "description": "You have raised a group of undead (starts at 5, up to 10) with the following tags: **hungry** **mindless** **slow** **undead**. They have HP and inflict dmg equal to their number.",
-    "tracks": [
-      {
-        "name": "Horde",
-        "shape": "circle",
-        "max": 10
-      }
-    ],
+    "title": "Lifeforce Is a Resource",
+    "description": "When you **Cast a Spell**:",
     "outcomes": [
       {
-        "text": "When you **command your undead horde**, spend 1 Aether and roll+cha."
-      },
-      {
-        "range": "10+",
-        "text": "They follow your orders to the best of their ability."
-      },
-      {
         "range": "7-9",
-        "text": "They get into trouble or you lose one of them (your call)."
-      },
-      {
-        "range": "6-",
-        "text": "Someone's coming for you; mark 1 XP and the GM makes a Move."
+        "text": "You can instead choose this: it drains your lifeforce; take 1 dmg **piercing**"
       }
     ],
     "submoves": [
       {
-        "title": "Strength",
-        "pickOne": [
-          "Quick (**fast** replaces **slow**)",
-          "Smart (**capable** replaces **mindless**)",
-          "Vicious (deals +1 dmg)"
-        ]
-      },
+        "title": "",
+        "description": "When you **attune yourself to the ethereal shackles that bind your undead to your will**, you may mark a Condition, then redistribute HP between yourself and any of your **near** undead as you see fit."
+      }
+    ]
+  },
+  {
+    "id": "nec004",
+    "title": "Sanctum to Unlife",
+    "description": "When you **set your mind to imbue a location with unholy power**, treat it as **Perform a Ritual**, but you can sacrifice living people or your own powerful undead 1-for-1 to negate each requirement—except for the last one. After you succeed, for each requirement the GM originally gave you, choose one benefit below:",
+    "outcomes": [
       {
-        "title": "Weakness",
-        "pickOne": [
-          "Afraid of light",
-          "Add **loud**",
-          "Weak (lose one after each Scene)"
+        "text": "",
+        "bullets": [
+          "Any creature that dies here automatically rises as an #undead that serves you",
+          "**holy** power is weak here, dealing half dmg (rounded down) and lessening other effects",
+          "It acts as a source of power for even darker rituals",
+          "It will attract willing devotees and followers",
+          "The change will last indefinitely (unless actively cleansed at its heart)"
         ]
       }
     ]
   },
   {
     "id": "nec005",
-    "title": "The Creature",
-    "description": "When you **Perform a Ritual** **to stitch a creature together from several corpses**, IT'S ALIVE! Roll+requirements fulfilled (1-4).",
-    "details": true,
-    "outcomes": [
-      {
-        "range": "10+",
-        "text": "Choose two from the following.",
-        "bullets": [
-          "They don't hate you",
-          "They're kind",
-          "They're more than an automaton",
-          "They're strong (double their HP and get **adv** on dmg rolls)"
-        ]
-      },
-      {
-        "range": "7-9",
-        "text": "Only one, and the GM adds a detail."
-      },
-      {
-        "range": "6-",
-        "text": "They escape with your name and a grudge."
-      }
-    ],
-    "submoves": [
-      {
-        "title": "",
-        "description": "The Creature has 6 HP and inflicts 1d8 dmg."
-      }
-    ]
+    "title": "Shed this Mortal Coil",
+    "description": "You've learned the secrets of lichdom. Gain a **Phylactery** (see Magic Items)."
   }
 ]

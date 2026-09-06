@@ -1,0 +1,76 @@
+[
+  {
+    "id": "bul001",
+    "title": "Stalwart Protector",
+    "description": "Once per session, when you **suffer dmg that isn't** **piercing**, you may ignore it entirely. If the dmg came from an enemy, also choose one:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "They leave themselves open and exposed",
+          "You learn a weakness or limitation of theirs",
+          "You infuriate or terrify them (GM's call)—and they act accordingly"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "I Am Your Shield",
+        "description": "When you interpose yourself between a **near** ally and an attack or source of dmg, you suffer its effects instead of them."
+      }
+    ]
+  },
+  {
+    "id": "bul002",
+    "title": "Armiger",
+    "description": "You know how to customize your armor and bring the best out of it. Choose one enhancement now:",
+    "pickOne": [
+      "**concealed** (it looks and sounds like mundane clothing)",
+      "reinforced (increase the dmg reduction by 1)",
+      "spiked (when a foe deals dmg to you, they take 1 dmg **piercing** in return)",
+      "warded (choose a non-physical dmg type such as acid or fire; it's never **piercing** for you)"
+    ],
+    "outcomes": [
+      {
+        "text": "When you successfully **Make Camp**, you may clear a use of a shield or change which enhancement your armor has."
+      }
+    ]
+  },
+  {
+    "id": "bul003",
+    "title": "Second Wind",
+    "tracks": [
+      {
+        "name": "Used",
+        "shape": "square"
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "When you **Face Death**, you also have access to the following option:",
+        "bullets": [
+          "*Not as Bad As It Looks*. Grit your teeth, force yourself through the pain, and get back up with 1 HP. You're no longer Helpless and you don't lock a Condition, but you can't choose this option again until after you successfully **Make Camp**."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bul004",
+    "title": "Silent Protector",
+    "description": "When **a combat situation begins**, choose an ally (PC or NPC) **near** you and gain the following benefits until the battle ends:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "*Retaliate*. When they get hurt for 2 or more dmg, gain **adv** on your next roll against the dmg source",
+          "*Watchful Eye*. You can always appear **near** them in a pinch, no matter where you were before. If you were in a tough spot, the GM will say how it's developed since you left"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bul005",
+    "title": "Taunting Shout",
+    "description": "When you cry out a challenge to your enemies, name one among them. For now, they will ignore your allies and treat you as the most obvious threat."
+  }
+]

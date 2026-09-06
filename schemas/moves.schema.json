@@ -12,6 +12,48 @@
         "description": "Unique identifier for the move (must be unique across all moves)",
         "pattern": "^[a-zA-Z0-9]+$"
       },
+      "if": {
+        "type": "array",
+        "description": "Optional array of conditional rules, evaluated in order at render time. Each rule's 'condition' is checked; the matching branch ('then' if true, 'else' if false) has its properties merged into the move's root (later rules win on conflicts). A property that's an array on both the root and the branch (e.g. submoves, outcomes, pick) is concatenated - root items first, then the branch's. A non-empty 'description' on both sides is concatenated with a space. Any other property (including one present on only one side) is replaced verbatim by the branch. Only used to vary a move's own properties based on character state - not applied within submoves.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "condition": {
+              "type": "object",
+              "description": "Condition to test. Currently supports 'hasMove', 'hasAnyMove', and 'hasGetParam'.",
+              "properties": {
+                "hasMove": {
+                  "type": "string",
+                  "description": "True if the character already has the move with this ID - either it's checked/taken, or it's a default move for one of their current roles."
+                },
+                "hasAnyMove": {
+                  "type": "array",
+                  "description": "True if the character already has any one of these move IDs (same check as 'hasMove', applied to each).",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "hasGetParam": {
+                  "type": "string",
+                  "description": "True if the page's current URL query string has this exact 'key=value' pair (e.g. 'move_wm001_pickone=2'). Read live from the URL, so it only reflects the state as of the last page load/render - it won't update until the page is reloaded.",
+                  "pattern": "^[^=]+=.*$"
+                }
+              },
+              "additionalProperties": false
+            },
+            "then": {
+              "type": "object",
+              "description": "Move properties to merge into the root when the condition is true."
+            },
+            "else": {
+              "type": "object",
+              "description": "Move properties to merge into the root when the condition is false."
+            }
+          },
+          "required": ["condition"],
+          "additionalProperties": false
+        }
+      },
       "title": {
         "type": "string",
         "description": "Display title of the move"
@@ -139,6 +181,14 @@
         "items": {
           "type": "string",
           "examples": ["Moves", "Equipment", "Advancement"]
+        }
+      },
+      "takeMoves": {
+        "type": "array",
+        "description": "Optional array of specific move IDs to restrict takeFrom to. Only moves whose id is in this list will be shown (in addition to any other takeFrom filtering). Useful for granting a specific move with flavour text rather than letting the player pick from a whole role/category.",
+        "items": {
+          "type": "string",
+          "examples": ["battlehard"]
         }
       },
       "takeFromAllowsDuplicates": {

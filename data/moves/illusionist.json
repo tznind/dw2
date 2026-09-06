@@ -2,62 +2,68 @@
   {
     "id": "ill001",
     "title": "Illusion Magic",
-    "description": "If you aren't a Wizard, you can **Cast a Spell**+int by combining a verb and a substance from the **Illusion** (substance: sight and/or sounds; verbs: cloak; disguise) School of Magic. At the start of each session you get Aether equal to your int. For more details, see the Wizard Starting Move, **Weave the Arcane**.",
-    "tracks": [
+    "if": [
       {
-        "name": "Aether",
-        "max": 3,
-        "shape": "circle"
-      }
-    ],
-    "outcomes": [
-      {
-        "text": "If you're a Wizard, add the following verbs to your repertoire:",
-        "bullets": [
-          "Make permanent",
-          "Substantiate"
-        ]
+        "condition": {"hasMove": "wiz001"},
+        "then": {
+          "description": "Add the verbs **make permanent** and **substantiate** to the Illusion School's repertoire, and when you **Make Camp** you can always mark Illusion in addition to your normal 3 Prepared Schools."
+        },
+        "else": {
+          "description": "Gain the **Weave the Arcane** Wizard Starting Move, though you only have access to Illusion. You start with Illusion Prepared; mark it now.\n\n You can **Cast a Spell**+int by combining a verb and a substance from Illusion to create an effect, as long as you have your arcane focus, both hands otherwise free, and the ability to speak aloud.",
+          "tracks": [
+            {
+              "name": "Illusion Prepared",
+              "shape": "hexagon",
+              "max": 1
+            }
+          ],
+          "outcomes": [
+            {
+              "text": "Your unique 7-9 option is: forget Illusion until you next **Make Camp**"
+            }
+          ],
+          "submoves": [
+            {
+              "title": "Illusion",
+              "outcomes": [
+                { "range": "Substance", "text": "Sights and/or sounds" },
+                { "range": "Verbs", "text": "Cloak; Disguise" }
+              ]
+            }
+          ]
+        }
       }
     ],
     "submoves": [
       {
-        "title": "",
-        "description": "Once per Scene, when someone believes in one of your illusions, clear a Condition."
+        "title": "Trickster",
+        "description": "Once per Scene, when **someone believes a lie because of one of your illusions**, clear a Condition."
       }
     ]
   },
   {
     "id": "ill002",
     "title": "Alter Perception",
-    "description": "When you **touch someone or something**, spend 1 Aether to alter one of their perceptible aspects. For example, you can make it seem like they're from a different ancestry, or that an item is magical when it really isn't (and vice versa). This effect lasts until you dismiss it or until the end of the Scene."
+    "description": "When you **touch someone or something**, you can alter their perceptible aspects without **Casting a Spell**; mark a **Condition** if they are unwilling. For example you can change someone's perceived ancestry, outfit or accent, or you can make an item seem magical, brand new, or made of a different substance. The effect lasts until you dismiss it or until the end of the Scene."
   },
   {
     "id": "ill003",
     "title": "Mirror Image",
-    "description": "When you **would suffer damage**, you may spend 1 Aether to reveal that you were an illusion and prevent all dmg; say where **near** you actually are."
+    "description": "When you **would suffer damage**, you may mark a Condition to reveal that you were an illusion and prevent all dmg; say where **near** you actually are."
   },
   {
     "id": "ill004",
-    "title": "Color Spray",
-    "description": "When you **spray an array of flashing, colored light from your hands**, spend 1 Aether and roll+dex.",
-    "outcomes": [
-      {
-        "range": "10+",
-        "text": "A group of **close** NPCs are dazed for a while. You and your allies get **adv** on their next roll against them."
-      },
-      {
-        "range": "7-9",
-        "text": "They're dazed only for a moment."
-      },
-      {
-        "range": "6-",
-        "text": "The magic is countered or backfires; mark 1 XP and the GM makes a Move."
-      }
-    ]
+    "title": "Fool Me Once...",
+    "description": "When you **trick someone with an illusion**, the next time you **Pull Strings** on them you have **adv** and may roll+INT (instead of +CHA), even if they learn it was an illusion. You can share these benefits with other PCs that were part of the illusion."
   },
   {
     "id": "ill005",
-    "title": "Near-Death Experience",
-    "description": "When you or an ally would kill an NPC, spend 1 Aether to have the killing blow exist only as an illusion. They feel all the pain and trauma, but it wasn't real. They're alive and shaken to their core; the would-be killer gets **adv** to **Pull Strings** on them by threatening their safety or interests."
+    "title": "The Mirror Stares Back",
+    "description": "The first time each NPC **falls for one of your illusions**, you may ask them one question as if you **Sensed Motive**.",
+    "outcomes": [
+      {
+        "text": "When you **Cast a Spell** **to make an illusory copy of a person**, you can also mark a **Condition** to overcharge the spell.  If you do, the illusory person perfectly imitates their original, lasts indefinetly, and starts loyal but slowly gains autonomy over time. You cannot dismiss an overcharged illusory person."
+      }
+    ]
   }
 ]

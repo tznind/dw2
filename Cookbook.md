@@ -645,6 +645,8 @@ Beyond basic roll-based moves, the system supports several specialized move type
 - Creates dropdown menus populated with moves from those roles
 - Allows character versatility and cross-class abilities
 - By default, filters out moves you already have from current roles
+- Optional `takeMoves` restricts the dropdown to specific move IDs (e.g. `"takeMoves": ["battlehard"]`) - handy for granting one specific move with its own flavour text instead of a whole role/category
+- If filtering (via `takeCategory`, `takeMoves`, or just a role with one eligible move) leaves only one option, it's preselected automatically - same as the role dropdown when only one role qualifies
 
 **Allow Duplicates:**
 
@@ -685,6 +687,41 @@ Create a dedicated "Equipment" role with gear options, then allow players to sel
 ```
 
 This creates a dropdown showing all Equipment moves (Weapon, Armor, Vehicle, etc.). Players can select the same item multiple times - perfect for tracking multiple weapons, armor sets, or other gear with individual customization.
+
+### Conditional Moves (if/then/else)
+
+**When to use:** A move's content should change depending on whether the character already has a specific other move.
+
+```json
+{
+  "id": "nav-bh",
+  "title": "Battlehardeneder",
+  "description": "You gain the **Battle Hard** move. If you have it instead add the following extra options:",
+  "if": [
+    {
+      "condition": { "hasMove": "battlehard" },
+      "then": {
+        "outcomes": [
+          { "text": "You can spend a **Valor** to ignore damage from a single attack" }
+        ]
+      },
+      "else": {
+        "takeFrom": ["Lord Commander"],
+        "takeMoves": ["battlehard"]
+      }
+    }
+  ]
+}
+```
+
+**Key Features:**
+- `if` is an array of rules, evaluated in order; each rule's `then` (condition true) or `else` (condition false) properties are merged into the move's root, later rules winning on conflicts
+- Array-valued properties shared by both the root and the branch (`submoves`, `outcomes`, `pick`, `pickOne`, ...) are concatenated - root items first, then the branch's - so a branch can add to what's already there instead of replacing it
+- A non-empty `description` on both sides is likewise concatenated (with a space) rather than replaced
+- Every other property (including one present on only one side) is replaced verbatim by the branch
+- Supported conditions: `hasMove: "<id>"` (character already has that move), `hasAnyMove: ["<id>", ...]` (character has any one of the listed moves) - "has" means checked/taken or a default move for one of their current roles (not counting moves picked up via someone else's `takeFrom`) - and `hasGetParam: "<key>=<value>"` (the page's current URL query string has that exact key/value, e.g. `"move_wm001_pickone=2"`)
+- `hasGetParam` is read live off the URL at render time, so it can go stale if something else on the page changes that param without a reload/re-render - not a concern for the other conditions, which are always re-evaluated fresh
+- Only affects the move's own root properties - not evaluated inside submoves
 
 ### Move Categories
 

@@ -2,17 +2,52 @@
   {
     "id": "wiz001",
     "title": "Weave the Arcane",
-    "description": "You can **Cast a Spell**+int by combining a verb and a substance from the eight major Schools of Magic. You can combine verbs and substances from different Schools. To **Cast a Spell** you need your arcane focus, both hands otherwise free, and the ability to speak aloud.",
-    "tracks": [
-        {
-            "name": "Aether",
-            "max": 3,
-            "shape": "circle"
-        }
-    ],
+    "description": "You start with 3 Schools of Magic Prepared; mark them now. When you finish **Making Camp**, you can change which Schools you have Prepared.  You can **Cast a Spell**+int by combining a verb and a substance from your Prepared Schools to create an effect, as long as you have your arcane focus, both hands otherwise free, and the ability to speak aloud. You can combine verbs and substances from different Prepared Schools.",
     "outcomes": [
         {
-            "text": "At the start of each Scene you have Aether equal to your int. When you **Cast a Spell**, On a 7-9, you can spend Aether equal to the spell's mag instead of the other options."
+            "text": "Your unique 7-9 option is: forget a Prepared School until you next **Make Camp**"
+        }
+    ],
+    "tracks": [
+        {
+            "name": "Abjuration",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Conjuration",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Divination",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Enchantment",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Evocation",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Illusion",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Necromancy",
+            "shape": "hexagon",
+            "max": 1
+        },
+        {
+            "name": "Transmutation",
+            "shape": "hexagon",
+            "max": 1
         }
     ],
     "useTwoColumnsForSubmoves": true,

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "brs001",
+    "title": "Trance-Like Fury",
+    "description": "Gain the **Rage!** Barbarian Starting Move.\n\nIf you already have **Rage!** then you get the following additional benefits and penalties:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Add your str to your armor",
+          "When you *calm down*, mark an additional **Condition**",
+          "When you **Trade Blows**, you and your foe have **adv** to their dmg rolls"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "brs002",
+    "title": "Red Nails",
+    "description": "Once per session, when you **become Bloodied**, clear a Condition.\n\nWhile Bloodied, increase all dmg you deal by 1.\n\nWhen you deal dmg to a Bloodied foe, it's **piercing**"
+  },
+  {
+    "id": "brs003",
+    "title": "Spine-Chilling Countenance",
+    "description": "When you **Pull Strings** **by physically overpowering or manhandling them**, roll+STR (instead of +CHA) and, if they go back on their word later, gain **adv** the next Move you roll against them."
+  },
+  {
+    "id": "brs004",
+    "title": "The Beast Within",
+    "description": "When you **unleash the beast inside while Angry**, you shapeshift into a hybrid form between yours and one of following animals:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Bear. You **Resist** mundane weapons and fire",
+          "Boar. You **Resist** fear, terror, and intimidation, even from supernatural sources",
+          "Wolf. Increase your **dmg dice size** one step"
+        ]
+      },
+      {
+        "text": "To put the beast back under requires a great effort; mark a Condition."
+      }
+    ]
+  },
+  {
+    "id": "brs005",
+    "title": "When It Earns Me",
+    "description": "When you **Face Death** while Angry, you may also choose the option below.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Spit in Death's Face. Recover all HP and you don't become Helpless. Don't lock a Condition either."
+        ]
+      },
+      {
+        "text": "When you do, lose access to this Move until you gain it as an advancement again."
+      }
+    ]
+  }
+]

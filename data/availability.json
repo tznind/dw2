@@ -9,9 +9,9 @@
         "type": "pickOne",
         "title": "Choose a weapon (or create a new one with the GM):",
         "options": [
-          { "name": "a noble's crossbow", "details": "1d10 dmg #ammo #near #far #precise #piercing #reload #two-handed", "uses": "" },
-          { "name": "deadly-sharp sword cane", "details": "1d8 dmg #concealed #hand #precise #two-handed", "uses": "" },
-          { "name": "decorated long sword + buckler", "details": "1d8 dmg #hand. Mark to ignore half dmg (rounded down) from one attack", "uses": "1" }
+          { "name": "a noble's crossbow", "details": "1d8 dmg #ammo #near #far #precise #piercing #reload #two-handed", "uses": "" },
+          { "name": "deadly-sharp sword cane", "details": "1d6 dmg #concealed #hand #precise #two-handed", "uses": "" },
+          { "name": "decorated long sword + buckler", "details": "1d6 dmg #hand. Mark to ignore half dmg (rounded down) from one attack", "uses": "1" }
         ]
       },
       {
@@ -31,7 +31,7 @@
   "The Cleric": {
     "_movesFile": "data/moves/cleric.json",
     "description": "No mere priest, a divine emissary armed with steel and powers from above",
-    "paths": ["Healer", "Oracle", "Warpriest"],
+    "paths": ["Caregiver", "Oracle", "Warpriest"],
     "level1Help": "At Level 1 your max hp is 8 and your wis is +2. Choose str or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
@@ -60,16 +60,16 @@
   "The Fighter": {
     "_movesFile": "data/moves/fighter.json",
     "description": "An expert in arms and armor; a professional in the deadliest proving ground",
-    "paths": ["Brawler", "Spellblade", "Tactician"],
+    "paths": ["Bulwark", "Weaponmaster", "Tactician"],
     "level1Help": "At Level 1 your max hp is 10. Choose str or dex to be +2 and the other to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
         "title": "Choose an additional weapon (or create a new one with the GM):",
         "options": [
-          { "name": "intimidating greataxe", "details": "1d12 dmg #hand #two-handed", "uses": "" },
-          { "name": "twin shortswords", "details": "1d6 dmg #hand #precise #two-handed. adv on dmg rolls", "uses": "" },
-          { "name": "yew longbow", "details": "1d8 dmg #close #far #near #two-handed", "uses": "" }
+          { "name": "intimidating greataxe", "details": "1d8 dmg #hand #two-handed", "uses": "" },
+          { "name": "twin shortswords", "details": "1d6 dmg #hand #light #precise", "uses": "" },
+          { "name": "yew longbow", "details": "1d6 dmg #close #far #near #two-handed", "uses": "" }
         ]
       },
       {
@@ -79,7 +79,7 @@
           { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
           { "name": "breastplate", "details": "dmg reduction 2 (reduces all incoming dmg by 2, to a min of 1). Min STR+2 to use properly", "uses": "" },
           { "name": "studded leather", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
-          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or clear one Condition/affliction", "uses": "2" },
+          { "name": "medicine", "details": "Mark to cure an affliction or double the next healing received", "uses": "2" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
           { "name": "shield", "details": "Mark to ignore all dmg from one attack", "uses": "1" }
         ]
@@ -89,7 +89,7 @@
   },
   "The Wizard": {
     "_movesFile": "data/moves/wizard.json",
-    "description": "A life of sacrifice & dedication with a single goal: master reality",
+    "description": "A lifetime of study & dedication in exchange for mastering reality",
     "paths": ["Evoker", "Illusionist", "Necromancer"],
     "level1Help": "At Level 1 your max hp is 6 and your int is +2. Choose dex or cha to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
@@ -98,7 +98,7 @@
         "title": "Choose an additional weapon (or create a new one with the GM):",
         "options": [
           { "name": "bejeweled skull cap", "details": "Add 1 to your Armor", "uses": "" },
-          { "name": "delicate grimoire", "details": "Once per Scene, you may reference or study it to recover 1 Aether", "uses": "" },
+          { "name": "delicate grimoire", "details": "Once per session, you may reference or study it to Prepare a School instantly", "uses": "" },
           { "name": "unwieldy staff", "details": "1d6 dmg #close #hand #two-handed", "uses": "" }
         ]
       },
@@ -109,12 +109,41 @@
           { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
           { "name": "bag of books", "details": "Mark to find a record of relevant information", "uses": "3" },
           { "name": "dagger", "details": "1d4 dmg #ammo #hand #close #piercing #precise", "uses": "" },
-          { "name": "potion of healing", "details": "Mark to recover half your lost HP (rounded down) or clear one locked Condition", "uses": "1" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP (rounded down) or clear one locked Condition", "uses": "1" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
         ]
       }
     ],
     "wiz001": true
+  },
+  "The Barbarian": {
+    "_movesFile": "data/moves/barbarian.json",
+    "description": "A mighty stranger from an even stranger land",
+    "paths": ["Berserker", "Hedonist", "Outlander"],
+    "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "ancestral longsword", "details": "1d6 #close + shield. Mark to ignore all dmg from one attack", "uses": "1" },
+          { "name": "bloodstained greataxe", "details": "1d8 dmg #close #two-handed #forceful", "uses": "" },
+          { "name": "dual hammers", "details": "1d6 dmg #close. adv on dmg rolls", "uses": "" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "hearty feast", "details": "Mark to share it with your allies; everyone recovers half their max HP (rounded down)", "uses": "1" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP or clear a locked Condition", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
+          { "name": "trap kit", "details": "When you spend time setting up a trap, mark once to create a dangerous, impeding hazard for anyone in its range; it typically deals 1d4 dmg", "uses": "2" }
+        ]
+      }
+    ],
+    "bar001": true
   },
   "The Rogue": {
     "_movesFile": "data/moves/rogue.json",
@@ -127,7 +156,7 @@
         "title": "Choose an additional weapon (or create a new one with the GM):",
         "options": [
           { "name": "collapsible shortbow", "details": "1d6 dmg #ammo #close #near #precise #two-handed", "uses": "" },
-          { "name": "hidden daggers", "details": "1d4 dmg #ammo #hand #close #piercing #precise. If you Trade Blows with one in each hand, roll dmg with adv", "uses": "" },
+          { "name": "hidden daggers", "details": "1d4 dmg #ammo #concealed #hand #close #light #piercing #precise. **adv** on **dmg** rolls", "uses": "" },
           { "name": "reliable whip", "details": "1d4 dmg #close #near #precise. When you Defy Danger or Trade Blows, on a 10+, you can choose to have the target drop something they're holding or grab one of their extremities", "uses": "" }
         ]
       },
@@ -144,6 +173,33 @@
       }
     ],
     "rgu001": true
+  },
+  "Berserker": {
+    "_movesFile": "data/moves/berserker.json",
+    "description": "You're the hardest of them, with a touch of the uncanny",
+    "brs001": true,
+    "brs002": false,
+    "brs003": false,
+    "brs004": false,
+    "brs005": false
+  },
+  "Hedonist": {
+    "_movesFile": "data/moves/hedonist.json",
+    "description": "You know what is best in life, and how to take it",
+    "hed001": true,
+    "hed002": false,
+    "hed003": false,
+    "hed004": false,
+    "hed005": false
+  },
+  "Outlander": {
+    "_movesFile": "data/moves/outlander.json",
+    "description": "You can't take the homeland out of the…",
+    "out001": true,
+    "out002": false,
+    "out003": false,
+    "out004": false,
+    "out005": false
   },
   "Assassin": {
     "_movesFile": "data/moves/assassin.json",
@@ -199,23 +255,23 @@
     "nec004": false,
     "nec005": false
   },
-  "Brawler": {
-    "_movesFile": "data/moves/brawler.json",
-    "description": "You know how to fight and need no silly arms or fancy protections",
-    "brw001": true,
-    "brw002": false,
-    "brw003": false,
-    "brw004": false,
-    "brw005": false
+  "Bulwark": {
+    "_movesFile": "data/moves/bulwark.json",
+    "description": "Unstoppable force? Meet immovable object!",
+    "bul001": true,
+    "bul002": false,
+    "bul003": false,
+    "bul004": false,
+    "bul005": false
   },
-  "Spellblade": {
-    "_movesFile": "data/moves/spellblade.json",
-    "description": "Magic & steel combined can change—or break—the world",
-    "spb001": true,
-    "spb002": false,
-    "spb003": false,
-    "spb004": false,
-    "spb005": false
+  "Weaponmaster": {
+    "_movesFile": "data/moves/weaponmaster.json",
+    "description": "An expertise as ancient as it is deadly",
+    "wm001": true,
+    "wm002": false,
+    "wm003": false,
+    "wm004": false,
+    "wm005": false
   },
   "Tactician": {
     "_movesFile": "data/moves/tactician.json",
@@ -226,8 +282,8 @@
     "tac004": false,
     "tac005": false
   },
-  "Healer": {
-    "_movesFile": "data/moves/healer.json",
+  "Caregiver": {
+    "_movesFile": "data/moves/caregiver.json",
     "description": "What good is a faith that doesn't make the world whole?",
     "hlr001": true,
     "hlr002": false,
@@ -246,7 +302,7 @@
   },
   "Warpriest": {
     "_movesFile": "data/moves/warpriest.json",
-    "description": "Evil cannot be allowed to exist",
+    "description": "Evil cannot be tolerated",
     "wpr001": true,
     "wpr002": false,
     "wpr003": false,
@@ -259,8 +315,8 @@
     "dab002": true,
     "dab003": false,
     "dab004": false,
-    "dab005": false,
-    "dab006": false
+    "dab006": false,
+    "dab007": false
   },
   "Diplomat": {
     "_movesFile": "data/moves/diplomat.json",

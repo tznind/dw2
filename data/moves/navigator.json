@@ -133,5 +133,28 @@
     "title": "Starship Command",
     "description": "As a senior officer, you have been granted command of your own starship.",
     "grantsCard": "ship"
+  },
+  {
+    "id":"nav-bh",
+    "title": "Battlehardeneder",
+    "description": "You gain the **Battle Hard** move.  If you have it instead add the following extra options:",
+    "if":[
+      {
+        "condition":{
+          "hasMove":"battlehard"
+        },
+        "then":{
+          "outcomes": [
+                  {
+                    "text": "You can spend a **Valor** to ignore damage from a single attack"
+                  }
+                ]
+        },
+        "else":{
+             "takeFrom": ["Lord Commander"],
+          "takeMoves":["battlehard"]
+        }
+      }
+    ]
   }
 ]

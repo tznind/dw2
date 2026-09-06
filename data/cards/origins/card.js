@@ -4,6 +4,11 @@ window.CardInitializers.origins = function(container, suffix) {
     const helpers = suffix ? window.CardHelpers.createScopedHelpers(container, suffix) : window.CardHelpers;
 
     const hintsByRole = {
+        "The Barbarian": {
+            ancestry: "e.g. construct, minotaur, nephilim, etc. What makes your homeland so different from places here?",
+            community: "e.g. brutal warriors, hospitable travelers, isolated devotees, etc. How did they adapt to your homeland's environment?",
+            background: "e.g. dangerous bandit, powerful leader, renowned gladiator, etc. What betrayal or calamity caused your departure?"
+        },
         "The Bard": {
             ancestry: "e.g. gnome, orc, giantkin, etc. What makes your art different from your people's?",
             community: "e.g. ever-curious scholars, filthy rich people, reclusive artists, etc. How do your life circumstances still influence your art?",
@@ -20,13 +25,13 @@ window.CardInitializers.origins = function(container, suffix) {
             background: "e.g. feral child, healer, miner, etc. What cause made you leave your former life of peace behind?"
         },
         "The Rogue": {
-            ancestry: "e.g. catfolk, halfling, oozeling, etc. Were your parents law-abiding people?",
-            community: "e.g. denizens of the Underdark, homeless people, privileged pricks, etc. Did you experience a lot of crime firsthand?",
+            ancestry: "e.g. catfolk, firbolg, oozeling, etc. Were your parents law-abiding people?",
+            community: "e.g. denizens of the Underdark, a street gang, privileged pricks, etc. Did you experience a lot of crime firsthand?",
             background: "e.g. criminal, squire, teacher, etc. Was it a slippery slope or a conscious decision to become who you are now?"
         },
         "The Wizard": {
             ancestry: "e.g. dwarf, elf, golem, etc. What event in your childhood drew you to the arcane?",
-            community: "e.g. amateur magicians, landed gentry, nomadic people, etc. Was magic valued among your people? Why?",
+            community: "e.g. amateur magicians, landed gentry, nomadic people, etc. Was magic valued among your people? Why? Why not?",
             background: "e.g. cursed person, mercenary, street magician, etc. How much did you pay or sacrifice to learn the impossible?"
         }
     };

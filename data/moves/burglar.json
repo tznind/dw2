@@ -2,7 +2,23 @@
   {
     "id": "bur001",
     "title": "Expert Treasure-hunter",
-    "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**.",
+    "if": [
+      {
+        "condition": {"hasMove": "rgu001"},
+        "then": {
+          "description": "Add the following to your Roguish Skills. See the Rogue Starting Move, **Tricks of the Trade**."
+        },
+        "else": {
+          "description": "You don't have the **Tricks of the Trade** Rogue Starting Move, so you gain it, but only with these two Skills. If you already had any of these Roguish Skills, work with the GM to create a new one for each redundant Skill.",
+          "submoves": [
+            {
+              "title": "Tricks of the Trade",
+              "description": "When you **Defy Danger** or **Sneak Past** by applying one of your Roguish Skills, you cheat; roll with 1d8+1d6 (instead of 2d6)."
+            }
+          ]
+        }
+      }
+    ],
     "outcomes": [
       {
         "text": "",
@@ -22,10 +38,10 @@
   {
     "id": "bur002",
     "title": "Better Lucky Than Good",
-    "description": "When you take this Move you get Luck equal to your cha. When you **Defy Danger** or **Trade Blows**, on a 7-9, you can mark Luck instead of the other options.",
+    "description": "When you take this Move you get Luck equal to your WIS (min 1). When you **Defy Danger** or **Trade Blows**, on a 7-9, you can mark Luck instead of the other options.",
     "outcomes": [
       {
-        "text": "When you **Enjoy Downtime**, you can spend 1 Treasure helping an NPC(s) to regain Luck equal to your cha."
+        "text": "When you **Enjoy Downtime**, you can spend 1 Treasure helping an NPC(s) to regain Luck equal to your WIS (min 1)."
       }
     ],
     "tracks": [
@@ -40,15 +56,15 @@
   {
     "id": "bur003",
     "title": "Breaking & Entering",
-    "description": "When you make a plan to steal something, name the thing and ask the GM questions equal to your int. You and your allies get **adv** the first time they act following the plan.",
+    "description": "When you **set your mind to steal something**, name the thing and ask the GM questions equal to your WIS (min 1) and they will answer truthfully. When you acquire it, you and everyone who helped each clear a **Condition**:",
     "outcomes": [
       {
         "text": "",
         "bullets": [
           "What's its most powerful defence?",
           "Who else wants it?",
-          "Who will come after it?",
-          "Who will notice it's missing"
+          "What's the best way in or out?",
+          "What else am I missing regarding it?"
         ]
       }
     ]
@@ -61,7 +77,7 @@
   {
     "id": "bur005",
     "title": "Vanishing Act",
-    "description": "When you **are sure no one is paying attention directly to you**, you can disappear from a Scene entirely, not rejoining the narrative until the Scene ends. If you're in trouble or a bind, ask the GM what you must do to disappear and they will tell you (4 - int) of the following requirements:",
+    "description": "When you **are sure no one is paying attention directly to you**, you can disappear from a Scene entirely, not rejoining the narrative until the Scene ends. If you're in trouble or a bind, ask the GM what you must do to disappear and they will tell you up to (4 - WIS) of the following requirements:",
     "outcomes": [
       {
         "text": "",
