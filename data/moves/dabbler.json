@@ -50,33 +50,54 @@
             ]
         }
     ],
-    "submoves": [
-        {
-            "title": "Enchantment",
-            "outcomes": [
-                {
-                    "range": "Substance",
-                    "text": "Sapient Beings"
-                },
-                {
-                    "range": "Verbs",
-                    "text": "Modify Emotions;Temporarily Charm, ___denex___ (if you already had Enchantment)"
-                }
-            ]
-        },
-        {
-            "title": "Illusion",
-            "outcomes": [
-                {
-                    "range": "Substance",
-                    "text": "Sight and/or sounds"
-                },
-                {
-                    "range": "Verbs",
-                    "text": "Cloak; Disguise, ___dilex___ (if you already had Illusion)"
-                }
 
-            ]
+
+    "if": [
+        {
+            "condition": {"hasMove": "wiz001"},
+            "then":
+            {
+                "outcomes":[
+                    {
+                        "range":"Extra Enchantment Verb",
+                        "text":"__dab3ee__"
+                    },
+                    {
+                        "range":"Extra Illusion Verb",
+                        "text":"__dab3ei__"
+                    }
+                ]
+            },
+            "else": {
+                  "submoves": [
+                    {
+                        "title": "Enchantment",
+                        "outcomes": [
+                            {
+                                "range": "Substance",
+                                "text": "Sapient Beings"
+                            },
+                            {
+                                "range": "Verbs",
+                                "text": "Modify Emotions;Temporarily Charm"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Illusion",
+                        "outcomes": [
+                            {
+                                "range": "Substance",
+                                "text": "Sight and/or sounds"
+                            },
+                            {
+                                "range": "Verbs",
+                                "text": "Cloak; Disguise"
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     ]
   },
