@@ -9,9 +9,9 @@
         "type": "pickOne",
         "title": "Choose a weapon (or create a new one with the GM):",
         "options": [
-          { "name": "a noble's crossbow", "details": "1d10 dmg #ammo #near #far #precise #piercing #reload #two-handed", "uses": "" },
-          { "name": "deadly-sharp sword cane", "details": "1d8 dmg #concealed #hand #precise #two-handed", "uses": "" },
-          { "name": "decorated long sword + buckler", "details": "1d8 dmg #hand. Mark to ignore half dmg (rounded down) from one attack", "uses": "1" }
+          { "name": "a noble's crossbow", "details": "1d8 dmg #ammo #near #far #precise #piercing #reload #two-handed", "uses": "" },
+          { "name": "deadly-sharp sword cane", "details": "1d6 dmg #concealed #hand #precise #two-handed", "uses": "" },
+          { "name": "decorated long sword + buckler", "details": "1d6 dmg #hand. Mark to ignore half dmg (rounded down) from one attack", "uses": "1" }
         ]
       },
       {

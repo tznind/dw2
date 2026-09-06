@@ -1,33 +1,33 @@
 [
   {
     "id": "brd001",
-    "title": "Perform for an Audience",
-    "description": "You express yourself and affect others with a particular artistic skill: __bas__",
+    "title": "Perform Your Art",
+    "description": "You express yourself and affect others with a particular artistic skill. Is it cooking, music, poetry, or something else? When you perform your art for an audience, roll+CHA.",
     "outcomes": [
         {
             "range": "10+",
-            "text": "Choose 3 from below",
+            "text": "Choose three from below.",
             "bullets": [
-                "An audience member clears a Condition",
-                "An audience member gains **Advantage** on their next roll",
-                "Regain one use of your **artistic samples**",
-                "You get **Advantage** on your next **Pull Strings** over an audience member"
+                "Affect — An audience member clears a marked Condition",
+                "Connect — A PC audience member marks 1 Depth with you",
+                "Craft — Regain one use of **artistic samples** (see below)",
+                "Dazzle — An NPC audience member gives you a gift or tries to meet you privately (their call)"
             ]
         },
         {
             "range": "7-9",
-            "text": "Choose 2"
+            "text": "Only two."
         },
         {
             "range": "6-",
-            "text": "You feel the performance was awful; choose 1, but mark a Condition."
+            "text": "You feel the performance was awful; choose one below, but mark a Condition."
         }
     ],
     "submoves": [
         {
 
         "title": "Note",
-        "description": "You can choose any option more than once."
+        "description": "An option chosen more than once must apply to a new audience member."
         }
     ]
   }

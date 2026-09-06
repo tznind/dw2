@@ -29,17 +29,25 @@
   {
     "id": "dab003",
     "title": "A Kind of Magic",
-    "description": "You can **Cast a Spell** + int by combining a verb and a substance from the Wizard's **Enchantment** or **Illusion** Schools.",
+    "description": "You can **Cast a Spell** + int by combining a verb and a substance from the Wizard's **Enchantment** or **Illusion** Schools.  If you could already use these Schools, work with the GM to create a new verb for each redundant School",
     "tracks":[
         {
-            "name": "Aether",
-            "max": 3,
+            "name": "Enchantment",
+            "max": 1,
+            "shape": "circle"
+        },
+        {
+            "name": "Illusion",
+            "max": 1,
             "shape": "circle"
         }
     ],
     "outcomes": [
         {
-            "text": "To Cast a Spell you need to do a performance. At the start of each session, you get Aether equal to your int. When you **Cast a Spell**, On a 7-9, you can spend Aether equal to the spell's mag instead of the other options."
+            "text": "To Cast a Spell you need to do a performance. Your unique 7-9 option is:",
+            "bullets": [
+                "*Your magic is drained*; forget one of the Schools of Magic you have access to until you next **Make Camp**"
+            ]
         }
     ],
     "submoves": [
@@ -52,7 +60,7 @@
                 },
                 {
                     "range": "Verbs",
-                    "text": "Modify Emotions;Temporarily Charm"
+                    "text": "Modify Emotions;Temporarily Charm, ___denex___ (if you already had Enchantment)"
                 }
             ]
         },
@@ -65,7 +73,7 @@
                 },
                 {
                     "range": "Verbs",
-                    "text": "Cloak; Disguise"
+                    "text": "Cloak; Disguise, ___dilex___ (if you already had Illusion)"
                 }
 
             ]
