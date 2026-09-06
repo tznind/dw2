@@ -28,7 +28,22 @@
       {
         "condition": {"hasGetParam": "move_wm001_pickone=2"},
         "then": {
-          "multiplePick": 2
+          "multiplePick": 2,
+          "submoves": [
+          {
+            "title": "Second Weapon Enhancements (choose 2)",
+            "pick":  [
+              "Adaptable - choose an extra range (**hand**, **close**, **near**, **far**",
+              "Adamantine - it's indestructible",
+              "Alarming - it glows in the presence of one creature type",
+              "Grappling - after inflicting DMG, you can pull a target closer to you",
+              "Pinning - after inflicting DMG on a creature your size or smaller, you can have it stay there and immobilize them",
+              "**Piercing**",
+              "**Precise**",
+              "Sharp - increase DMG by 1"
+            ]
+          }
+        ]
         }
       }
     ]
