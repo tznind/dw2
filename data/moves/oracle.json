@@ -2,15 +2,33 @@
   {
     "id": "orc001",
     "title": "Visions From Above",
-    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the Knowledge Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **Knowledge** (or another Domain from Invoke the Divine) to your deity's Domains.",
-    "outcomes": [{
-      "text": "At the start of each session, roll 1d6 as your Fate Die and keep its result. **After someone rolls**, you may switch one die with your Fate Die. The die that was switched out becomes your new Fate Die."
-    },
-    {
-      "range": "Fate Die",
-      "text": "__orfd:Roll D6__"
-    }
-  ]
+    "description": "Gain the **Invoke the Divine** Cleric Starting Move if you don't already have it, except your deity's Domain is Knowledge. Choose your deity's worshippers and enemies as detailed in the Move.",
+    "if": [
+      {
+        "condition": {"hasMove": "clr001"},
+        "then": {
+          "outcomes": [
+            { "text": "Add Knowledge to your deity's domains. Is this a new aspect of your deity, a result of your unique connection to them, or something else?" }
+          ]
+        },
+        "else": {
+          "takeFrom": ["The Cleric"],
+          "takeMoves": ["clr001"]
+        }
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Guidance",
+        "description": "Now and at the start of each session, roll 1d6 as your Fate Die and keep its result. Once per scene, after someone rolls for a Move (not for dmg or similar), you may switch one die with your Fate Die. The die that was switched out becomes your new Fate Die.",
+        "outcomes": [
+          {
+            "range": "Fate Die",
+            "text": "__orfd:Roll D6__"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "orc002",
@@ -47,18 +65,25 @@
   },
   {
     "id": "orc004",
-    "title": "Living Saint",
-    "description": "You share a profound connection with the divine. When you take this move, lock a Condition to reflect this and **Forge a Bond** (**Mystical Vessel**) with your deity.\n\nIf you ever clear that Condition or break the Bond, this deeper union with the divine dissolves. In that case, lose this Move and immediately take another one in its place."
+    "title": "Sacred Truth",
+    "description": "Once per session, when you **publicly reveal the truth about a secret or mystery**, gain 1 Depth with your deity. If someone present doesn't want it known, you also gain **adv** on your next rolled Move against them."
   },
   {
     "id": "orc005",
-    "title": "Not the End",
+    "title": "A Moth to the Sacred Flame",
+    "description": "When you **willingly expose yourself to an enemy attack**, roll+cha; if you're vulnerable while doing so, roll with **adv**.",
     "outcomes": [
       {
-        "text": "When you **Face Death**, you also have access to the following option:",
-        "bullets": [
-          "*Divine Intervention*. Your deity miraculously saves your life, banishes a danger, enemy or obstacle, then restores all your HP. You're no longer helpless"
-        ]
+        "range": "10+",
+        "text": "They boast and babble at you, and you can ask any two questions about them or their superiors."
+      },
+      {
+        "range": "7-9",
+        "text": "You can ask one question, but after answering they'll turn to violence."
+      },
+      {
+        "range": "6-",
+        "text": "They're far more cunning or powerful than they appear (GM's call); mark 1 XP and the GM makes a Move."
       }
     ]
   }

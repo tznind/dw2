@@ -2,10 +2,31 @@
   {
     "id": "wpr001",
     "title": "Punishment Divine",
-    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the War Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **War** (or another Domain from Invoke the Divine) to your deity's Domains.",
-    "outcomes": [{
-      "text": "You can wear **heavy armor**, ignoring the STR requirement, and can wield non-blunt weapons. You can erase 1 Depth with your deity to get **adv** to **Trade Blows** for a Scene. If you're fighting enemies of your deity, you get **adv** to dmg rolls."
-    }]
+    "description": "Gain the **Invoke the Divine** Cleric Starting Move if you don't already have it, except your deity's Domain is War. Choose your deity's worshippers and enemies as detailed in the Move.",
+    "if": [
+      {
+        "condition": {"hasMove": "clr001"},
+        "then": {
+          "outcomes": [
+            { "text": "Add War to your deity's domains. Is this a new aspect of your deity, a result of your unique connection to them, or something else?" }
+          ]
+        },
+        "else": {
+          "takeFrom": ["The Cleric"],
+          "takeMoves": ["clr001"]
+        }
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Divine Shield",
+        "description": "Once per scene, when you take dmg, you may erase 1 Depth with your deity to ignore it, even if it is #piercing."
+      },
+      {
+        "title": "Rebuke",
+        "description": "Once per session, when you condemn someone for their evil ways, gain 1 Depth with your deity."
+      }
+    ]
   },
   {
     "id": "wpr002",
@@ -28,20 +49,13 @@
   },
   {
     "id": "wpr003",
-    "title": "A Moth to the Sacred Flame",
-    "description": "When you **willingly expose yourself to an enemy attack**, roll+cha; if you're vulnerable while doing so, roll with **adv**.",
+    "title": "Not the End",
     "outcomes": [
       {
-        "range": "10+",
-        "text": "They boast and babble at you, and you can ask any two questions about them or their superiors."
-      },
-      {
-        "range": "7-9",
-        "text": "You can ask one question, but after answering they'll turn to violence."
-      },
-      {
-        "range": "6-",
-        "text": "They're far more cunning or powerful than they appear (GM's call); mark 1 XP and the GM makes a Move."
+        "text": "When you **Face Death**, you also have access to the following option:",
+        "bullets": [
+          "*Divine Intervention*. Your deity miraculously saves your life, banishes a danger, enemy or obstacle, then restores all your HP. You're no longer helpless"
+        ]
       }
     ]
   },

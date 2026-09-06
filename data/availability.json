@@ -302,7 +302,7 @@
   },
   "Warpriest": {
     "_movesFile": "data/moves/warpriest.json",
-    "description": "Evil cannot be allowed to exist",
+    "description": "Evil cannot be tolerated",
     "wpr001": true,
     "wpr002": false,
     "wpr003": false,
