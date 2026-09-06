@@ -2,10 +2,31 @@
   {
     "id": "hlr001",
     "title": "The Greatest Miracle",
-    "description": "If you aren't a Cleric, you can now **Cast a Spell**+wis with an effect under the Life Domain, which you get from a deity. For more details, see the Cleric Starting Move, **Invoke the Divine**.\n\nIf you're a Cleric, you can add **Life** (or another Domain from Invoke the Divine) to your deity's Domains.",
-    "outcomes": [{
-      "text": "Whenever you try to **Cast a Spell** to restore someone's HP, increase the dice size rolled one step"
-    }]
+    "description": "Gain the **Invoke the Divine** Cleric Starting Move if you don't already have it, except your deity's Domain is **Life**. Choose your deity's worshippers and enemies as detailed in the Move.",
+    "if": [
+      {
+        "condition": {"hasMove": "clr001"},
+        "then": {
+          "outcomes": [
+            { "text": "Add Life to your deity's domains. Is this a new aspect of your deity, a result of your unique connection to them, or something else?" }
+          ]
+        },
+        "else": {
+          "takeFrom": ["The Cleric"],
+          "takeMoves": ["clr001"]
+        }
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Battlefield Medic",
+        "description": "Once per session, when you endanger yourself to protect or heal someone, gain 1 Depth with your deity."
+      },
+      {
+        "title": "Cure Wounds",
+        "description": "Whenever you **Cast a Spell** to heal someone (e.g. restore HP, cure disease, etc.), treat the **mag** as if it were 1 lower when comparing it to your Casting Stat."
+      }
+    ]
   },
   {
     "id": "hlr002",
@@ -14,7 +35,7 @@
       {
         "text": "When someone else **Faces Death** in your presence, you may parley with Death and grant the agonizing character access to the following option:",
         "bullets": [
-          "Revivified — You're no longer Helpless and you recover half your max HP"
+          "Revivified — You're no longer Helpless and you recover half your max HP. You still lock a Condition after **Facing Death**."
         ]
       },
       {
@@ -24,8 +45,16 @@
   },
   {
     "id": "hlr003",
-    "title": "Emotional Transference",
-    "description": "When you **touch someone else and offer yourself as a sacrifice**, erase 1 Depth with your deity so they clear Conditions up to your wis. For each Condition they clear, you mark one."
+    "title": "I'll Carry it For You",
+    "description": "When you **touch someone else and offer yourself as a sacrifice**, erase 1 Depth with your deity then do either or both:",
+    "outcomes": [
+      {
+        "text": "Choose any Conditions they have; they clear those Conditions and you mark them"
+      },
+      {
+        "text": "Choose any amount of HP they are missing; they restore it, and you lose them"
+      }
+    ]
   },
   {
     "id": "hlr004",
@@ -34,7 +63,7 @@
       {
         "text": "No one will attack you directly and unprovoked, unless they've seen you fight or have a score to settle. When you **Pull Strings**, you get access to the following approach:",
         "bullets": [
-          "If you implore them to turn away from violence, they might get away now or change their mind later."
+          "If you implore them to turn away from violence, they might leave now or change their mind later."
         ]
       }
     ]
@@ -42,6 +71,6 @@
   {
     "id": "hlr005",
     "title": "Mass Cure Wounds",
-    "description": "When you **proclaim your faith**, erase 1 Depth with your deity to restore half of your and your **close** allies lost HP (rounded down)."
+    "description": "When you **proclaim your faith**, erase 1 Depth with your deity to restore half of your and your **close** allies maximum HP (rounded down)."
   }
 ]

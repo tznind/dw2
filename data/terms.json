@@ -102,5 +102,9 @@
   {
     "term":"Dual Wielding",
     "description":"When dealing **dmg** with two weapons at once, roll dmg for each and keep the highest result.  By default, only **light** weapons are designed to be wielded this way."
+  },
+  {
+    "term":"any effect under your deity's Domain",
+    "description":"Is intentionally broad. Here are some examples for each domain:\n- Law — command someone, detect deceit, summon enforcers\n- Light — light up a room, conjure light-based illusions, call down searing light from above\n- Craft — assemble or create objects, dismantle crafted objects, know who created something\n- Nature — rapidly grow vegetation, summon animals to your aid, change the weather\n- Travel — find or create shelter, carve a path through a hazard or obstacle, teleport somewhere"
   }
 ]
