@@ -2,7 +2,7 @@
   {
     "id": "brd001",
     "title": "Perform Your Art",
-    "description": "You express yourself and affect others with a particular artistic skill. Is it cooking, music, poetry, or something else? When you perform your art for an audience, roll+CHA.",
+    "description": "You express yourself and affect others with a particular artistic skill: __brd1a__(Is it cooking, music, poetry, or something else?). When you perform your art for an audience, roll+CHA.",
     "outcomes": [
         {
             "range": "10+",

@@ -124,11 +124,58 @@
             "title": "Note",
             "description": "If you already had any of these Roguish Skills, work with the GM to create a new one for each redundant Skill."
         }
+    ],
+    "if": [
+        {
+            "condition": {"hasMove": "bur001"},
+            "then": {
+                "outcomes": [
+                    { "range": "Extra Skill (Climb walls)", "text": "__dab4ecw__" }
+                ]
+            }
+        },
+        {
+            "condition": {"hasMove": "rgu001"},
+            "then": {
+                "outcomes": [
+                    { "range": "Extra Skill (Detect noises)", "text": "__dab4edn__" },
+                    { "range": "Extra Skill (Pick pockets)", "text": "__dab4epp__" }
+                ]
+            }
+        },
+        {
+            "condition": {"hasMove": "spy001"},
+            "then": {
+                "outcomes": [
+                    { "range": "Extra Skill (Understand languages)", "text": "__dab4eul__" }
+                ]
+            }
+        }
     ]
   },
   {
     "id": "dab006",
     "title": "Virtuoso's Mind",
     "description": "You can have up to two Bardic Lore subjects active at a time. When you ask the GM a question about an active subject, instead of them answering you may choose to **Spout Lore** with **adv**. On a 12+, you may answer (instead of the GM)."
+  },
+  {
+    "id": "dab007",
+    "title": "Artisan's Apprentice",
+    "description": "Gain the **Perform Your Art** Starting Move from the Bard Class.",
+    "if": [
+      {
+        "condition": {"hasMove": "brd001"},
+        "then": {
+          "outcomes": [
+            { "text": "You gain a second artistic skill. When you **Perform Your Art** by showcasing both artistic skills together, make an additional choice (no matter the roll)." }
+          ],
+          "details":true
+        },
+        "else": {
+          "takeFrom": ["The Bard"],
+          "takeMoves": ["brd001"]
+        }
+      }
+    ]
   }
 ]

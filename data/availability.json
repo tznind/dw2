@@ -315,7 +315,8 @@
     "dab002": true,
     "dab003": false,
     "dab004": false,
-    "dab006": false
+    "dab006": false,
+    "dab007": false
   },
   "Diplomat": {
     "_movesFile": "data/moves/diplomat.json",
