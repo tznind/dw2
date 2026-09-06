@@ -119,7 +119,7 @@
   "The Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
     "description": "A mighty stranger from an even stranger land",
-    "paths": ["Berserker"],
+    "paths": ["Berserker", "Hedonist", "Outlander"],
     "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
@@ -182,6 +182,24 @@
     "brs003": false,
     "brs004": false,
     "brs005": false
+  },
+  "Hedonist": {
+    "_movesFile": "data/moves/hedonist.json",
+    "description": "You know what is best in life, and how to take it",
+    "hed001": true,
+    "hed002": false,
+    "hed003": false,
+    "hed004": false,
+    "hed005": false
+  },
+  "Outlander": {
+    "_movesFile": "data/moves/outlander.json",
+    "description": "You can't take the homeland out of the…",
+    "out001": true,
+    "out002": false,
+    "out003": false,
+    "out004": false,
+    "out005": false
   },
   "Assassin": {
     "_movesFile": "data/moves/assassin.json",

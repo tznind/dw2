@@ -73,11 +73,19 @@
   },
   {
     "term":"Damage Steps",
-    "description":"Indicates how much damage a source does, they are d4, d6, d8, d10, d12 [ed: then maybe d8+d6 - like for MAG 4 spells?]"
+    "description":"Indicates how much damage a source does, they are d4, d6, d8, d10, d12, d12+d4, d12+d6, d12+d8, d12+d10"
   },
   {
     "term":"Resistance",
     "description":"When a PC or NPC [has Resistance], they *Resist* it, meaning it's nearly useless against them. Resistance does not provide dmg reduction like armor does, but instead influences the **Fictional Positioning** and whether dmg (and Moves) would be rolled at all.\n\nOvercoming such resistance usually requires imagination, special circumstances, or overwhelming power."
+  },
+  {
+    "term":"Max/Min Dmg",
+    "description":"Some effects, notably **Trade Blows**, say that minimum or maximum dmg is dealt. Instead of rolling, treat the roll as it was the lowest or highest possible.  This *does still count as rolling for damage* when it comes to triggering certain Moves and effects."
+  },
+  {
+    "term":"Dual Wielding",
+    "description":"When dealing **dmg** with two weapons at once, roll dmg for each and keep the highest result.  By default, only **light** weapons are designed to be wielded this way."
   }
 
 ]

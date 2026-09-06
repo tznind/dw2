@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hed001",
+    "title": "Herculean Appetite",
+    "description": "You have a grand and terrible need that pushes you to greater heights and deeper depths. Say what it is now.",
+    "tracks": [
+    {
+      "name": "Unsatisfied",
+      "shape": "circle",
+      "startLabel": "M",
+      "endLabel": "L",
+      "max": 2
+    }
+
+    ],
+    "outcomes": [
+      {
+        "range": "Appetite",
+        "text": " __hedapp:fame and glory, mortal pleasures, power over others, riches and property, the pride of my ancestors, the thrill of chaos, utter destruction, etc__"
+      },
+      {
+        "text": "You have the additional Condition, **Unsatisfied**. It can be marked, locked, and cleared the same as any Condition, and **Reach Your Limit** only triggers when it has also been marked.\n\nWhile Unsatisfied is marked, you have **dis** to all Move rolls that don't pursue satisfaction of your appetite.\n\nWhenever you **look to satisfy your appetite**, ask the GM how to pursue it here and now; they will tell you, usually with a risk or cost. When you satiate it, clear Unsatisfied. If locked, it only clears if you *gratuitously overindulge it*, usually with extreme cost and/or risk."
+      }
+    ]
+  },
+  {
+    "id": "hed002",
+    "title": "Basking in Victory",
+    "description": "When you **satiate an appetite to the extreme** (destroy something precious, gain enormous fame, mountains of riches, etc.), in addition to clearing **Unsatisfied**, choose two:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Clear an additional Condition",
+          "Gain 1 Depth with a PC that helped you satisfy it",
+          "Mark 1 XP",
+          "Rewrite one of your appetites"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hed003",
+    "title": "Forthright Speech",
+    "description": "When you smash through social etiquette to call something what it really is, roll+cha.",
+    "outcomes": [
+      { "range": "10+", "text": "Name someone here who agrees and is willing to help, and clear a Condition." },
+      { "range": "7-9", "text": "You find an ally or clear a Condition (your call)." },
+      { "range": "6-", "text": "You'll regret your honesty; mark 1 XP and the GM makes a Move." }
+    ]
+  },
+  {
+    "id": "hed004",
+    "title": "Insatiable",
+    "description": "You have a second appetite. What is it? Did you always have it? While you're Unsatisfied, you only need to pursue one of your appetites to not suffer its penalty. When you look to satisfy your appetite, tell the GM which one before they tell you how.",
+    "outcomes": [
+      {
+        "range": "Appetite",
+        "text": " __hedapp2__"
+      }
+    ]
+  },
+  {
+    "id": "hed005",
+    "title": "Strong Like Bull",
+    "description": "When you **strain yourself to break free of a restraint or compulsion** (physical or mental), you can mark a Condition to automatically succeed."
+  }
+]

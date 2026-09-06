@@ -42,5 +42,13 @@
   {
     "alias":"dmg dize size",
     "term":"Damage Steps"
+  },
+  {
+    "alias":"max dmg",
+    "term":"Max/Min Dmg"
+  },
+  {
+    "alias":"min dmg",
+    "term":"Max/Min Dmg"
   }
 ]
