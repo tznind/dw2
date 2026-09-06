@@ -33,7 +33,7 @@
     "title": "Awake! The Shadow Is Gone",
     "outcomes": [
       {
-        "text": "When someone else **Faces Death** in your presence, you may parley with Death and grant the agonizing character access to the following option:",
+        "text": "When someone else **Faces Death** in your presence, you may parley with Death and grant the other PC access to the following option:",
         "bullets": [
           "Revivified — You're no longer Helpless and you recover half your max HP. You still lock a Condition after **Facing Death**."
         ]
