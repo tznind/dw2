@@ -26,5 +26,21 @@
   {
     "alias":"one step",
     "term":"Damage Steps"
+  },
+  {
+    "alias":"lock it",
+    "term":"Locked"
+  },
+  {
+    "alias":"Angry",
+    "term":"Condition"
+  },
+  {
+    "alias":"Resist",
+    "term":"Resistance"
+  },
+  {
+    "alias":"dmg dize size",
+    "term":"Damage Steps"
   }
 ]

@@ -119,6 +119,7 @@
   "The Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
     "description": "A mighty stranger from an even stranger land",
+    "paths": ["Berserker"],
     "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
@@ -172,6 +173,15 @@
       }
     ],
     "rgu001": true
+  },
+  "Berserker": {
+    "_movesFile": "data/moves/berserker.json",
+    "description": "You're the hardest of them, with a touch of the uncanny",
+    "brs001": true,
+    "brs002": false,
+    "brs003": false,
+    "brs004": false,
+    "brs005": false
   },
   "Assassin": {
     "_movesFile": "data/moves/assassin.json",

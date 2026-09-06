@@ -2,7 +2,7 @@
   {
     "id": "bar001",
     "title": "Rage!",
-    "description": "When you enter a rage, mark Angry. When you calm down, you may mark a different Condition to clear Angry. While Angry, you get the following penalties and benefits:",
+    "description": "When you enter a rage, mark **Angry**. When you calm down, you may mark a different Condition to clear Angry. While Angry, you get the following penalties and benefits:",
     "outcomes": [
       {
         "text": "",

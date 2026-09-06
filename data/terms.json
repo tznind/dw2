@@ -1,5 +1,13 @@
 [
   {
+      "term":"Condition",
+      "description":"Conditions represent exhaustion, frustration, maladies, or emotions that affect a PC as they adventure. They usually happen as a result of a Player's choices, and are rarely inflicted specifically upon you.  If **Marked** or **Locked** you have **dis** on its associated stat rolls.\n\nRare circumstances, such using certain magic items, may require a PC to mark a specific Condition. If they already have that Condition marked, they instead **lock it**. If it's already locked, then they mark another Condition of their choice."
+  },
+  {
+      "term":"Locked",
+      "description":"Not only is the Condition active and affecting your character, but it won't clear under normal circumstances. Only effects that specify that they clear locked Conditions can do so, such as **Enjoy Downtime** or **Reveal Your Struggle**."
+  },
+  {
     "term":"piercing",
     "description":"Cuts or bypasses thick armor and shielding. dmg of this type ignores armor and shield protection"
   },
@@ -66,5 +74,10 @@
   {
     "term":"Damage Steps",
     "description":"Indicates how much damage a source does, they are d4, d6, d8, d10, d12 [ed: then maybe d8+d6 - like for MAG 4 spells?]"
+  },
+  {
+    "term":"Resistance",
+    "description":"When a PC or NPC [has Resistance], they *Resist* it, meaning it's nearly useless against them. Resistance does not provide dmg reduction like armor does, but instead influences the **Fictional Positioning** and whether dmg (and Moves) would be rolled at all.\n\nOvercoming such resistance usually requires imagination, special circumstances, or overwhelming power."
   }
+
 ]
