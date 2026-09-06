@@ -26,6 +26,14 @@
     ],
     "if": [
       {
+        "condition": { 
+          "hasMove": "wm001"
+        },
+        "then": {
+          "details": true          
+        }
+      },
+      {
         "condition": {"hasGetParam": "move_wm001_pickone=2"},
         "then": {
           "multiplePick": 2,

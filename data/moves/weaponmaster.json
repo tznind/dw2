@@ -26,7 +26,12 @@
     "submoves": [
       {
         "title": "Enhance",
-        "description": "When you **Enjoy Downtime**, you may also do the following: spend 1 Treasure and choose a magic item or Artifact. It becomes part of your Signature Weapon, which gains the item's properties, Moves, and whichever #tags make sense. A Signature Weapon may only be grafted with one item at a time; a previously-grafted item can be split as part of this activity."
+        "description": "When you **Enjoy Downtime**, you may also do the following:",
+        "outcomes": [
+          {
+            "text": "*Enhance* - Spend 1 Treasure and choose a **magic item** or **Artifact**. It becomes part of your **Signature Weapon**, which gains the item's properties, Moves, and whichever **tags** make sense. A Signature Weapon may only be grafted with one item at a time; a previously-grafted item can be split as part of this activity."
+          }
+        ]
       }
     ]
   },
@@ -37,7 +42,7 @@
     "pickOne": [
       "Might of Arms. You can comfortably wield **two-handed** melee weapons in one hand, and even dual-wield them",
       "Point Blank. All ranged weapons you wield gain **hand** and **close**. While using one up **close** or closer, deal +1 dmg",
-      "Spellbreaker. When a **close** NPC tries to create a magical effect, you may interrupt and stop it; mark a Condition from backlash"
+      "Spellbreaker. When a **close** NPC tries to create a magical effect, you may interrupt and stop it; mark a **Condition** from backlash"
     ]
   },
   {
@@ -48,17 +53,18 @@
   {
     "id": "wm004",
     "title": "Secret Weapon",
-    "submoves": [
+    "description": "*The Hand That Wields* - When you **Trade Blows** with an ordinary weapon, or no weapon at all, on a 10+, you may instead choose to clear a Condition and, on a 6-, mark 2 XP instead of 1.",
+    "outcomes": [
       {
-        "title": "The Hand That Wields",
-        "description": "When you **Trade Blows** with an ordinary weapon, or no weapon at all, on a 10+, you may instead choose to clear a Condition and, on a 6-, mark 2 XP instead of 1. When you finally draw your **Signature Weapon** after trying to defeat a foe without it, until the fight ends, after you roll to **Trade Blows** you may mark a Condition to increase the result by one step (6- → 7-9 → 10+)."
+        "text": "When you finally draw your **Signature Weapon** after trying to defeat a foe without it, until the fight ends, after you roll to **Trade Blows** you may mark a Condition to increase the result by one step (6- → 7-9 → 10+)."
       }
     ]
   },
   {
     "id": "wm005",
     "title": "Snap the Blade",
-    "description": "When you **inflict dmg with a weapon**, after the dmg roll you may temporarily break the weapon (if it isn't indestructible) to instead deal max dmg. The weapon becomes nearly useless until repaired.",
+    "description": "When you inflict **dmg** with a weapon, after the dmg roll you may temporarily break the weapon (if it isn't indestructible) to instead deal max dmg. The weapon becomes nearly useless until repaired.",
+    "details": true,
     "outcomes": [
       {
         "text": "When you **Make Camp**, you may repair one **Signature Weapon** or mundane weapon that has been broken in this or a similar way."
