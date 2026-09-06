@@ -3,7 +3,7 @@
     "id": "dab002",
     "title": "Bardic Lore",
     "description": "You've studied a variety of arcane subjects, including:",
-    "pickOne": [
+    "pick": [
         "A Bestiary of Creatures Most Unusual",
         "Gods and Their Servants",
         "Grand Histories of the Known World",
@@ -22,7 +22,7 @@
     ],
     "outcomes": [
         {
-            "text": "Mark one as active when you choose this Move. You can ask the GM questions about your active subject times per session equal to your int; the GM will answer truthfully.\n\nWhen you **Make Camp**, you can spend some time studying and/or remembering your training to change your active subject."
+            "text": "Mark **one** as active when you choose this Move. You can ask the GM questions about your active subject times per session equal to your int; the GM will answer truthfully.\n\nWhen you **Make Camp**, you can spend some time studying and/or remembering your training to change your active subject."
         }
     ]
   },
@@ -83,40 +83,31 @@
   {
     "id": "dab004",
     "title": "A Knave, a Rascal",
+    "description": "You get access to the following Roguish Skills:",
     "outcomes": [
     {
-        "text": "You get access to the following Roguish Skills. When you apply one of your Roguish Skills, **Defy Danger**+int.",
+        "text": "",
         "bullets": [
             "Climb walls",
             "Detect noises",
             "Pick pockets",
             "Understand languages"
         ]
+    },
+    {
+        "text": "When you **Defy Danger** or **Sneak Past** using one of your Roguish Skills, you may roll+INT (instead of another Stat)."
     }
-    ]
-  },
-  {
-    "id": "dab005",
-    "title": "Countercharm",
-    "description": "When you try to impede a mind-influencing effect, roll+int.",
-    "outcomes": [
+    ],
+    "submoves": [
         {
-            "range": "10+",
-            "text": "It doesn't affect you or your allies."
-        },
-        {
-            "range": "7-9",
-            "text": "You or your allies are unaffected (your call)."
-        },
-        {
-            "range": "6-",
-            "text": "It's beyond your ken; mark 1 XP and the GM makes a Move."
+            "title": "Note",
+            "description": "If you already had any of these Roguish Skills, work with the GM to create a new one for each redundant Skill."
         }
     ]
   },
   {
     "id": "dab006",
     "title": "Virtuoso's Mind",
-    "description": "When you **Spout Lore**, you may ignore the questions and instead roll+int. If you have a relevant record of information, you get **adv** on the roll. On a 12+, you may answer instead of the GM."
+    "description": "You can have up to two Bardic Lore subjects active at a time. When you ask the GM a question about an active subject, instead of them answering you may choose to **Spout Lore** with **adv**. On a 12+, you may answer (instead of the GM)."
   }
 ]
