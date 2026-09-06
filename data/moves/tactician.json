@@ -2,7 +2,7 @@
   {
     "id": "tac001",
     "title": "Plans Within Plans",
-    "description": "When you **enter a combat situation**, gain Prep equal to your INT (min 1). During the combat situation, you can spend 1 Prep to execute one of the following stratagems:",
+    "description": "When you **enter a combat situation**, gain Prep equal to your INT (min 1). When the combat situation ends, lose all Prep. During the combat situation, you can spend 1 Prep to execute one of the following stratagems:",
     "tracks": [
         {
             "name": "Prep",
@@ -15,42 +15,23 @@
         {
             "text": "",
             "bullets": [
-                "*Charge!* — You and willing allies rush different foes; everyone charging and being charged gets **adv** to their next dmg rolls",
-                "*Coordinated Maneuver* - **Aid a PC** without a cost or risk; *what does it look like?*",
-                "*Hammer & Anvil* — Draw a foe's attention; suffer 1 DMG **piercing** and grant an ally **adv** on their next **Trade Blows** against them",
-                "*Survey* - Ask the GM a question about a foe's strengths, weaknesses or intentions and they will answer truthfully"
+                "*Charge!* — You and willing allies rush different foes; everyone charging and being charged gets **adv** to their next dmg roll",
+                "*Coordinated Maneuver* — **Aid a PC** without a cost or risk; *what does it look like?*",
+                "*Hammer & Anvil* — Draw a foe's attention; suffer 1 dmg **piercing** and grant an ally **adv** on their next **Trade Blows** against them",
+                "*Survey* — Ask the GM a question about a foe's strengths, weaknesses, or intentions, and they will answer truthfully"
             ]
         }
     ]
   },
   {
     "id": "tac002",
-    "title": "Attack of Opportunity",
-    "description": "When you react to an NPC in **hand** reach moving away, roll+int.",
-    "outcomes": [
-      {
-        "range": "10+",
-        "text": "Choose two from the following.",
-        "bullets": [
-          "An ally freely moves towards or away from them",
-          "The NPC can't move",
-          "You inflict min dmg to them"
-        ]
-      },
-      {
-        "range": "7-9",
-        "text": "Choose one from the 10+ list."
-      },
-      {
-        "range": "6-",
-        "text": "The NPC escapes too quickly; mark 1 XP and the GM makes a Move."
-      }
-    ]
+    "title": "Eye for Destruction",
+    "description": "When you **set your mind to destroying something** (building, obstacle, magical artifact, etc.), treat it like **Perform a Ritual**. If this is during a combat situation, you can spend Prep, 1-for-1, to negate a requirement, except for the last one."
   },
   {
     "id": "tac003",
-    "title": "Know Thy Enemy",
-    "description": "When you're about to **Trade Blows** with an NPC, you can spend 1 Prep to ask GM what they Resist. You can spend 1 additional Prep to produce the tools necessary to ignore one of those Resists."
+    "title": "Honed Instincts",
+    "description": "When you **get a bad feeling about an upcoming situation** (your call), mark a **Condition** then ask the GM how to avoid or prepare for it. Whether or not your hunch is right, the GM will give you one piece of advice; clear a Condition if you follow it."
   },
   {
     "id": "tac004",
@@ -69,14 +50,14 @@
   {
     "id": "tac005",
     "title": "Veteran of a Hundred Battles",
+    "description": "When you **reach 0 Prep**, you may mark a **Condition** to regain 1 Prep. What past situation does this remind you of?",
     "outcomes": [
       {
-        "text": "Add the following stratagems to your **Plans Within Plans**:",
+        "text": "Additionally, add the following stratagems to your **Plans Within Plans**:",
         "bullets": [
-          "Demoralize — A Bloodied opponent surrenders or flees",
+          "Demoralize — A Bloodied foe surrenders or flees (GM's call)",
           "First Strike — An ally acts now, even if they're surprised",
-          "Ralling Cry — Other allies **near** you clears a Condition",
-          "Taunt — An opponent has **dis** to dmg rolls unless they include you as a target"
+          "Rallying Cry — A **near** ally clears a Condition"
         ]
       }
     ]

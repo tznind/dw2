@@ -25,7 +25,7 @@ window.CardInitializers.origins = function(container, suffix) {
             background: "e.g. feral child, healer, miner, etc. What cause made you leave your former life of peace behind?"
         },
         "The Rogue": {
-            ancestry: "e.g. catfolk, halfling, oozeling, etc. Were your parents law-abiding people?",
+            ancestry: "e.g. catfolk, firbolg, oozeling, etc. Were your parents law-abiding people?",
             community: "e.g. denizens of the Underdark, homeless people, privileged pricks, etc. Did you experience a lot of crime firsthand?",
             background: "e.g. criminal, squire, teacher, etc. Was it a slippery slope or a conscious decision to become who you are now?"
         },
