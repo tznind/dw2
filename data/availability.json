@@ -60,7 +60,7 @@
   "The Fighter": {
     "_movesFile": "data/moves/fighter.json",
     "description": "An expert in arms and armor; a professional in the deadliest proving ground",
-    "paths": ["Bulwark", "Spellblade", "Tactician"],
+    "paths": ["Bulwark", "Weaponmaster", "Tactician"],
     "level1Help": "At Level 1 your max hp is 10. Choose str or dex to be +2 and the other to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
@@ -264,14 +264,14 @@
     "bul004": false,
     "bul005": false
   },
-  "Spellblade": {
-    "_movesFile": "data/moves/spellblade.json",
-    "description": "Magic & steel combined can change—or break—the world",
-    "spb001": true,
-    "spb002": false,
-    "spb003": false,
-    "spb004": false,
-    "spb005": false
+  "Weaponmaster": {
+    "_movesFile": "data/moves/weaponmaster.json",
+    "description": "An expertise as ancient as it is deadly",
+    "wm001": true,
+    "wm002": false,
+    "wm003": false,
+    "wm004": false,
+    "wm005": false
   },
   "Tactician": {
     "_movesFile": "data/moves/tactician.json",

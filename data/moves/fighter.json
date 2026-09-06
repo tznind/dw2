@@ -23,6 +23,14 @@
           "Sharp - increase DMG by 1"
         ]
       }
+    ],
+    "if": [
+      {
+        "condition": {"hasGetParam": "move_wm001_pickone=2"},
+        "then": {
+          "multiplePick": 2
+        }
+      }
     ]
   }
 ]

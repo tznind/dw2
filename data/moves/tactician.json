@@ -2,7 +2,7 @@
   {
     "id": "tac001",
     "title": "Plans Within Plans",
-    "description": "At the start of each battle you get Prep equal to your int. When a fight ends, lose all Prep. During a combat you can always mark a Condition to get 1 Prep, and you can spend 1 Prep to execute one of the following stratagems:",
+    "description": "When you **enter a combat situation**, gain Prep equal to your INT (min 1). During the combat situation, you can spend 1 Prep to execute one of the following stratagems:",
     "tracks": [
         {
             "name": "Prep",
@@ -15,10 +15,10 @@
         {
             "text": "",
             "bullets": [
-                "Bait & Switch — When an ally **close** to you would take dmg, exchange positions unimpeded and suffer the dmg yourself",
-                "Charge! — You and willing allies rapidly move towards different foes. You, foes, and allies all get **adv** to their next dmg rolls",
-                "Flanking Tactic — When an ally **Trades Blows** with an opponent you're engaged with, they get **adv** to their dmg roll",
-                "Hammer & Anvil — When you suffer max dmg, an ally gets **adv** to their next **Trade Blows** against that same opponent"
+                "*Charge!* — You and willing allies rush different foes; everyone charging and being charged gets **adv** to their next dmg rolls",
+                "*Coordinated Maneuver* - **Aid a PC** without a cost or risk; *what does it look like?*",
+                "*Hammer & Anvil* — Draw a foe's attention; suffer 1 DMG **piercing** and grant an ally **adv** on their next **Trade Blows** against them",
+                "*Survey* - Ask the GM a question about a foe's strengths, weaknesses or intentions and they will answer truthfully"
             ]
         }
     ]
