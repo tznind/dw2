@@ -1,6 +1,6 @@
 # Dungeon World 2
 
-This is an initial outline of Dungeon World 2 beta character sheet.
+This is an online character sheet for Dungeon World 2 beta character sheet (v2).
 
 It is available at:
 https://tznind.github.io/dw2/cs.html
