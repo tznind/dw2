@@ -19,6 +19,9 @@ https://github.com/tznind/lc
 </tr>
 </table>
 
+For older versions (e.g. beta v1) clone the repository at:
+- v1 beta [872bc67](https://github.com/tznind/dw2/commit/872bc67f2e35d2c5a18fc2cff706199fae168d90)
+
 ### Cookbook
 
 For more detailed description of how to create various types of moves see [Cookbook.md](./Cookbook.md)
