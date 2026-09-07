@@ -42,7 +42,8 @@
     "tracks": [
       {
         "name": "Used",
-        "shape": "square"
+        "shape": "square",
+        "max": 1
       }
     ],
     "outcomes": [

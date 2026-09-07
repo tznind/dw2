@@ -69,7 +69,7 @@
         "options": [
           { "name": "intimidating greataxe", "details": "1d8 dmg #hand #two-handed", "uses": "" },
           { "name": "twin shortswords", "details": "1d6 dmg #hand #light #precise", "uses": "" },
-          { "name": "yew longbow", "details": "1d6 dmg #close #far #near #two-handed", "uses": "" }
+          { "name": "yew longbow", "details": "1d6 dmg #ammo #near #far #reload #two-handed", "uses": "" }
         ]
       },
       {
