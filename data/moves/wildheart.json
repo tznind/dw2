@@ -1,27 +1,58 @@
 [
   {
     "id": "wld001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Primeval Whisperer",
+    "description": "You can communicate freely with wild creatures. When you **Sense the Motive** **of a wild creature**, no matter the result you may ask them an extra question, even on a 6-. When you **Pull the Strings** of a wild creature, if your approach aligns with their desires or instincts, roll with **adv**.",
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "A \"wild creature\" can be an animal, plant, fungus, or other non-sapient living being. It isn't a \"thing\" like a rock or a river, but it could be a tree or an insect. If it's unclear whether something is a wild creature, the GM has the final say."
+      }
+    ]
+ 
   },
   {
     "id": "wld002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "Call of the Wild",
+    "description": "When you **call out to the wilderness for aid**, choose a suitable type of wild creature for your current environment and roll+CHA.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "That wild creature arrives to help you for the scene as an allied NPC; choose two.",
+        "bullets": [
+          "A pack or group of them arrive instead of just one",
+          "They accompany you for a period after this scene ends",
+          "They cause no collateral damage or turmoil while here",
+          "They intimidate or distract an enemy upon their arrival"
+        ]
+      },
+      { "range": "7-9", "text": "Choose one" },
+      { "range": "6-", "text": "You instead draw nature's ire or hunger; mark 1 XP and the GM makes a Move." }
+    ]
   },
   {
     "id": "wld003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Raised by Wolves",
+    "description": "Choose one type of wild creature __wldct:Bears, eagles, wolves__. By default, they treat you as a friend and your companions as allies by association. When you **spend time with your chosen wild creature**, choose one if alone or two if with another PC.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "**exchange gifts** — Regain a spent use of an item",
+          "**listen to their stories** — Learn about a nearby danger or obstacle as if you rolled a 7-9 to **Spout Lore**",
+          "**relax and recharge** — Clear a Condition"
+        ]
+      }
+    ]
   },
   {
     "id": "wld004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Rumour From the Earth",
+    "description": "When you **Unearth Secrets** or **Sense Motive** **by questioning nearby wild creatures**, you may roll+CHA."
   },
   {
     "id": "wld005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Together as One",
+    "description": "When you **mark a wild creature with blood, mud, or dirt**, erase previous marks, then you can share in their senses as if they were yours (and vice versa), no matter what distance separates you."
   }
 ]

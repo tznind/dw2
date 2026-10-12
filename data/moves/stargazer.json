@@ -28,7 +28,7 @@
           "Vulnerability — The GM will tell you a weakness they hide"
         ]
       },
-      { "range": "7-9", "text": "Choose only one." },
+      { "range": "7-9", "text": "Choose one" },
       { "range": "6-", "text": "You only see their success; mark 1 XP and gain **dis** against them until the end of the scene." }
     ]
   },
