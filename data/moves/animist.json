@@ -1,27 +1,73 @@
 [
   {
     "id": "ani001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Anima Mundi",
+    "description": "You have an especially close connection with the elemental spirits of the world—the roots, rocks, winds, waters, and more—and they see you as a guardian, caretaker, and ambassador. You can **Cast a Spell** by entreating natural spirits for aid. When you do so, your unique ✷7-9 option is:\n\n- The spirits demand a favor or sacrifice; the GM will say more after you choose this.",
+    "outcomes": [
+      {
+        "text":"Each time you **Cast a Spell** this way, answer the questions below.  Your Casting Stat for the spell starts at 0 and increases by 1 for each \"Yes\".",
+        "bullets": [
+          "Are you wielding and wearing no metal whatsoever?",
+          "Does this leverage a nearby natural feature or entity?",
+          "Will this restore harmony or advance a cycle of nature?"
+        ]
+      }
+    ]
   },
   {
     "id": "ani002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "Back to Basics",
+    "description": "When you **reveal a new flaw or failure of civilization to one or more NPCs**, clear a Condition, then roll+CHA",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two:",
+        "bullets": [
+          "They account for the issue and start working to fix it",
+          "They attack or sabotage an enemy of nature",
+          "They protect you or nature from an imminent threat"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose only one"
+      },
+      {
+        "range": "6-",
+        "text": "You drawn an enemy's attention; mark 1 XP and the GM makes a Move."
+      }
+    ]
   },
   {
     "id": "ani003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Commmune with Nature",
+    "description": "When you **spend time connected with natural spirits**, ask one question below about the region you're in, or ask all of them but mark a Condition after hearing the ansewrs. The GM will answer honestly",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Does anything here threaten the natural world?",
+          "What danger or enemy here should we be aware of?",
+          "What person or location here could be helpful to us?"
+        ]
+      }
+    ]
   },
   {
     "id": "ani004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Death and Regrowth",
+    "tracks": [
+      {
+        "name": "Lifeforce",
+        "max": 2,
+        "shape": "hexagon"
+      }
+    ],
+    "description": "When you **finish off a significant enemy**, or when you **suffer max DMG**, gain 1 Lifeforce (max 2). You can spend Lifeforce as if it was a use of **medicine**."
   },
   {
     "id": "ani005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Eye of the Storm",
+    "description": "When you **Cast a Spell** by entreating natural spirits for aid, if all three questions are answered \"Yes\", you can treat the **MAG** as if it were 1 lower when comparing it to your **Casting Stat**"
   }
 ]

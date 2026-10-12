@@ -114,5 +114,9 @@
   {
     "term":"Bloodied",
     "description":"Your HP reaches half or less"
+  },
+  {
+    "term":"Medicine",
+    "description":"Mark to have someone double the HP they recover next or to cure a minior disease or poison"
   }
 ]
