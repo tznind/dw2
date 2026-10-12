@@ -17,7 +17,7 @@
   {
     "id": "brs002",
     "title": "Red Nails",
-    "description": "Once per session, when you **become Bloodied**, clear a Condition.\n\nWhile Bloodied, increase all dmg you deal by 1.\n\nWhen you deal dmg to a Bloodied foe, it's **piercing**"
+    "description": "Once per session, when you **become Bloodied**, clear a Condition.\n\nWhile **Bloodied**, increase all dmg you deal by 1.\n\nWhen you deal dmg to a Bloodied foe, it's **piercing**"
   },
   {
     "id": "brs003",

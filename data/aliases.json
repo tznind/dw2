@@ -58,5 +58,9 @@
   {
     "alias":"mag",
     "move":"Cast a Spell"
+  },
+  {
+    "alias":"Become Bloodied",
+    "term":"Bloodied"
   }
 ]

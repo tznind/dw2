@@ -120,7 +120,7 @@
     "_movesFile": "data/moves/barbarian.json",
     "description": "A mighty stranger from an even stranger land",
     "paths": ["Berserker", "Hedonist", "Outlander"],
-    "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
+    "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +2, then assign +0, +0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
@@ -128,7 +128,7 @@
         "options": [
           { "name": "ancestral longsword", "details": "1d6 #close + shield. Mark to ignore all dmg from one attack", "uses": "1" },
           { "name": "bloodstained greataxe", "details": "1d8 dmg #close #two-handed #forceful", "uses": "" },
-          { "name": "dual hammers", "details": "1d6 dmg #close. adv on dmg rolls", "uses": "" }
+          { "name": "dual hammers", "details": "1d6 dmg #close #light adv on dmg rolls", "uses": "" }
         ]
       },
       {

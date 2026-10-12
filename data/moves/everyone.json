@@ -150,7 +150,7 @@
     "title": "Defy Danger (+Variable)",
     "category": "Core Moves",
     "hideCheckbox": true,
-    "description": "When you **contend with a risk, threat, or obstacle** - and no other move fits better - describe how you do it, then the GM chooses one:\n- +str if you power through, physically endure, or break it\n- +dex if you dodge, outpace, or target it precisely\n- +int if you analyze, notice, or outsmart it\n- +wis if you scrutinize, empathize with, or resolutely resist it\n- +cha if you charm, trick, impress, or provoke it",
+    "description": "When you **contend with a risk, threat, or obstacle** - and no other move fits - describe how you do it, then the GM chooses one and you roll:\n- +str if you power through, physically endure, or break it\n- +dex if you dodge, outpace, or target it precisely\n- +int if you analyze, notice, or outsmart it\n- +wis if you scrutinize, empathize with, or resolutely resist it\n- +cha if you charm, trick, impress, or provoke it",
     "outcomes": [
         {
             "range": "10+",
@@ -243,6 +243,24 @@
         {
             "range": "6-",
             "text": "The GM answers with danger or an unwelcome truth; mark 1 XP and the GM makes a Move."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Example Questions",
+            "outcomes": [
+                {
+                    "text": "",
+                    "bullets": [
+                        "Where is ... located?",
+                        "What could have caused ...?",
+                        "What might be the best way to accomplish ...?",
+                        "What have I heard or read about ...?",
+                        "How might I gain access to ...?"
+                    ]
+                }
+            ]
+            
         }
     ]
   },
