@@ -1,27 +1,114 @@
 [
   {
     "id": "inq001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Beware My Power",
+    "if": [
+      {
+        "condition": {"hasMove": "pal001"},
+        "then": {
+          "description": "Add this oath to your Oaths of Conviction as well:",
+          "pick": [
+            "Castigation (Never allow an evildoer to live). When you **Trade Blows** with a creature with evil intent (GM's call), add +1d6 **holy** dmg"
+          ]
+        },
+        "else": {
+          "description": "Gain the **Oaths of Conviction - Liege** Paladin Starting Move: you have sworn a righteous oath and service to a liege; name them now: ___inq1pln:leader/institution/organization__.\n\nYou start with the oath below marked. As long as you uphold it, you can use its benefit:",
+          "pick": [
+            "Castigation (Never allow an evildoer to live). When you **Trade Blows** with a creature with evil intent (GM's call), add +1d6 **holy** dmg"
+          ],
+          "submoves": [
+            {
+              "title": "Broken Oaths",
+              "description": "When you **break an oath** (your call), clear that oath and lock a Condition. When you **find a way to atone** (also your call), clear a Condition and mark a cleared oath."
+            }
+          ]
+        }
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Smite Evil",
+        "description": "When you **Trade Blows** with a creature with evil intent,",
+        "outcomes": [
+          {
+            "range": "10+",
+            "text": "Add the following to the list of options available:",
+            "bullets": [
+              "If they're an outsider to this world, you banish them for a while",
+              "You mark their appearance permanently; describe how",
+              "You weaken their resolve; the GM will say what happens"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "inq002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "By the Power Invested in Me…",
+    "description": "When you **give an NPC an order based on your authority**, roll+STR.",
+    "outcomes": [
+      { "range": "10+", "text": "They follow your order and you get **adv** to your next Move rolled against them." },
+      {
+        "range": "7-9",
+        "text": "They choose one:",
+        "bullets": [
+          "Back away cautiously, then flee",
+          "Consult with another authority",
+          "Do as you say, but tell someone about it afterwards"
+        ]
+      },
+      { "range": "6-", "text": "They dismiss your authority; mark 1 XP and the GM makes a Move." }
+    ]
   },
   {
     "id": "inq003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Mystical Imprisonment",
+    "description": "When you **name an evildoer and order them to stop**, magical chains appear and bind them; roll+STR.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two below.",
+        "bullets": [
+          "It lasts longer than a few moments",
+          "They can't move",
+          "They can't speak or cast spells"
+        ]
+      },
+      { "range": "7-9", "text": "Choose one" },
+      { "range": "6-", "text": "The chains can't hold them; mark 1 XP and the GM makes a Move." }
+    ]
   },
   {
     "id": "inq004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Nomosmancy",
+    "description": "You can **Cast a Spell**+STR to impose Order and deny a supernatural effect.",
+    "outcomes": [
+      {
+        "range": "7-9",
+        "text": "Your unique option is:",
+        "bullets": [
+          "You get a supernatural stain; you can't use this Move until you **Make Camp**"
+        ]
+      }
+    ]
   },
   {
     "id": "inq005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Public Condemnation",
+    "description": "When you **proclaim someone to be an evildoer to the public**, roll+STR.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two from the list below.",
+        "bullets": [
+          "They will hunt the evildoer down for you as a group",
+          "They will protect you from the evildoer",
+          "You impress someone powerful (GM's call); roll with **adv** the next time you **Pull Strings** on them"
+        ]
+      },
+      { "range": "7-9", "text": "Choose one" },
+      { "range": "6-", "text": "An evildoer is hidden among the crowd; mark 1 XP and the GM makes a Move." }
+    ]
   }
 ]

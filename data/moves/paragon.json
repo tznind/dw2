@@ -1,27 +1,67 @@
 [
   {
     "id": "par001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Safeguard the Helpless",
+    "if": [
+      {
+        "condition": {"hasMove": "pal001"},
+        "then": {
+          "description": "Your Protection oath's benefits also stop foes from **piercing** your armor."
+        },
+        "else": {
+          "description": "Gain the **Oaths of Conviction - Liege** Paladin Starting Move: you have sworn a righteous oath and service to a liege; name them now: ___par1pln:leader/institution/organization__.\n\nYou start with the oath below marked. As long as you uphold it, you can use its benefit:",
+          "pick": [
+            "Protection (Never let an innocent die in your presence). Your weapon deals **holy** DMG, add +1 to your armor, and its benefits also stop foes from **piercing** your armor"
+          ],
+          "submoves": [
+            {
+              "title": "Broken Oaths",
+              "description": "When you **break an oath** (your call), clear that oath and lock a Condition. When you **find a way to atone** (also your call), clear a Condition and mark a cleared oath."
+            }
+          ]
+        }
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Hold the Line",
+        "description": "When a **near** NPC attempts to harm or move towards an ally, you may interpose and roll+CHA.",
+        "outcomes": [
+          { "range": "10+", "text": "They can't get past you." },
+          { "range": "7-9", "text": "They get past you, but their next dmg dealt is halved (rounded down)." },
+          { "range": "6-", "text": "They find an opening against you and your ally; mark 1 XP and the GM makes a Move." }
+        ]
+      }
+    ]
   },
   {
     "id": "par002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "A Shot at Redemption",
+    "description": "When you **offer a defeated foe an opportunity to change their ways**, offer them proof of your sincerity and roll+CHA.",
+    "outcomes": [
+      { "range": "10+", "text": "They'll make their best attempt at it." },
+      { "range": "7-9", "text": "They're interested but will need constant monitoring and guidance." },
+      { "range": "6-", "text": "They aren't ready; mark 1 XP and the GM makes a Move." }
+    ]
   },
   {
     "id": "par003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "\"For the Honor of…\"",
+    "description": "Once per session, when you **assume a heroic form related to your Origins**, choose benefits from below up to your CHA, which last until you **Face Death**, **Reach Your Limit**, or the scene ends, whichever happens first.\n- All allies who witness it clear a Condition\n- All foes who witness it ignore your allies for now and treat you as the biggest threat\n- Reduce dmg taken by half (rounded down) from NPCs with evil intent\n- Your STR is +3"
   },
   {
     "id": "par004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Inspiring Presence",
+    "description": "When you **rally your allies with a show of commitment**, roll+CHA.",
+    "outcomes": [
+      { "range": "10+", "text": "They all clear a Condition." },
+      { "range": "7-9", "text": "You can mark a Condition so up to your CHA of them clear a Condition." },
+      { "range": "6-", "text": "Your action is ignored; mark 1 XP and the GM makes a Move." }
+    ]
   },
   {
     "id": "par005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "You Will Not Break Me",
+    "description": "When you **Reach Your Limit**, you may also choose from the options below. If you do, you only clear up to CHA Conditions, but may mark 1 Depth with a PC who helped you:\n- **Angry** — Make a show of force or lash out at your foes\n- **Distracted** — Pursue a suspicion or side-quest\n- **Exhausted** — Sound the retreat or make a personal sacrifice\n- **Frightened** — Confront your fears or confide in another\n- **Insecure** — Seek guidance or submit to authority"
   }
 ]
