@@ -1,27 +1,50 @@
 [
   {
     "id": "sta001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Eye in the Sky",
+    "description": "You have a special connection to the sun(s), moon(s), and stars. You always know the time and date, and can never get lost while you can see the sky.  While **outside during the day**, ignore **DIS** from being **Frightened** and gain +1 Armor. While **outside during the night**, ignore **Dis** from being **Insecure** and deal +1 DMG."
   },
   {
     "id": "sta002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "Augury",
+    "description": "When you **read the future written in the stars**, you can focus your reading on a specific place or person; roll+WIS, then the GM reveals an important event that will happen soon.",
+    "outcomes": [
+      { "range": "10+", "text": "You may ask a follow-up question." },
+      { "range": "7-9", "text": "The vision is disturbing; mark a Condition." },
+      { "range": "6-", "text": "The event involves an ally's terrible fate (PC or NPC); the GM will say how, but then you can twist the fate to fall upon you instead. Whoever suffers the terrible fate has **dis** on all rolls during the event." }
+    ]
   },
   {
     "id": "sta003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Doomsayer",
+    "description": "When you **proclaim an enemy's imminent fate to them**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose two.",
+        "bullets": [
+          "Pain — Increase dmg they take by 1 until the end of the scene",
+          "Regret — Gain **adv** the next time you or an ally **Pulls Strings** against them",
+          "Vulnerability — The GM will tell you a weakness they hide"
+        ]
+      },
+      { "range": "7-9", "text": "Choose only one." },
+      { "range": "6-", "text": "You only see their success; mark 1 XP and gain **dis** against them until the end of the scene." }
+    ]
   },
   {
     "id": "sta004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Forecaster",
+    "description": "After you successfully **Make Camp**, choose what the weather is like from the list below. It remains like this until someone changes it, you use this Move again, or you depart from the region. You and all companions gain the weather's benefit.",
+    "pickOne": [
+      "**clear skies** — Clear a Condition when this is chosen",
+      "**overcast** — Ignore **dis** from being **Exhausted**",
+      "**rain, fog, or snow** — Gain **adv** to **Sneak Past** outside"
+    ]
   },
   {
     "id": "sta005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Scion of Sunrise and Sunset",
+    "description": "When **outside during dawn or dusk**, gain **Eye in the Sky**'s daytime and nighttime benefits. When you **focus on your connection to the celestial bodies**, you may mark a Condition to treat this scene as if it takes place outdoors during dawn or dusk."
   }
 ]
