@@ -1,8 +1,9 @@
 <div class="card equipment-card">
-  <h3 class="card-title">🎒 Equipment</h3>
+  <h3 class="card-title">🎒 Equipment & Treasure</h3>
 
 
   <h4>Treasure Track & Wealth Tiers</h4>
+  <p>Start with Poor Wealth (all four Broke boxes already ticked). When you find Treasure, mark a number of boxes on the track equal to the Treasure's value (GM's call).</p>
           <span id="tb_track"
                 data-track
                 data-track-name="Broke"
@@ -12,6 +13,27 @@
                 data-track
                 data-track-name="Poor"
                 data-track-max="6"
+                data-track-shape="square"></span>
+          <span id="mp_track"
+                data-track
+                data-track-name="Modest"
+                data-track-max="8"
+                data-track-shape="square"></span>
+          <span id="cp_track"
+                data-track
+                data-track-name="Comfortable"
+                data-track-max="10"
+                data-track-shape="square"></span>
+          <span id="rp_track"
+                data-track
+                data-track-name="Rich"
+                data-track-max="12"
+                data-track-shape="square"></span>
+          <span id="ap_track"
+                data-track
+                data-track-name="Aristocratic"
+                data-track-max="5"                
+                data-track-dynamic="true"
                 data-track-shape="square"></span>
   <table id="equipment" data-dynamic-table data-table-max="10">
     <thead>
