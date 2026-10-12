@@ -39,7 +39,7 @@
         "title": "Choose a blunt weapon (or create a new one with the GM):",
         "options": [
           { "name": "consecrated mace", "details": "1d6 dmg #hand + shield. Mark to ignore all dmg from one attack", "uses": "1" },
-          { "name": "plain quarterstaff", "details": "1d6 dmg #close #hand", "uses": "" },
+          { "name": "plain quarterstaff", "details": "1d6 dmg #close #hand #two-handed", "uses": "" },
           { "name": "reinforced net", "details": "0 dmg #close #hand. Mark to trap one medium or some small creatures under it", "uses": "1" }
         ]
       },
@@ -49,7 +49,7 @@
         "options": [
           { "name": "holy water vials", "details": "#holy #close. Mark to ignore all Resistances of an enemy of your deity until the end of the Scene", "uses": "3" },
           { "name": "leather armor", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
-          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or clear one Condition/affliction", "uses": "2" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or to cure a minior disease or poison", "uses": "2" },
           { "name": "pious supplies", "details": "Mark to rummage through and find an item used in your deity's worship, such as candles, censer, incense, or holy vestments", "uses": "3" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
         ]
@@ -79,7 +79,7 @@
           { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
           { "name": "breastplate", "details": "dmg reduction 2 (reduces all incoming dmg by 2, to a min of 1). Min STR+2 to use properly", "uses": "" },
           { "name": "studded leather", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
-          { "name": "medicine", "details": "Mark to cure an affliction or double the next healing received", "uses": "2" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or to cure a minor disease or poison", "uses": "2" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
           { "name": "shield", "details": "Mark to ignore all dmg from one attack", "uses": "1" }
         ]
@@ -120,7 +120,7 @@
     "_movesFile": "data/moves/barbarian.json",
     "description": "A mighty stranger from an even stranger land",
     "paths": ["Berserker", "Hedonist", "Outlander"],
-    "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +2, then assign +0, +0, and -1 to the others.",
+    "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
     "default-gear": [
       {
         "type": "pickOne",
