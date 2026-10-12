@@ -520,5 +520,29 @@
     "multiple": 6,
     "takeFromAllowsDuplicates": true,
     "takeFrom": ["Bonds"]
+  },
+  {
+    "id": "evy024",
+    "title": "Make a Purchase",
+    "category": "Campaign Moves",
+    "description": "The GM confirms the cost of the item, taking into account which Wealth tier would treat it as a meaningful purchase, but not a trivial or impossible one.",
+    "outcomes": [
+        {
+            "text": "If the cost is **below your Wealth**, your finances can painlessly absorb it, and you can buy it without clearing any boxes from your Treasure Track"
+        },
+        {
+            "text": "If the cost is **equal to your Wealth**, you'll still have to pay, but not a huge amount. Clear the rightmost box from your Treasure Track to buy it"
+        },
+        {
+            "text": "If the cost is **above your Wealth**, you can't afford it, or those who sell it aren't willing to sell it to someone of your sanding"
+        }
+    ],
+    "hideCheckbox": true,
+    "submoves": [
+        {
+            "title": "Selling Items",
+            "description": "Just like when buying items, sold items also relate to your Wealth. If an item's cost is equal to your Wealth, it sells for 0 Treasure (you're no merchant). If it's above your Wealth, it's worth 1 Treasure, no matter how much higher above your Wealth it is, unless you go out of your way to find a broker or make a deal."
+        }
+    ]
   }
 ]
