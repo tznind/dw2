@@ -19,6 +19,11 @@ window.CardInitializers.origins = function(container, suffix) {
             community: "e.g. a bunch of lowlifes, devout people, law enforcers, etc. What traditions do you still honor separately from your deity?",
             background: "e.g. disillusioned sheriff, helpless urchin, skeptical wizard's apprentice, etc. What \"divine intervention\" made you quit and become a cleric?"
         },
+        "The Druid": {
+            ancestry: "e.g. centaur, spiderkin, treefolk, etc. What physical feature persists throughout your transformations?",
+            community: "e.g. obstinate industrialists, pack of wild animals, sacred protectors, etc. How do they see nature compared to you?",
+            background: "e.g. brilliant artisan, devoted hermit, wealthy heir(ess), etc. Who wants you to return to your old, \"civilized\" life?"
+        },
         "The Fighter": {
             ancestry: "e.g. dragonborn, human, nephilim, etc. What fighting lesson from your childhood still stays with you?",
             community: "e.g. peaceful farmers, self-sacrificing miners, tough sailors, etc. Did they appreciate fighting prowess? Why?",
@@ -28,6 +33,11 @@ window.CardInitializers.origins = function(container, suffix) {
             ancestry: "e.g. dhampir, elemental, mousekin, etc. What custom among your people marks a formal oath or promise?",
             community: "e.g. a heartbroken vampire, fellow prisoners, forest dryads, etc. Who do you look up to despite them not being a paladin themself?",
             background: "e.g. daring revolutionary, evil warlord, kind free spirit, etc. What tragedy made you swear your vows?"
+        },
+        "The Ranger": {
+            ancestry: "e.g. goblin, grippli, mer-person, etc. What natural environment did you grow up in?",
+            community: "e.g. remote villagers, retired heroes, wandering bounty hunters, etc. What skills did you learn from them directly?",
+            background: "e.g. royal gameskeeper, wanted criminal, wilderness guide, etc. What coming danger prompted you to adventure?"
         },
         "The Rogue": {
             ancestry: "e.g. catfolk, firbolg, oozeling, etc. Were your parents law-abiding people?",
