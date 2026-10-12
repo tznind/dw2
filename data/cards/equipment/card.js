@@ -9,6 +9,49 @@ window.CardInitializers.equipment = function(container, suffix) {
         return `${entry.name}${usesText}${details}`.trim();
     }
 
+    function isTrackFull(trackSpan) {
+        const shapes = trackSpan.querySelectorAll('.track-shape');
+        if (shapes.length === 0) {
+            return false;
+        }
+        return trackSpan.querySelectorAll('.track-shape.filled').length === shapes.length;
+    }
+
+    function updateWealthTierUnderlines() {
+        const trackSpans = Array.from(container.querySelectorAll('[data-track]'));
+
+        // The current tier is the first one not yet fully filled (everything
+        // before it must therefore be full too) - only that tier is underlined,
+        // not every tier that happens to follow a full one.
+        let currentIndex = trackSpans.findIndex(trackSpan => !isTrackFull(trackSpan));
+        if (currentIndex === -1) {
+            currentIndex = trackSpans.length; // every tier full - nothing left to underline
+        }
+
+        trackSpans.forEach((trackSpan, index) => {
+            const label = trackSpan.querySelector('.track-label');
+            if (!label) {
+                return;
+            }
+            // index 0 (Broke) is the default state and is never highlighted
+            const achieved = currentIndex > 0 && index === currentIndex;
+            label.style.textDecoration = achieved ? 'underline' : '';
+            label.style.fontWeight = achieved ? '900' : '';
+        });
+    }
+
+    updateWealthTierUnderlines();
+
+    // Track shapes toggle a 'filled' class on click, and get rebuilt entirely
+    // when a dynamic track's max value changes - watch both to stay in sync.
+    const wealthTierObserver = new MutationObserver(updateWealthTierUnderlines);
+    wealthTierObserver.observe(container, {
+        attributes: true,
+        attributeFilter: ['class'],
+        childList: true,
+        subtree: true
+    });
+
     helpers.addEventListener('starting-equipment-btn', 'click', async () => {
         const selectedRole = window.Utils ? window.Utils.getCurrentRole() : null;
 
