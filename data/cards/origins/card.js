@@ -24,6 +24,11 @@ window.CardInitializers.origins = function(container, suffix) {
             community: "e.g. peaceful farmers, self-sacrificing miners, tough sailors, etc. Did they appreciate fighting prowess? Why?",
             background: "e.g. feral child, respected miner, tireless healer, etc. What cause made you leave your former life of peace behind?"
         },
+        "The Paladin": {
+            ancestry: "e.g. dhampir, elemental, mousekin, etc. What custom among your people marks a formal oath or promise?",
+            community: "e.g. a heartbroken vampire, fellow prisoners, forest dryads, etc. Who do you look up to despite them not being a paladin themself?",
+            background: "e.g. daring revolutionary, evil warlord, kind free spirit, etc. What tragedy made you swear your vows?"
+        },
         "The Rogue": {
             ancestry: "e.g. catfolk, firbolg, oozeling, etc. Were your parents law-abiding people?",
             community: "e.g. denizens of the Underdark, a street gang, privileged pricks, etc. Did you experience a lot of crime firsthand?",

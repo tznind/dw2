@@ -1,0 +1,27 @@
+[
+  {
+    "id": "pal001",
+    "title": "Oaths of Conviction - Liege",
+    "description": "You have sworn righteous oaths and service to a liege; name them now: ___pln:leader/institution/organization__.\n\nYou start with all five of the following oaths marked. As long as you uphold an oath, you can use its benefit:",
+    "tracks": [
+      {
+        "dynamic": true,
+        "name": "Mercy",
+        "max": 4
+      }
+    ],
+    "pick": [
+          "Bravery (Always be the first one in and the last one out). When you **Defy Danger**, treat any 6- as 7-9 ",
+          "Mercy (Never take a life). Max uses equal to twice your WIS (min 1). Mark to touch someone with a bare hand and restore 1 HP. Regain all uses when you finish **Making Camp**",
+          "Protection (Never let an innocent die in your presence). Your weapon deals **holy** DMG and add +1 to your armor",
+          "Purity (Never trick or deceive). You're immune to all diseases and you can mark a Condition to cure someone else's disease",
+          "Retribution (Never let an evildoer go unpunished). You can mark a Condition to perceive creatures with evil intent up to **near** you. When you **declare someone to have evil intent**, from now on they suffer 1d4 DMG **piercing** whenever they inflict **DMG** on you or your **close** alies"
+    ],
+    "submoves": [
+      {
+        "title": "Broken Oaths",
+        "description": "When you **break an oath** (your call), clear that oath and lock a Condition. When you **find a way to atone** (also your call), clear a Condition and mark a cleared oath."
+      }
+    ]
+  }
+]

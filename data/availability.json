@@ -174,6 +174,35 @@
     ],
     "rgu001": true
   },
+  "The Paladin": {
+    "_movesFile": "data/moves/paladin.json",
+    "description": "A wondering do-gooder empowered by oaths & steel",
+    "paths": ["Inquisitor", "Paragon", "Questing Knight"],
+    "level1Help": "At Level 1 your max hp is 10 and your cha is +2. Choose str or wis to be +2 too, then assign 0, 0, and -1 to the others.",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "bloodied warhammer", "details": "1d8 dmg #close #two-handed #forceful", "uses": "" },
+          { "name": "crossbow with silver tipped bolts", "details": "1d8 dmg #ammo #near #far #reload #two-handed", "uses": "" },
+          { "name": "liege’s longsword", "details": "1d6 dmg #close and gleaming shield. Mark to ignore all dmg from one attack", "uses": "1" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two of the items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "half plate", "details": "dmg reduction 2 (reduces dmg taken by 2, to a min of 1), req. STR+2", "uses": "" },
+          { "name": "javelins", "details": "1d4 dmg #ammo #near #thrown", "uses": "" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP or clear a locked Condition", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
+        ]
+      }
+    ],
+    "pal001": true
+  },
   "Berserker": {
     "_movesFile": "data/moves/berserker.json",
     "description": "You're the hardest of them, with a touch of the uncanny",
@@ -335,6 +364,33 @@
     "swb003": false,
     "swb004": false,
     "swb005": false
+  },
+  "Inquisitor": {
+    "_movesFile": "data/moves/inquisitor.json",
+    "description": "Rotten apples must be purged before they spoil the rest",
+    "inq001": true,
+    "inq002": false,
+    "inq003": false,
+    "inq004": false,
+    "inq005": false
+  },
+  "Paragon": {
+    "_movesFile": "data/moves/paragon.json",
+    "description": "An inspiration to anyone who meets you",
+    "par001": true,
+    "par002": false,
+    "par003": false,
+    "par004": false,
+    "par005": false
+  },
+  "Questing Knight": {
+    "_movesFile": "data/moves/questing-knight.json",
+    "description": "Absolute commitment can achieve the impossible",
+    "qkn001": true,
+    "qkn002": false,
+    "qkn003": false,
+    "qkn004": false,
+    "qkn005": false
   },
   "Struggles": {
     "_movesFile": "data/moves/struggles.json",
