@@ -35,8 +35,8 @@
             "description": "- Who was the betrayer to you? __str2_0__\n\n- How did they betray you? __str2_1__\n\n- How can you heal that wound? __str2_2__"
         },
         {
-            "title": "Driven & Hurting (+)",
-            "description": "You can suffer 1d6 dmg **piercing** to ignore all Condition penalties for your next roll."
+            "title": "Driven (+)",
+            "description": "You can suffer 1d4 dmg **piercing** to ignore all Condition penalties for your next roll."
         },
         {
             "title":"Hurting (+)",
