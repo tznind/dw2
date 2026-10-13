@@ -39,7 +39,7 @@
         "title": "Choose a blunt weapon (or create a new one with the GM):",
         "options": [
           { "name": "consecrated mace", "details": "1d6 dmg #hand + shield. Mark to ignore all dmg from one attack", "uses": "1" },
-          { "name": "plain quarterstaff", "details": "1d6 dmg #close #hand", "uses": "" },
+          { "name": "plain quarterstaff", "details": "1d6 dmg #close #hand #two-handed", "uses": "" },
           { "name": "reinforced net", "details": "0 dmg #close #hand. Mark to trap one medium or some small creatures under it", "uses": "1" }
         ]
       },
@@ -49,7 +49,7 @@
         "options": [
           { "name": "holy water vials", "details": "#holy #close. Mark to ignore all Resistances of an enemy of your deity until the end of the Scene", "uses": "3" },
           { "name": "leather armor", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
-          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or clear one Condition/affliction", "uses": "2" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or to cure a minior disease or poison", "uses": "2" },
           { "name": "pious supplies", "details": "Mark to rummage through and find an item used in your deity's worship, such as candles, censer, incense, or holy vestments", "uses": "3" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
         ]
@@ -79,7 +79,7 @@
           { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
           { "name": "breastplate", "details": "dmg reduction 2 (reduces all incoming dmg by 2, to a min of 1). Min STR+2 to use properly", "uses": "" },
           { "name": "studded leather", "details": "dmg reduction 1 (reduces all incoming dmg by 1, to a min of 1). Min STR+1 to use properly", "uses": "" },
-          { "name": "medicine", "details": "Mark to cure an affliction or double the next healing received", "uses": "2" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or to cure a minor disease or poison", "uses": "2" },
           { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
           { "name": "shield", "details": "Mark to ignore all dmg from one attack", "uses": "1" }
         ]
@@ -128,7 +128,7 @@
         "options": [
           { "name": "ancestral longsword", "details": "1d6 #close + shield. Mark to ignore all dmg from one attack", "uses": "1" },
           { "name": "bloodstained greataxe", "details": "1d8 dmg #close #two-handed #forceful", "uses": "" },
-          { "name": "dual hammers", "details": "1d6 dmg #close. adv on dmg rolls", "uses": "" }
+          { "name": "dual hammers", "details": "1d6 dmg #close #light adv on dmg rolls", "uses": "" }
         ]
       },
       {
@@ -173,6 +173,93 @@
       }
     ],
     "rgu001": true
+  },
+  "The Paladin": {
+    "_movesFile": "data/moves/paladin.json",
+    "description": "A wondering do-gooder empowered by oaths & steel",
+    "paths": ["Inquisitor", "Paragon", "Questing Knight"],
+    "level1Help": "At Level 1 your max hp is 10 and your cha is +2. Choose str or wis to be +2 too, then assign 0, 0, and -1 to the others.",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "bloodied warhammer", "details": "1d8 dmg #close #two-handed #forceful", "uses": "" },
+          { "name": "crossbow with silver tipped bolts", "details": "1d8 dmg #ammo #near #far #reload #two-handed", "uses": "" },
+          { "name": "liege’s longsword", "details": "1d6 dmg #close and gleaming shield. Mark to ignore all dmg from one attack", "uses": "1" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two of the items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "half plate", "details": "dmg reduction 2 (reduces dmg taken by 2, to a min of 1), req. STR+2", "uses": "" },
+          { "name": "javelins", "details": "1d4 dmg #ammo #near #thrown", "uses": "" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP or clear a locked Condition", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
+        ]
+      }
+    ],
+    "pal001": true
+  },
+  "The Druid": {
+    "_movesFile": "data/moves/druid.json",
+    "description": "A disciple of nature who communes with the spirits and transforms into animals",
+    "paths": ["Animist", "Stargazer", "Wildheart"],
+    "level1Help": "At Level 1 your max hp is 8 and your wis is +2. Choose dex or cha to be +2 too, then assign 0, 0, and -1 to the others.",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "flowering staff", "details": "1d4 dmg #close #two-handed. Mark instead of another item to produce a natural alternative", "uses": "2" },
+          { "name": "vine slingshot", "details": "1d6 dmg #near #ammo #two-handed", "uses": "" },
+          { "name": "wooden club", "details": "1d6 dmg #close + shield. Mark to ignore all dmg from one attack", "uses": "1" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two of the items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "alchemical vials", "details": "Mark to withdraw of any of the following types: acid, fire, or smoke", "uses": "3" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or to cure a minor disease or poison", "uses": "2" },
+          { "name": "potion of healing", "details": "Mark to recover half your max HP or clear a locked Condition", "uses": "1" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" }
+        ]
+      }
+    ],
+    "dru001": true
+  },
+  "The Ranger": {
+    "_movesFile": "data/moves/ranger.json",
+    "description": "A seasoned hunter and traveler who works closely with a beast friend",
+    "paths": ["Beastmaster", "Deadeye", "Scout"],
+    "level1Help": "At Level 1 your max hp is 10 and your dex is +2. Choose str or int to be +2 too, then assign 0, 0, and -1 to the others.",
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose a weapon (or create a new one with the GM):",
+        "options": [
+          { "name": "composite bow", "details": "1d6 dmg #near #far #ammo #two-handed", "uses": "" },
+          { "name": "dual scimitars", "details": "1d6 dmg #hand #light #precise, adv on dmg rolls", "uses": "" },
+          { "name": "reliable staff", "details": "1d6 dmg #hand #close #two-handed and sling 1d4 dmg #near #ammo", "uses": "" }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two of the items below:",
+        "options": [
+          { "name": "adventuring gear", "details": "Mark to rummage through and find a useful mundane item", "uses": "3" },
+          { "name": "light armor", "details": "dmg reduction 1 (reduces dmg taken by 1, to a min of 1), req. STR+1", "uses": "" },
+          { "name": "medicine", "details": "Mark to have someone double the HP they recover next or to cure a minor disease or poison", "uses": "2" },
+          { "name": "provisions", "details": "Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\"", "uses": "3" },
+          { "name": "trap kit", "details": "When you spend time setting up a trap, mark once to create a dangerous, impeding hazard for anyone in its range; it typically deals 1d4 dmg", "uses": "2" }
+        ]
+      }
+    ],
+    "rgr001": true
   },
   "Berserker": {
     "_movesFile": "data/moves/berserker.json",
@@ -336,6 +423,87 @@
     "swb004": false,
     "swb005": false
   },
+  "Inquisitor": {
+    "_movesFile": "data/moves/inquisitor.json",
+    "description": "Rotten apples must be purged before they spoil the rest",
+    "inq001": true,
+    "inq002": false,
+    "inq003": false,
+    "inq004": false,
+    "inq005": false
+  },
+  "Paragon": {
+    "_movesFile": "data/moves/paragon.json",
+    "description": "An inspiration to anyone who meets you",
+    "par001": true,
+    "par002": false,
+    "par003": false,
+    "par004": false,
+    "par005": false
+  },
+  "Questing Knight": {
+    "_movesFile": "data/moves/questing-knight.json",
+    "description": "Absolute commitment can achieve the impossible",
+    "qkn001": true,
+    "qkn002": false,
+    "qkn003": false,
+    "qkn004": false,
+    "qkn005": false
+  },
+  "Animist": {
+    "_movesFile": "data/moves/animist.json",
+    "description": "The natural world is alive in ways few mortals now understand",
+    "ani001": true,
+    "ani002": false,
+    "ani003": false,
+    "ani004": false,
+    "ani005": false
+  },
+  "Stargazer": {
+    "_movesFile": "data/moves/stargazer.json",
+    "description": "As foretold above, so unfolds below",
+    "sta001": true,
+    "sta002": false,
+    "sta003": false,
+    "sta004": false,
+    "sta005": false
+  },
+  "Wildheart": {
+    "_movesFile": "data/moves/wildheart.json",
+    "description": "Follower of the oldest path, wild & weary as the beasts",
+    "wld001": true,
+    "wld002": false,
+    "wld003": false,
+    "wld004": false,
+    "wld005": false
+  },
+  "Beastmaster": {
+    "_movesFile": "data/moves/beastmaster.json",
+    "description": "Two bodies, one soul",
+    "bst001": true,
+    "bst002": false,
+    "bst003": false,
+    "bst004": false,
+    "bst005": false
+  },
+  "Deadeye": {
+    "_movesFile": "data/moves/deadeye.json",
+    "description": "One shot, one kill",
+    "dea001": true,
+    "dea002": false,
+    "dea003": false,
+    "dea004": false,
+    "dea005": false
+  },
+  "Scout": {
+    "_movesFile": "data/moves/scout.json",
+    "description": "Intimately familiar with wilderness’ bounties and perils",
+    "sct001": true,
+    "sct002": false,
+    "sct003": false,
+    "sct004": false,
+    "sct005": false
+  },
   "Struggles": {
     "_movesFile": "data/moves/struggles.json",
     "str001": true,
@@ -397,6 +565,7 @@
     "evy021": true,
     "evy022": false,
     "evy023":false,
-    "evya": true
+    "evya": true,
+    "evy024":true
   }
 }

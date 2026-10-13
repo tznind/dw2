@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dru001",
+    "title": "Shapeshift",
+    "description": "When you **transform into a beast you've encountered before**, describe your new shape, choose an adaptation below, and roll+WIS. If you encountered the beast before the game began, the GM may ask for details.\n- fast & agile — 1d6 dmg #precise #hand #close\n- mobile & acclimated — 1d4 dmg #hand, can fly, swim, or burrow\n- small or camouflaged — 1 dmg #hand. You have **adv** to **Sneak Past**\n- tough & strong — Armor 2, 1d8 dmg #hand #close",
+    "outcomes": [
+      { "range": "10+", "text": "It works and you gain the adaptation's benefits." },
+      { "range": "7-9", "text": "It works, but the GM will say what compels your instincts; pursue it now or mark a Condition to resist it." },
+      { "range": "6-", "text": "It works, but you lose control over it for now; mark 1 XP and the GM makes a Move." }
+    ],
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "While shapeshifted you can't communicate with anyone except other PCs. You can return to normal any time you're in control, but must always do so when the scene ends."
+      }
+    ]
+  }
+]

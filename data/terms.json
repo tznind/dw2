@@ -106,5 +106,25 @@
   {
     "term":"any effect under your deity's Domain",
     "description":"Is intentionally broad. Here are some examples for each domain:\n- Law — command someone, detect deceit, summon enforcers\n- Light — light up a room, conjure light-based illusions, call down searing light from above\n- Craft — assemble or create objects, dismantle crafted objects, know who created something\n- Nature — rapidly grow vegetation, summon animals to your aid, change the weather\n- Travel — find or create shelter, carve a path through a hazard or obstacle, teleport somewhere"
+  },
+  {
+    "term":"thrown",
+    "description":"You can *Trade Blows*+Str instead of +Dex when using it as a ranged weapon"
+  },
+  {
+    "term":"Bloodied",
+    "description":"Your HP reaches half or less"
+  },
+  {
+    "term":"Medicine",
+    "description":"Mark to have someone double the HP they recover next or to cure a minor disease or poison"
+  },
+  {
+    "term":"Adventuring Gear",
+    "description":"Mark to rummage through and find a useful mundane item"
+  },
+  {
+    "term":"Provisions",
+    "description":"Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\""
   }
 ]

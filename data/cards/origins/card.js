@@ -12,27 +12,42 @@ window.CardInitializers.origins = function(container, suffix) {
         "The Bard": {
             ancestry: "e.g. gnome, orc, giantkin, etc. What makes your art different from your people's?",
             community: "e.g. ever-curious scholars, filthy rich people, reclusive artists, etc. How do your life circumstances still influence your art?",
-            background: "e.g. gladiator, librarian, performer, etc. Why did you choose art and danger over a simpler life?"
+            background: "e.g. dreaming librarian, gossipmonger sailor, prestigious curator, etc. Why did you choose art and danger over a simpler life?"
         },
         "The Cleric": {
             ancestry: "e.g. halfling, owlkin, tiefling, etc. What is their view of your faith?",
             community: "e.g. a bunch of lowlifes, devout people, law enforcers, etc. What traditions do you still honor separately from your deity?",
-            background: "e.g. sheriff, urchin, wizard's apprentice, etc. What \"divine intervention\" made you quit and become a cleric?"
+            background: "e.g. disillusioned sheriff, helpless urchin, skeptical wizard's apprentice, etc. What \"divine intervention\" made you quit and become a cleric?"
+        },
+        "The Druid": {
+            ancestry: "e.g. centaur, spiderkin, treefolk, etc. What physical feature persists throughout your transformations?",
+            community: "e.g. obstinate industrialists, pack of wild animals, sacred protectors, etc. How do they see nature compared to you?",
+            background: "e.g. brilliant artisan, devoted hermit, wealthy heir(ess), etc. Who wants you to return to your old, \"civilized\" life?"
         },
         "The Fighter": {
             ancestry: "e.g. dragonborn, human, nephilim, etc. What fighting lesson from your childhood still stays with you?",
             community: "e.g. peaceful farmers, self-sacrificing miners, tough sailors, etc. Did they appreciate fighting prowess? Why?",
-            background: "e.g. feral child, healer, miner, etc. What cause made you leave your former life of peace behind?"
+            background: "e.g. feral child, respected miner, tireless healer, etc. What cause made you leave your former life of peace behind?"
+        },
+        "The Paladin": {
+            ancestry: "e.g. dhampir, elemental, mousekin, etc. What custom among your people marks a formal oath or promise?",
+            community: "e.g. a heartbroken vampire, fellow prisoners, forest dryads, etc. Who do you look up to despite them not being a paladin themself?",
+            background: "e.g. daring revolutionary, evil warlord, kind free spirit, etc. What tragedy made you swear your vows?"
+        },
+        "The Ranger": {
+            ancestry: "e.g. goblin, grippli, mer-person, etc. What natural environment did you grow up in?",
+            community: "e.g. remote villagers, retired heroes, wandering bounty hunters, etc. What skills did you learn from them directly?",
+            background: "e.g. royal gameskeeper, wanted criminal, wilderness guide, etc. What coming danger prompted you to adventure?"
         },
         "The Rogue": {
             ancestry: "e.g. catfolk, firbolg, oozeling, etc. Were your parents law-abiding people?",
             community: "e.g. denizens of the Underdark, a street gang, privileged pricks, etc. Did you experience a lot of crime firsthand?",
-            background: "e.g. criminal, squire, teacher, etc. Was it a slippery slope or a conscious decision to become who you are now?"
+            background: "e.g. heartless criminal, faithful squire, beloved teacher, etc. Was it a slippery slope or a conscious decision to become who you are now?"
         },
         "The Wizard": {
             ancestry: "e.g. dwarf, elf, golem, etc. What event in your childhood drew you to the arcane?",
             community: "e.g. amateur magicians, landed gentry, nomadic people, etc. Was magic valued among your people? Why? Why not?",
-            background: "e.g. cursed person, mercenary, street magician, etc. How much did you pay or sacrifice to learn the impossible?"
+            background: "e.g. cursed person, lonely scholar, street magician, etc. How much did you pay or sacrifice to learn the impossible?"
         }
     };
 

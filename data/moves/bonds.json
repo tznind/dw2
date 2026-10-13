@@ -56,9 +56,9 @@
   },
   {
     "id": "bon004",
-    "title": "True Lovers",
+    "title": "Romantic Partners",
     "hideCheckbox": true,
-    "description": "You both share a rare and powerful reciprocated love\nWith:__bon4_wi__ (which PC)",
+    "description": "This is true love. You think this happens every day?\nWith:__bon4_wi__ (which PC)",
     "tracks": [
       {
         "name": "Always on my mind",
@@ -70,7 +70,7 @@
     "outcomes": [
       {
         "range": "Always on My Mind",
-        "text": "Once per session each of you can ask the other, *\"Are you thinking about me right now?\"* If \"Yes\", then the responder can **Aid** the asker as if they were in close proximity, with no cost."
+        "text": "Once per session each of you can *wonder dreamily about your lover* to gain **adv** on a roll as if they were Aiding you (at no cost)."
       }
     ],
     "pick": [
@@ -81,19 +81,19 @@
   },
   {
     "id": "bon005",
-    "title": "Mentor & Ward",
+    "title": "Teacher & Student",
     "hideCheckbox": true,
-    "description": "One protects and guides the other through life and its dangers\nWith:__bon5_wi__ (which PC), I am the __bon5_role:Mentor/Ward__",
+    "description": "One advises and guides the other through life and its dangers\nWith:__bon5_wi__ (which PC), I am the __bon5_role:Teacher/Student__",
     "outcomes": [
       {
         "range": "Words of Wisdom",
-        "text": "Once per session, when **the Mentor gives advice or guidance to the Ward**, the Mentor says what the Ward should do. If the Ward accepts, their first roll in pursuit of it has **adv**. If the Ward rejects it, the Mentor marks a Condition but the Ward clears one. Either way, if the Ward later achieves it, the Ward marks 1 XP and the Mentor clears a Condition."
+        "text": "Once per session, when **the Teacher gives advice or guidance to the Student**, the Teacher says what the Student should do. If the Student accepts, their first roll in pursuit of it has **adv**. If the Student rejects it, the Teacher marks a Condition but the Student clears one. Either way, if the Student achieves it later, the Student marks 1 XP and the Teacher clears a Condition."
       }
     ],
     "pick": [
-      "**The Sincerest Form of Flattery** - When the Mentor **Sense Motive** the Ward, they may always ask one additional question, even if they're Sensing another. When **the Ward imitates a mannerism or ability from the Mentor**, the Ward may mark a Condition to gain access to one of the Mentor's Moves for the rest of the scene (Ward's call which Move).",
-      "**Just Like We Practiced** - Once per session each, the Mentor and Ward can **Aid** the other without any cost or risk.",
-      "**Heroic Sacrifice** - When the Ward would **Face Death**, the Mentor may take their place, clearing a Condition (and joining the scene if they were absent). When the Mentor dies, they can give the Ward a final word of guidance, either here and now or based on their last conversation. From now until they see the Mentor again (if ever), when the Ward **End the Session** having followed that guidance, they mark 1 XP."
+      "**The Sincerest Form of Flattery** - When the Teacher **Sense Motive** the Student, they may always ask one additional question, even if they're Sensing another. When **the Student imitates a mannerism or ability from the Teacher**, the Student may mark a Condition to gain access to one of the Teacher's Moves for the rest of the scene (Student's call which Move).",
+      "**Just Like We Practiced** - Once per session each, the Teacher and Student can **Aid** one another without any cost or risk.",
+      "**Heroic Sacrifice** - When the Student would **Face Death**, the Teacher may take their place, clearing a Condition (and joining the scene if they were absent). When the Teacher dies, they can give the Student a final word of guidance, either here and now or based on their last conversation. From now until they see the Teacher again (if ever), when the Student **End the Session** having followed that guidance, they mark 1 XP."
     ]
   },
   {
@@ -116,7 +116,7 @@
     ],
     "pick": [
       "**Try to Keep Up** - When you **gain the Upper Hand**, you may taunt your rival to clear a Condition. If you do, they gain **adv** on their next roll.",
-      "**That Only Counts as One** - Once per session, when you **admit that your rival went above and beyond or did the impossible**, they may make one choice from **Comfort or Support**.",
+      "**Still Counts as One** - Once per session, when you **admit that your rival went above and beyond or did the impossible**, they may make one choice from **Comfort or Support**.",
       "**I Can Do That** - When you **Aid your rival by copying their actions**, instead of giving them **adv** you may roll at the same time with your own Stat (or other questions, or similar). If your result is higher, they can use it instead and you gain the Upper Hand."
     ]
   },

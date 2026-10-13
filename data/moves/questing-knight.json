@@ -1,0 +1,49 @@
+[
+  {
+    "id": "qkn001",
+    "title": "On a Mission",
+    "description": "When you **dedicate yourself to a quest for your liege**, describe it. If you already have a quest, erase it and mark a Condition. Then mark blessings up to your WIS. They remain while you stay true to your quest, and can be changed when you **Make Camp**. When you **End the Session**, mark 1 XP if you've made significant progress on your quest. When you finish your quest, mark 2 XP, recover all HP, clear a locked Condition, and lose your blessings.",
+    "pick": [
+      "**Ardent Dedication** — You know the direction of your quest",
+      "**Immaculate Body** — You are immune to a specific type of harm (fire, falling, arrows, etc.)",
+      "**Golden Tongue** — You can communicate with any sapient being",
+      "**Seventh Sense** — You can sense the presence of a creature type",
+      "**Superhuman State** — You don't need food, water, or sleep"
+    ],
+    "details": true
+  },
+  {
+    "id": "qkn002",
+    "title": "I Dub Thee…",
+    "description": "When you **Face Death**, you may also choose the following:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Newly Knighted. Name a PC, say why you believe in them, then die. If they accept, they gain this Path beyond normal Path limits."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qkn003",
+    "title": "The Great Uniter",
+    "description": "When you **try to join or ally with a faction, or request assistance from your liege**, if they aren't your direct foes they'll tell you of a big problem or goal they're grappling with. If you help them resolve it, you earn their loyalty, and they're willing to work alongside anyone, even their enemies, as long as you lead the efforts."
+  },
+  {
+    "id": "qkn004",
+    "title": "Throw Down the Gauntlet",
+    "description": "When you **demand a one-on-one duel in response to an insult**, your opponent cannot decline, but they can use a substitute, propose provisions, or add complications (GM's call). Additionally, whenever you begin the duel, clear Conditions up to your WIS."
+  },
+  {
+    "id": "qkn005",
+    "title": "Trusted Squire",
+    "tracks": [
+      {
+        "name": "Xp",
+        "max": 5
+      }
+    ],
+    "description": "You have a young NPC at your service who carries your belongings, tends to your needs, and is learning to fight (1d4 dmg). When **they suffer harm**, mark a Condition. Once per session, when you **teach them a lesson**, **Defy Danger**+WIS. On a 7+, they mark 1 XP. When the squire marks their 5th XP, they're ready. You **Level Up** when you sponsor them and they leave to become a paladin themselves. Lose access to this Move until you take on a new squire."
+  }
+]

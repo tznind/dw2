@@ -35,11 +35,15 @@
             "description": "- Who was the betrayer to you? __str2_0__\n\n- How did they betray you? __str2_1__\n\n- How can you heal that wound? __str2_2__"
         },
         {
-            "title": "Driven & Hurting (+)",
-            "description": "You can suffer 1d6 dmg **piercing** to ignore all Condition penalties for your next roll. When you **Comfort or Support** (or receive it), you may also ask, \"Did I tell them about my betrayer?\". If \"Yes\", the comforted gets an extra option."
+            "title": "Driven (+)",
+            "description": "You can suffer 1d4 dmg **piercing** to ignore all Condition penalties for your next roll."
         },
         {
-            "title": "Guarded (-)",
+            "title":"Hurting (+)",
+            "description": "When you **Comfort or Support** (or receive it), you may also ask, \"Did I tell them about my betrayer?\". If \"Yes\", the comforted gets an extra option."
+        },
+        {
+            "title": "Wary (-)",
             "description": "When you gain Depth with another PC, mark a Condition."
         }
     ]
@@ -301,7 +305,7 @@
         },
         {
             "title": "Keep Digging (+)",
-            "description": "When you would spend Treasure, you may instead mark an equal amount of Debt, which represents additional dues beyond what you initially owed. When you give your creditor something they really want (GM's call), reset Debt to 0."
+            "description": "When you would spend Treasure, you may instead mark an equal amount of Debt, which represents additional dues beyond what you initially owed. You can also buy items beyond your current Wealth tier by marking 1 Debt per tier difference. When you give your creditor something they really want (GM's call), reset Debt to 0."
         },
         {
             "title": "Collectors (-)",
@@ -411,11 +415,11 @@
     "submoves": [
         {
             "title": "Questions",
-            "description": "- What one aspect of your prophetic dreams is consistently clear? __str15_0__\n\n- Do you know who sends you these visions? __str15_1__\n\n- Who among your beloved is in danger in them? __str15_2__"
+            "description": "- What one aspect of your prophetic dreams is consistently clear? __str15_0__\n\n- Do you know who sends you these visions? __str15_1__\n\n- Who close to you do they depict as in danger? __str15_2__"
         },
         {
             "title": "Saw It Coming (+)",
-            "description": "When you finish **Make Camp** successfully, gain Wyrd equal to your WIS. When something terrible happens to another PC (your call), you may spend 1 or 2 Wyrd to allow their Player to re-roll that number of dice after making a roll."
+            "description": "When you finish **Make Camp** successfully, gain Wyrd equal to your WIS. When something terrible happens to another PC (your call), you may spend 1 or 2 Wyrd to allow their Player to re-roll that number of dice after making a roll and seeing the consequences. The new result is what *really* happens."
         },
         {
             "title": "No Rest for the All-Seeing (-)",
@@ -556,7 +560,7 @@
         },
         {
             "title": "Unmasked (-)",
-            "description": "When your real identity is revealed, the GM may have the wrong people get news of you or the GM advances a Threat (GM's call)."
+            "description": "When your real identity is revealed to someone new, the GM may have the wrong people get news of you or the GM advances a Threat (GM's call)."
         }
     ]
   },
@@ -628,7 +632,7 @@
     "id": "str022",
     "title": "Vengeful",
     "hideCheckbox": true,
-    "description": "There's no justice in this world, but the one you make.",
+    "description": "There's no justice in this world, but the one you will wield against your archenemy.",
     "details": true,
     "tracks": [
         {

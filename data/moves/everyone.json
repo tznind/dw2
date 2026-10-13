@@ -150,7 +150,7 @@
     "title": "Defy Danger (+Variable)",
     "category": "Core Moves",
     "hideCheckbox": true,
-    "description": "When you **contend with a risk, threat, or obstacle** - and no other move fits better - describe how you do it, then the GM chooses one:\n- +str if you power through, physically endure, or break it\n- +dex if you dodge, outpace, or target it precisely\n- +int if you analyze, notice, or outsmart it\n- +wis if you scrutinize, empathize with, or resolutely resist it\n- +cha if you charm, trick, impress, or provoke it",
+    "description": "When you **contend with a risk, threat, or obstacle** - and no other move fits - describe how you do it, then the GM chooses one and you roll:\n- +str if you power through, physically endure, or break it\n- +dex if you dodge, outpace, or target it precisely\n- +int if you analyze, notice, or outsmart it\n- +wis if you scrutinize, empathize with, or resolutely resist it\n- +cha if you charm, trick, impress, or provoke it",
     "outcomes": [
         {
             "range": "10+",
@@ -243,6 +243,24 @@
         {
             "range": "6-",
             "text": "The GM answers with danger or an unwelcome truth; mark 1 XP and the GM makes a Move."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Example Questions",
+            "outcomes": [
+                {
+                    "text": "",
+                    "bullets": [
+                        "Where is ... located?",
+                        "What could have caused ...?",
+                        "What might be the best way to accomplish ...?",
+                        "What have I heard or read about ...?",
+                        "How might I gain access to ...?"
+                    ]
+                }
+            ]
+            
         }
     ]
   },
@@ -409,7 +427,32 @@
     "title": "Reach Your Limit",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:\n- **Angry** — Lash out at your allies or break something important\n- **Distracted** — Wander off alone or miss something relevant\n- **Exhausted** — Collapse or give up when it matters\n- **Frightened** — Hide or flee from danger\n- **Insecure** — Overcompensate or harshly criticize someone\n\nAfter the outburst, lock the chosen Condition.",
+    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:",
+    "outcomes": [
+        {
+            "range": "Angry",
+            "text": "Lash out at your allies or break something important"
+        },
+        {
+            "range": "Distracted",
+            "text": "Wander off alone or miss something relevant"
+        },
+        {
+            "range": "Exhausted",
+            "text": "Collapse or give up when it matters"
+        },
+        {
+            "range": "Frightened",
+            "text": "Hide or flee from danger"
+        },
+        {
+            "range": "Insecure",
+            "text": "Overcompensate or harshly criticize someone"
+        },
+        {
+            "text": "After the outburst, lock the chosen Condition."
+        }
+    ],
     "submoves": [
         {
             "title": "Note:",
@@ -502,5 +545,29 @@
     "multiple": 6,
     "takeFromAllowsDuplicates": true,
     "takeFrom": ["Bonds"]
+  },
+  {
+    "id": "evy024",
+    "title": "Make a Purchase",
+    "category": "Campaign Moves",
+    "description": "The GM confirms the cost of the item, taking into account which Wealth tier would treat it as a meaningful purchase, but not a trivial or impossible one.",
+    "outcomes": [
+        {
+            "text": "If the cost is **below your Wealth**, your finances can painlessly absorb it, and you can buy it without clearing any boxes from your Treasure Track"
+        },
+        {
+            "text": "If the cost is **equal to your Wealth**, you'll still have to pay, but not a huge amount. Clear the rightmost box from your Treasure Track to buy it"
+        },
+        {
+            "text": "If the cost is **above your Wealth**, you can't afford it, or those who sell it aren't willing to sell it to someone of your sanding"
+        }
+    ],
+    "hideCheckbox": true,
+    "submoves": [
+        {
+            "title": "Selling Items",
+            "description": "Just like when buying items, sold items also relate to your Wealth. If an item's cost is equal to your Wealth, it sells for 0 Treasure (you're no merchant). If it's above your Wealth, it's worth 1 Treasure, no matter how much higher above your Wealth it is, unless you go out of your way to find a broker or make a deal."
+        }
+    ]
   }
 ]
