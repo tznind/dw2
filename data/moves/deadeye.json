@@ -1,27 +1,65 @@
 [
   {
     "id": "dea001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Death from Afar",
+    "description": "When you **enter a combat situation**, gain Aim equal to your DEX (min 1). You can spend 1 Aim to do one of the maneuvers below. When the combat situation ends, lose all Aim.",
+    "tracks": [
+      { "name": "Aim", "shape": "circle", "max": 4 }
+    ],
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "**Line It Up** — Your next ranged attack gains **piercing** and ignores cover and concealment",
+          "**Rapid Shots** — Your next ranged attack gains **area** and either **hand**, **close**, **near**, or **far**",
+          "**Suppressing Fire** — **Aid A PC** without paying another cost; if they take dmg, reduce it by 1 (min 1)",
+          "**Take Cover** — After you **Trade Blows** at range, reduce dmg taken by your DEX (min 0)"
+        ]
+      }
+    ]
   },
   {
     "id": "dea002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "Find Weakness",
+    "description": "You may **Sense Motive**+DEX by observing them in a battle or physical contest. If you do so, no matter the roll you may also ask one question about their strengths and weaknesses."
   },
   {
     "id": "dea003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Sniper Nest",
+    "description": "When you **spend minutes or hours (GM's call) finding or creating the perfect vantage point**, you gain the following benefits while there:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Once a combat situation begins, gain +1 Aim (max 4)",
+          "The first time you attack with a ranged weapon from it, no one new learns your position",
+          "Trap kits set up here deal 1d6 dmg instead of 1d4 and never impede or harm you or your allies"
+        ]
+      },
+      {
+        "text": "When you leave the nest, lose its benefits unless you spend time setting it up again. If you need to **Defy Danger** to leave it safely, roll with **adv**."
+      }
+    ]
   },
   {
     "id": "dea004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Spotter",
+    "description": "When you **receive** **Aid** **while attacking with a ranged weapon**, instead of gaining **adv** on a roll you may execute one maneuver without spending Aim."
   },
   {
     "id": "dea005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Trick Arrows",
+    "description": "You may spend Aim or mark a use of the appropriate item to do any of the following maneuvers on your next ranged attack:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "adventuring gear — **forceful**, or pulls you to them or vice-versa",
+          "alchemical vials — +1 dmg and spreads acid, fire, or smoke",
+          "poisoner's kit — target takes +1 dmg until the end of the scene",
+          "trap kit — +1 dmg and briefly immobilizes your target"
+        ]
+      }
+    ]
   }
 ]

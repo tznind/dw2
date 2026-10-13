@@ -118,5 +118,13 @@
   {
     "term":"Medicine",
     "description":"Mark to have someone double the HP they recover next or to cure a minior disease or poison"
+  },
+  {
+    "term":"Adventuring Gear",
+    "description":"Mark to rummage through and find a useful mundane item"
+  },
+  {
+    "term":"Provisions",
+    "description":"Mark once while you Comfort or Support to turn a \"No\" into a \"Yes\""
   }
 ]

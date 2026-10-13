@@ -1,27 +1,53 @@
 [
   {
     "id": "sct001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "Lay of the Land",
+    "description": "When you **survey an environment or landscape away from your companions**, roll+INT, then skip ahead to when you return to your companions.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose three benefits below.",
+        "bullets": [
+          "Natural wildlife won't prey on, or flee from, you or your allies",
+          "When you **Sneak Past** by blending in, treat a 7-9 as a 10+",
+          "When you **Unearth Secrets**, if the secret is related to the environment (e.g. corruption, feature, usual inhabitant, etc.), treat a 6- as a 7-9",
+          "When you **Undertake a Perilous Journey** as the leader, gain +1 to the roll and clear a Condition. If another PC is the leader, gain 1 Depth with them if they ask for your advice."
+        ]
+      },
+      { "range": "7-9", "text": "Choose two" },
+      { "range": "6-", "text": "Choose one, but something followed you back; mark 1 XP and the GM makes a Move." }
+    ]
   },
   {
     "id": "sct002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "Hunter's Mark",
+    "description": "Once per session, when you **focus on hunting an individual**, gain the following benefits when interacting with them until the end of that session:",
+    "details": true,
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Gain **adv** on Moves rolled in direct pursuit of them",
+          "When you **Spout Lore** about them, gain +1 to the roll",
+          "The first time this session you deal dmg to them, it's max",
+          "When you capture or defeat them, clear a Condition"
+        ]
+      }
+    ]
   },
   {
     "id": "sct003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Peerless Wayfarer",
+    "description": "When you use **Lay of the Land**, if you spend excessive time exploring (days or weeks), make an extra choice. No matter the time spent, on a 12+, you also bring back a lead on an ally, opportunity, or treasure. Say which, then the GM will tell you more. When you leave an environment you've surveyed with **Lay of the Land**, write down your benefits; you regain them if you ever return here."
   },
   {
     "id": "sct004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "The Wild Provides",
+    "description": "When you **search a natural landscape for resources**, **Defy Danger**+INT. On a 7+, gain 2 Uses, split between **adventuring gear**, **medicine**, and **provisions**."
   },
   {
     "id": "sct005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Natural Historian",
+    "description": "When you **Spout Lore** about flora or fauna from the wild, on a 7+, ask an additional question. If it can fight, the GM will also tell you its HP and dmg."
   }
 ]
