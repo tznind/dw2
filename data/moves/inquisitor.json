@@ -6,16 +6,10 @@
       {
         "condition": {"hasMove": "pal001"},
         "then": {
-          "description": "Add this oath to your Oaths of Conviction as well:",
-          "pick": [
-            "Castigation (Never allow an evildoer to live). When you **Trade Blows** with a creature with evil intent (GM's call), add +1d6 **holy** dmg"
-          ]
+          "description": "Add the following oath to your Oaths. See the Paladin Starting Move, **Oaths of Conviction - Liege**."
         },
         "else": {
-          "description": "Gain the **Oaths of Conviction - Liege** Paladin Starting Move: you have sworn a righteous oath and service to a liege; name them now: ___inq1pln:leader/institution/organization__.\n\nYou start with the oath below marked. As long as you uphold it, you can use its benefit:",
-          "pick": [
-            "Castigation (Never allow an evildoer to live). When you **Trade Blows** with a creature with evil intent (GM's call), add +1d6 **holy** dmg"
-          ],
+          "description": "You don't have the **Oaths of Conviction - Liege** Paladin Starting Move, so you gain it, but only with the oath below. You have sworn a righteous oath and service to a liege; name them now: ___inq1pln:leader/institution/organization__. As long as you uphold your oath, you can use its benefit.",
           "submoves": [
             {
               "title": "Broken Oaths",
@@ -24,6 +18,9 @@
           ]
         }
       }
+    ],
+    "pick": [
+      "Castigation (Never allow an evildoer to live). When you **Trade Blows** with a creature with evil intent (GM's call), add +1d6 **holy** dmg"
     ],
     "submoves": [
       {
@@ -82,7 +79,7 @@
   {
     "id": "inq004",
     "title": "Nomosmancy",
-    "description": "You can **Cast a Spell**+STR to impose Order and deny a supernatural effect.",
+    "description": "You can **Cast a Spell**+STR **to impose Order and deny a supernatural effect**.",
     "outcomes": [
       {
         "range": "7-9",

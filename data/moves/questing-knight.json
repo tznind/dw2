@@ -9,7 +9,8 @@
       "**Golden Tongue** — You can communicate with any sapient being",
       "**Seventh Sense** — You can sense the presence of a creature type",
       "**Superhuman State** — You don't need food, water, or sleep"
-    ]
+    ],
+    "details": true
   },
   {
     "id": "qkn002",
@@ -27,7 +28,7 @@
   {
     "id": "qkn003",
     "title": "The Great Uniter",
-    "description": "When you **try to join or ally with a faction**, or request assistance from your liege, if they aren't your direct foes they'll tell you of a big problem or goal they're grappling with. If you help them resolve it, you earn their loyalty, and they're willing to work alongside anyone, even their enemies, as long as you lead the efforts."
+    "description": "When you **try to join or ally with a faction, or request assistance from your liege**, if they aren't your direct foes they'll tell you of a big problem or goal they're grappling with. If you help them resolve it, you earn their loyalty, and they're willing to work alongside anyone, even their enemies, as long as you lead the efforts."
   },
   {
     "id": "qkn004",
@@ -37,6 +38,12 @@
   {
     "id": "qkn005",
     "title": "Trusted Squire",
-    "description": "You have a young NPC at your service who carries your belongings, tends to your needs, and is learning to fight (1d4 dmg). When they suffer harm, mark a Condition. Once per session, when you **teach them a lesson**, **Defy Danger**+WIS. On a 7+, they mark 1 XP. When the squire marks their 5th XP, they're ready. You **Level Up** when you sponsor them and they leave to become a paladin themselves. Lose access to this Move until you take on a new squire."
+    "tracks": [
+      {
+        "name": "Xp",
+        "max": 5
+      }
+    ],
+    "description": "You have a young NPC at your service who carries your belongings, tends to your needs, and is learning to fight (1d4 dmg). When **they suffer harm**, mark a Condition. Once per session, when you **teach them a lesson**, **Defy Danger**+WIS. On a 7+, they mark 1 XP. When the squire marks their 5th XP, they're ready. You **Level Up** when you sponsor them and they leave to become a paladin themselves. Lose access to this Move until you take on a new squire."
   }
 ]

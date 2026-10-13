@@ -47,7 +47,16 @@
   {
     "id": "par003",
     "title": "\"For the Honor of…\"",
-    "description": "Once per session, when you **assume a heroic form related to your Origins**, choose benefits from below up to your CHA, which last until you **Face Death**, **Reach Your Limit**, or the scene ends, whichever happens first.\n- All allies who witness it clear a Condition\n- All foes who witness it ignore your allies for now and treat you as the biggest threat\n- Reduce dmg taken by half (rounded down) from NPCs with evil intent\n- Your STR is +3"
+    "description": "Once per session, when you **assume a heroic form related to your Origins**, choose one benefit below, which lasts until you **Face Death**, **Reach Your Limit**, or the scene ends, whichever happens first.",
+    "tracks": [
+      { "name": "Used", "shape": "square", "max": 1 }
+    ],
+    "pickOne": [
+      "All allies who witness it clear a Condition",
+      "All foes who witness it ignore your allies for now and treat you as the biggest threat",
+      "Reduce dmg taken by half (rounded down) from NPCs with evil intent",
+      "Your STR is +3"
+    ]
   },
   {
     "id": "par004",
@@ -62,6 +71,28 @@
   {
     "id": "par005",
     "title": "You Will Not Break Me",
-    "description": "When you **Reach Your Limit**, you may also choose from the options below. If you do, you only clear up to CHA Conditions, but may mark 1 Depth with a PC who helped you:\n- **Angry** — Make a show of force or lash out at your foes\n- **Distracted** — Pursue a suspicion or side-quest\n- **Exhausted** — Sound the retreat or make a personal sacrifice\n- **Frightened** — Confront your fears or confide in another\n- **Insecure** — Seek guidance or submit to authority"
+    "description": "When you **Reach Your Limit**, you may also choose from the options below. If you do, you only clear up to CHA Conditions, but may mark 1 Depth with a PC who helped you:",
+    "outcomes": [
+      {
+        "range": "Angry",
+        "text": "Make a show of force or lash out at your foes"
+      },
+      {
+        "range": "Distracted",
+        "text": "Pursue a suspicion or side-quest"
+      },
+      {
+        "range": "Exhausted",
+        "text": "Sound the retreat or make a personal sacrifice"
+      },
+      {
+        "range": "Frightened",
+        "text": "Confront your fears or confide in another"
+      },
+      {
+        "range": "Insecure",
+        "text": "Seek guidance or submit to authority"
+      }
+    ]
   }
 ]

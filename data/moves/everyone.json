@@ -427,7 +427,32 @@
     "title": "Reach Your Limit",
     "category": "Extra Moves",
     "hideCheckbox": true,
-    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:\n- **Angry** — Lash out at your allies or break something important\n- **Distracted** — Wander off alone or miss something relevant\n- **Exhausted** — Collapse or give up when it matters\n- **Frightened** — Hide or flee from danger\n- **Insecure** — Overcompensate or harshly criticize someone\n\nAfter the outburst, lock the chosen Condition.",
+    "description": "When you **mark your last Condition**, clear all your marked Conditions then choose and act out one of the following outbursts:",
+    "outcomes": [
+        {
+            "range": "Angry",
+            "text": "Lash out at your allies or break something important"
+        },
+        {
+            "range": "Distracted",
+            "text": "Wander off alone or miss something relevant"
+        },
+        {
+            "range": "Exhausted",
+            "text": "Collapse or give up when it matters"
+        },
+        {
+            "range": "Frightened",
+            "text": "Hide or flee from danger"
+        },
+        {
+            "range": "Insecure",
+            "text": "Overcompensate or harshly criticize someone"
+        },
+        {
+            "text": "After the outburst, lock the chosen Condition."
+        }
+    ],
     "submoves": [
         {
             "title": "Note:",
