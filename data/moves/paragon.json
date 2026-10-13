@@ -47,11 +47,11 @@
   {
     "id": "par003",
     "title": "\"For the Honor of…\"",
-    "description": "Once per session, when you **assume a heroic form related to your Origins**, choose one benefit below, which lasts until you **Face Death**, **Reach Your Limit**, or the scene ends, whichever happens first.",
+    "description": "Once per session, when you **assume a heroic form related to your Origins**, choose one benefit below up to your CHA, which lasts until you **Face Death**, **Reach Your Limit**, or the scene ends, whichever happens first.",
     "tracks": [
       { "name": "Used", "shape": "square", "max": 1 }
     ],
-    "pickOne": [
+    "pick": [
       "All allies who witness it clear a Condition",
       "All foes who witness it ignore your allies for now and treat you as the biggest threat",
       "Reduce dmg taken by half (rounded down) from NPCs with evil intent",

@@ -20,12 +20,12 @@
       }
     ],
     "pick": [
-      "Castigation (Never allow an evildoer to live). When you **Trade Blows** with a creature with evil intent (GM's call), add +1d6 **holy** dmg"
+      "Castigation (Never allow an evildoer to live). When you **Trade Blows** **with a creature with evil intent (GM's call)**, add +1d6 **holy** dmg"
     ],
     "submoves": [
       {
         "title": "Smite Evil",
-        "description": "When you **Trade Blows** with a creature with evil intent,",
+        "description": "When you **Trade Blows** **with a creature with evil intent (GM's call)**,",
         "outcomes": [
           {
             "range": "10+",

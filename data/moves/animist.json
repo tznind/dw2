@@ -34,14 +34,14 @@
       },
       {
         "range": "6-",
-        "text": "You drawn an enemy's attention; mark 1 XP and the GM makes a Move."
+        "text": "You draw an enemy's attention; mark 1 XP and the GM makes a Move."
       }
     ]
   },
   {
     "id": "ani003",
-    "title": "Commmune with Nature",
-    "description": "When you **spend time connected with natural spirits**, ask one question below about the region you're in, or ask all of them but mark a Condition after hearing the ansewrs. The GM will answer honestly",
+    "title": "Commune with Nature",
+    "description": "When you **spend time connected with natural spirits**, ask one question below about the region you're in, or ask all of them but mark a Condition after hearing the answers. The GM will answer honestly",
     "outcomes": [
       {
         "text": "",
