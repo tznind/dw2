@@ -1,27 +1,110 @@
 [
   {
     "id": "bst001",
-    "title": "Placeholder Move 1",
-    "description": "Placeholder"
+    "title": "No Mere Creature",
+    "if": [
+      {
+        "condition": {"hasMove": "rgr001"},
+        "then": {
+          "description": "Instead choose two additional Qualities for your Companion. Either way, choose and mark one Special Training below. When you **Make Camp**, you can retrain them to change which is marked."
+        },
+        "else": {
+          "description": "Gain the **Animal Companion** Ranger Starting Move: you work closely with a reasonably-sized mundane natural beast. Examples include wolf, bear, fox, hawk, hound, etc. Give them a name, describe their appearance, and consider how you bonded. Then choose three Qualities they have, and one Drawback. Either way, choose and mark one Special Training below. When you **Make Camp**, you can retrain them to change which is marked.",
+          "details": true,
+          "submoves": [
+            {
+              "title": "Qualities (choose three)",
+              "pick": [
+                "aquatic",
+                "burrowing",
+                "cute",
+                "fast",
+                "flying",
+                "large",
+                "night vision",
+                "scary",
+                "stealthy",
+                "strong",
+                "tracker"
+              ]
+            },
+            {
+              "title": "Drawback",
+              "pickOne": [
+                "coward",
+                "fragile",
+                "hungry",
+                "loud",
+                "stubborn"
+              ]
+            },
+            {
+              "title": "Assistance",
+              "description": "When **your animal companion assists you**, say how, then choose one for each relevant Quality (GM's call):",
+              "outcomes": [
+                {
+                  "text": "",
+                  "bullets": [
+                    "They create an opportunity or overcome a small obstacle",
+                    "They grant you **adv** on an associated Move roll",
+                    "If fighting, they increase your armor by 1 and your dmg dealt by 1d4",
+                    "Their Drawback doesn't introduce a complication"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Note",
+              "description": "Usually, you control and portray your animal companion along with your own character. If they are separated from you or affected by their Drawback, the GM might control them for a time.\n\nYour animal companion doesn't have HP. When they get hurt, mark a Condition or say how they leave the scene."
+            }
+          ]
+        }
+      }
+    ],
+    "pick": [
+      "**Magical Familiar** — They count as an extension of yourself when you **Cast a Spell**",
+      "**Sentinel** — They will always alert you to sudden dangers or ambushes before it's too late",
+      "**Sniffer** — When you **Unearth Secrets**, before you roll you may ask one question about the secret"
+    ]
   },
   {
     "id": "bst002",
-    "title": "Placeholder Move 2",
-    "description": "Placeholder"
+    "title": "In This Together",
+    "description": "When you retrain your animal companion, you can also change their Drawback. After you **help your animal companion work on their Drawback**, gain 1 Loyalty (max 3). You may spend Loyalty to gain an unmarked Special Training until the end of the scene.",
+    "tracks": [
+      { "name": "Loyalty", "max": 3 }
+    ]
   },
   {
     "id": "bst003",
-    "title": "Placeholder Move 3",
-    "description": "Placeholder"
+    "title": "Kindred Spirits",
+    "description": "When you **Make Camp**, your animal companion clears one of your Conditions (your choice).",
+    "submoves": [
+      {
+        "title": "Emotional Support",
+        "description": "Choose a **Condition** now: __bstcc__; ignore its penalties while your animal companion is with you. You may change the chosen Condition when you retrain them."
+      }
+    ]
   },
   {
     "id": "bst004",
-    "title": "Placeholder Move 4",
-    "description": "Placeholder"
+    "title": "Superior Companion",
+    "description": "Your animal companion can have two Special Trainings (instead of one), and can also choose from the following:",
+    "pick": [
+      "**Distraction** — When you **Sneak Past**, after you roll you may send your companion away to draw attention, increasing the result by one level (6- → 7-9 → 10+)",
+      "**Pack Leader** — Others of their kind treat you and your companions as allies, if not friends",
+      "**Rescuer** — When you would **Face Death**, they save you but can't help again until you **Make Camp**; regain 1 HP"
+    ]
   },
   {
     "id": "bst005",
-    "title": "Placeholder Move 5",
-    "description": "Placeholder"
+    "title": "Warbeast",
+    "description": "When your animal companion helps you to fight, increase the added armor to 2, and the added dmg to 1d6. Once per scene, when they would get hurt, they're actually fine.",
+    "tracks": [
+      {
+        "name": "Used",
+        "max": 1
+      }
+    ]
   }
 ]
