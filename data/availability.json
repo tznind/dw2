@@ -1,6 +1,7 @@
 {
   "The Bard": {
     "_movesFile": "data/moves/bard.json",
+    "tags": ["class"],
     "description": "An artist through and through, with ambitions far beyond merely pleasing an audience",
     "paths": ["Dabbler", "Diplomat", "Swashbuckler"],
     "level1Help": "At Level 1 your max hp is 8 and your cha is +2. Choose dex or int to be +1, then assign +1, 0, and -1 to the others.",
@@ -30,6 +31,7 @@
   },
   "The Cleric": {
     "_movesFile": "data/moves/cleric.json",
+    "tags": ["class"],
     "description": "No mere priest, a divine emissary armed with steel and powers from above",
     "paths": ["Caregiver", "Oracle", "Warpriest"],
     "level1Help": "At Level 1 your max hp is 8 and your wis is +2. Choose str or cha to be +1, then assign +1, 0, and -1 to the others.",
@@ -59,6 +61,7 @@
   },
   "The Fighter": {
     "_movesFile": "data/moves/fighter.json",
+    "tags": ["class"],
     "description": "An expert in arms and armor; a professional in the deadliest proving ground",
     "paths": ["Bulwark", "Weaponmaster", "Tactician"],
     "level1Help": "At Level 1 your max hp is 10. Choose str or dex to be +2 and the other to be +1, then assign +1, 0, and -1 to the others.",
@@ -89,6 +92,7 @@
   },
   "The Wizard": {
     "_movesFile": "data/moves/wizard.json",
+    "tags": ["class"],
     "description": "A lifetime of study & dedication in exchange for mastering reality",
     "paths": ["Evoker", "Illusionist", "Necromancer"],
     "level1Help": "At Level 1 your max hp is 6 and your int is +2. Choose dex or cha to be +1, then assign +1, 0, and -1 to the others.",
@@ -118,6 +122,7 @@
   },
   "The Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
+    "tags": ["class"],
     "description": "A mighty stranger from an even stranger land",
     "paths": ["Berserker", "Hedonist", "Outlander"],
     "level1Help": "At Level 1 your max hp is 12 and your str is +2. Choose dex or wis to be +1, then assign +1, 0, and -1 to the others.",
@@ -147,6 +152,7 @@
   },
   "The Rogue": {
     "_movesFile": "data/moves/rogue.json",
+    "tags": ["class"],
     "description": "The ultimate survivalist, every tool—legal or not—is at their disposal",
     "paths": ["Assassin", "Burglar", "Spy"],
     "level1Help": "At Level 1 your max hp is 8 and your dex is +2. Choose int or cha to be +1, then assign +1, 0, and -1 to the others.",
@@ -176,6 +182,7 @@
   },
   "The Paladin": {
     "_movesFile": "data/moves/paladin.json",
+    "tags": ["class"],
     "description": "A wondering do-gooder empowered by oaths & steel",
     "paths": ["Inquisitor", "Paragon", "Questing Knight"],
     "level1Help": "At Level 1 your max hp is 10 and your cha is +2. Choose str or wis to be +2 too, then assign 0, 0, and -1 to the others.",
@@ -205,6 +212,7 @@
   },
   "The Druid": {
     "_movesFile": "data/moves/druid.json",
+    "tags": ["class"],
     "description": "A disciple of nature who communes with the spirits and transforms into animals",
     "paths": ["Animist", "Stargazer", "Wildheart"],
     "level1Help": "At Level 1 your max hp is 8 and your wis is +2. Choose dex or cha to be +2 too, then assign 0, 0, and -1 to the others.",
@@ -234,6 +242,7 @@
   },
   "The Ranger": {
     "_movesFile": "data/moves/ranger.json",
+    "tags": ["class"],
     "description": "A seasoned hunter and traveler who works closely with a beast friend",
     "paths": ["Beastmaster", "Deadeye", "Scout"],
     "level1Help": "At Level 1 your max hp is 10 and your dex is +2. Choose str or int to be +2 too, then assign 0, 0, and -1 to the others.",
@@ -263,6 +272,7 @@
   },
   "Berserker": {
     "_movesFile": "data/moves/berserker.json",
+    "tags": ["path"],
     "description": "You're the hardest of them, with a touch of the uncanny",
     "brs001": true,
     "brs002": false,
@@ -272,6 +282,7 @@
   },
   "Hedonist": {
     "_movesFile": "data/moves/hedonist.json",
+    "tags": ["path"],
     "description": "You know what is best in life, and how to take it",
     "hed001": true,
     "hed002": false,
@@ -281,6 +292,7 @@
   },
   "Outlander": {
     "_movesFile": "data/moves/outlander.json",
+    "tags": ["path"],
     "description": "You can't take the homeland out of the…",
     "out001": true,
     "out002": false,
@@ -290,6 +302,7 @@
   },
   "Assassin": {
     "_movesFile": "data/moves/assassin.json",
+    "tags": ["path"],
     "description": "Silent as the grave, deadly as nightshade",
     "asn001": true,
     "asn002": false,
@@ -299,6 +312,7 @@
   },
   "Burglar": {
     "_movesFile": "data/moves/burglar.json",
+    "tags": ["path"],
     "description": "Skill and guile—and a dash of good luck, of course",
     "bur001": true,
     "bur002": false,
@@ -308,6 +322,7 @@
   },
   "Spy": {
     "_movesFile": "data/moves/spy.json",
+    "tags": ["path"],
     "description": "Obtaining and trading secrets is your trade",
     "spy001": true,
     "spy002": false,
@@ -317,6 +332,7 @@
   },
   "Evoker": {
     "_movesFile": "data/moves/evoker.json",
+    "tags": ["path"],
     "description": "There's a simple beauty in utter destruction",
     "evk001": true,
     "evk002": false,
@@ -326,6 +342,7 @@
   },
   "Illusionist": {
     "_movesFile": "data/moves/illusionist.json",
+    "tags": ["path"],
     "description": "How do you define ‘real’?",
     "ill001": true,
     "ill002": false,
@@ -335,6 +352,7 @@
   },
   "Necromancer": {
     "_movesFile": "data/moves/necromancer.json",
+    "tags": ["path"],
     "description": "The greatest taboo among magic practitioners—for a reason",
     "nec001": true,
     "nec002": false,
@@ -344,6 +362,7 @@
   },
   "Bulwark": {
     "_movesFile": "data/moves/bulwark.json",
+    "tags": ["path"],
     "description": "Unstoppable force? Meet immovable object!",
     "bul001": true,
     "bul002": false,
@@ -353,6 +372,7 @@
   },
   "Weaponmaster": {
     "_movesFile": "data/moves/weaponmaster.json",
+    "tags": ["path"],
     "description": "An expertise as ancient as it is deadly",
     "wm001": true,
     "wm002": false,
@@ -362,6 +382,7 @@
   },
   "Tactician": {
     "_movesFile": "data/moves/tactician.json",
+    "tags": ["path"],
     "description": "Audacious & cunning in planning, firm & persevering in execution",
     "tac001": true,
     "tac002": false,
@@ -371,6 +392,7 @@
   },
   "Caregiver": {
     "_movesFile": "data/moves/caregiver.json",
+    "tags": ["path"],
     "description": "What good is a faith that doesn't make the world whole?",
     "hlr001": true,
     "hlr002": false,
@@ -380,6 +402,7 @@
   },
   "Oracle": {
     "_movesFile": "data/moves/oracle.json",
+    "tags": ["path"],
     "description": "Things that were, are, and yet may be",
     "orc001": true,
     "orc002": false,
@@ -389,6 +412,7 @@
   },
   "Warpriest": {
     "_movesFile": "data/moves/warpriest.json",
+    "tags": ["path"],
     "description": "Evil cannot be tolerated",
     "wpr001": true,
     "wpr002": false,
@@ -398,6 +422,7 @@
   },
   "Dabbler": {
     "_movesFile": "data/moves/dabbler.json",
+    "tags": ["path"],
     "description": "Jack of all trades, master of none",
     "dab002": true,
     "dab003": false,
@@ -407,6 +432,7 @@
   },
   "Diplomat": {
     "_movesFile": "data/moves/diplomat.json",
+    "tags": ["path"],
     "description": "Mastery of people is an art in and unto itself",
     "dip001": true,
     "dip002": false,
@@ -416,6 +442,7 @@
   },
   "Swashbuckler": {
     "_movesFile": "data/moves/swashbuckler.json",
+    "tags": ["path"],
     "description": "There's beauty in all things, even fighting!",
     "swb001": true,
     "swb002": false,
@@ -425,6 +452,7 @@
   },
   "Inquisitor": {
     "_movesFile": "data/moves/inquisitor.json",
+    "tags": ["path"],
     "description": "Rotten apples must be purged before they spoil the rest",
     "inq001": true,
     "inq002": false,
@@ -434,6 +462,7 @@
   },
   "Paragon": {
     "_movesFile": "data/moves/paragon.json",
+    "tags": ["path"],
     "description": "An inspiration to anyone who meets you",
     "par001": true,
     "par002": false,
@@ -443,6 +472,7 @@
   },
   "Questing Knight": {
     "_movesFile": "data/moves/questing-knight.json",
+    "tags": ["path"],
     "description": "Absolute commitment can achieve the impossible",
     "qkn001": true,
     "qkn002": false,
@@ -452,6 +482,7 @@
   },
   "Animist": {
     "_movesFile": "data/moves/animist.json",
+    "tags": ["path"],
     "description": "The natural world is alive in ways few mortals now understand",
     "ani001": true,
     "ani002": false,
@@ -461,6 +492,7 @@
   },
   "Stargazer": {
     "_movesFile": "data/moves/stargazer.json",
+    "tags": ["path"],
     "description": "As foretold above, so unfolds below",
     "sta001": true,
     "sta002": false,
@@ -470,6 +502,7 @@
   },
   "Wildheart": {
     "_movesFile": "data/moves/wildheart.json",
+    "tags": ["path"],
     "description": "Follower of the oldest path, wild & weary as the beasts",
     "wld001": true,
     "wld002": false,
@@ -479,6 +512,7 @@
   },
   "Beastmaster": {
     "_movesFile": "data/moves/beastmaster.json",
+    "tags": ["path"],
     "description": "Two bodies, one soul",
     "bst001": true,
     "bst002": false,
@@ -488,6 +522,7 @@
   },
   "Deadeye": {
     "_movesFile": "data/moves/deadeye.json",
+    "tags": ["path"],
     "description": "One shot, one kill",
     "dea001": true,
     "dea002": false,
@@ -497,6 +532,7 @@
   },
   "Scout": {
     "_movesFile": "data/moves/scout.json",
+    "tags": ["path"],
     "description": "Intimately familiar with wilderness’ bounties and perils",
     "sct001": true,
     "sct002": false,
@@ -506,6 +542,7 @@
   },
   "Struggles": {
     "_movesFile": "data/moves/struggles.json",
+    "hidden": true,
     "str001": true,
     "str002": true,
     "str003": true,
@@ -531,6 +568,7 @@
   },
   "Bonds": {
     "_movesFile": "data/moves/bonds.json",
+    "hidden": true,
     "bon001": false,
     "bon002": true,
     "bon003": true,

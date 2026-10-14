@@ -105,17 +105,17 @@
       </div>
       
       <!-- Role selectors support data-roles attribute to limit which roles appear:
-           - Comma-separated list: data-roles="The Bard,Wanderer"
+           - Comma-separated list: data-roles="The Bard,The Cleric"
            - Wildcard for all roles: data-roles="*"
-           - Tag (roles with "tags": ["origin"] in availability.json): data-roles="@origin"
-           - Exclusions: data-roles="*,!Navigator" or data-roles="!@career"
+           - Tag (roles with "tags": ["class"] in availability.json): data-roles="@class"
+           - Exclusions: data-roles="*,!Scout" or data-roles="!@path"
            - No attribute: shows all roles (same as *)
            Roles with "hidden": true are left out of * and @tag. Tags let modules
            add roles to a selector without editing this file. -->
       <div class="role-controls">
         <div class="role-primary">
           <label for="role">Class:</label>
-          <select id="role" name="role" data-roles="The Barbarian,The Bard,The Cleric,The Druid,The Fighter,The Paladin,The Ranger,The Rogue,The Wizard">
+          <select id="role" name="role" data-roles="@class">
             <option value="">Select class...</option>
           </select>
           <button type="button" id="role-help-button" class="help-icon" title="Show class description">?</button>
@@ -126,7 +126,7 @@
           <div class="paths-flow">
             <div class="path-field">
               <label for="role2">Path 1:</label>
-              <select id="role2" name="role2" data-roles="Dabbler, Diplomat, Swashbuckler, Caregiver, Oracle, Warpriest, Bulwark, Weaponmaster, Tactician, Assassin, Burglar, Spy, Evoker, Illusionist, Necromancer, Berserker, Hedonist, Outlander, Inquisitor, Paragon, Questing Knight, Animist, Stargazer, Wildheart, Beastmaster, Deadeye, Scout">
+              <select id="role2" name="role2" data-roles="@path">
                 <option value="">Select path...</option>
               </select>
               <button type="button" id="role2-help-button" class="help-icon" title="Show path 1 description">?</button>
@@ -134,7 +134,7 @@
 
             <div class="path-field">
               <label for="role3">Path 2:</label>
-              <select id="role3" name="role3" data-roles="Dabbler, Diplomat, Swashbuckler, Caregiver, Oracle, Warpriest, Bulwark, Weaponmaster, Tactician, Assassin, Burglar, Spy, Evoker, Illusionist, Necromancer, Berserker, Hedonist, Outlander, Inquisitor, Paragon, Questing Knight, Animist, Stargazer, Wildheart, Beastmaster, Deadeye, Scout">
+              <select id="role3" name="role3" data-roles="@path">
                 <option value="">Select path...</option>
               </select>
               <button type="button" id="role3-help-button" class="help-icon" title="Show path 2 description">?</button>
@@ -142,7 +142,7 @@
 
             <div class="path-field">
               <label for="role4">Multiclass 1:</label>
-              <select id="role4" name="role4" data-roles="Dabbler, Diplomat, Swashbuckler, Caregiver, Oracle, Warpriest, Bulwark, Weaponmaster, Tactician, Assassin, Burglar, Spy, Evoker, Illusionist, Necromancer, Berserker, Hedonist, Outlander, Inquisitor, Paragon, Questing Knight, Animist, Stargazer, Wildheart, Beastmaster, Deadeye, Scout">
+              <select id="role4" name="role4" data-roles="@path">
                 <option value="">Select path...</option>
               </select>
               <button type="button" id="role4-help-button" class="help-icon" title="Show multiclass 1 description">?</button>
@@ -150,7 +150,7 @@
 
             <div class="path-field">
               <label for="role5">Multiclass 2:</label>
-              <select id="role5" name="role5" data-roles="Dabbler, Diplomat, Swashbuckler, Caregiver, Oracle, Warpriest, Bulwark, Weaponmaster, Tactician, Assassin, Burglar, Spy, Evoker, Illusionist, Necromancer, Berserker, Hedonist, Outlander, Inquisitor, Paragon, Questing Knight, Animist, Stargazer, Wildheart, Beastmaster, Deadeye, Scout">
+              <select id="role5" name="role5" data-roles="@path">
                 <option value="">Select path...</option>
               </select>
               <button type="button" id="role5-help-button" class="help-icon" title="Show multiclass 2 description">?</button>
@@ -292,7 +292,8 @@
      each class in data/availability.json. Kept self-contained here (rather
      than in the shared engine .js files) so upstream engine updates keep
      merging cleanly. Multiclass 1/2 deliberately keep their full data-roles
-     list, since multiclassing pulls a path from a *different* class. If a
+     list (every role tagged "path"), since multiclassing pulls a path from a
+     *different* class. If a
      class has no "paths" defined (or none is selected yet), Path 1/2 fall
      back to their own data-roles list, same as before this script existed. -->
 <script>
@@ -308,8 +309,7 @@
   }
 
   function fallbackRolesFor(select) {
-    var attr = select.getAttribute('data-roles') || '';
-    return attr.split(',').map(function(role) { return role.trim(); }).filter(Boolean);
+    return window.Utils.resolveRoleSpec(select.getAttribute('data-roles'));
   }
 
   // Rebuilds a select's <option> list from `roles`, keeping the current
