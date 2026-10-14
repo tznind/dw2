@@ -1,3 +1,10 @@
 {
-  "modules": []
+  "modules": [
+    {
+      "id": "example-class",
+      "name": "Example Class",
+      "description": "Adds ExampleClass with three placeholder paths",
+      "path": "data/modules/example-class"
+    }
+  ]
 }

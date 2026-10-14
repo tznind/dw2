@@ -1,0 +1,27 @@
+{
+  "ExampleClass": {
+    "_movesFile": "data/modules/example-class/moves/example-class.json",
+    "tags": ["class"],
+    "description": "Placeholder class added by the Example Class module.",
+    "paths": ["ExamplePath1", "ExamplePath2", "ExamplePath3"],
+    "exc001": true
+  },
+  "ExamplePath1": {
+    "_movesFile": "data/modules/example-class/moves/example-path1.json",
+    "tags": ["path"],
+    "description": "Placeholder path 1.",
+    "exp1001": false
+  },
+  "ExamplePath2": {
+    "_movesFile": "data/modules/example-class/moves/example-path2.json",
+    "tags": ["path"],
+    "description": "Placeholder path 2.",
+    "exp2001": false
+  },
+  "ExamplePath3": {
+    "_movesFile": "data/modules/example-class/moves/example-path3.json",
+    "tags": ["path"],
+    "description": "Placeholder path 3.",
+    "exp3001": false
+  }
+}
